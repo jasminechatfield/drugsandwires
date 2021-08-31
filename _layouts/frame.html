@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <div class="page__wrapper">
+<header>
+  <!-- <h1>Drugs and Wires</h1> -->
+  {% include header.html %}
+
+  {% include navigation.html %}
+
+  <div class="newsbox">
+    <p>Short news in the news box</p>
+  </div>
+</header>
+
+{{ content }}
+
+<footer>
+  <div class="footer">
+ <p> © 2015–2021 Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995 </p>
+</div>
+</footer>
+</div>
+</body>
+<script src="/assets/js/gallery.js"></script>
+</html>

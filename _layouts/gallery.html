@@ -1,0 +1,18 @@
+---
+layout: frame
+---
+
+<main>
+   {% for gallery in site.data.galleries.items %} {% if gallery.tag ==
+   page.gallery-tag %} {% assign pagegallery = gallery %} {% endif %} {% endfor
+   %}
+
+   <h1>{{pagegallery.name}}</h1>
+   {{content}} {% assign galleryimages = pagegallery.images | reverse %}
+   <ul class="gallery__list">
+      {% for image in galleryimages %}
+      <li class="gallery__list__item">{% include gallery-thumbnail.html %}</li>
+      {% endfor %}
+      <li class="gallery__list__item"></li>
+   </ul>
+</main>

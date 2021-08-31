@@ -1,0 +1,26 @@
+---
+layout: frame
+---
+
+<main>
+   {% assign character = page.character %} {% for category in
+   site.data.characters.categories %} {% for character in category.characters %}
+   {% assign lowercase = character.tag | downcase %} {% if lowercase ==
+   page.character %}
+   <h2>{{character.name}}</h2>
+   {% for paragraph in character.description %}
+   <p>{{paragraph}}</p>
+   {% endfor %} {% if character.hobbies %}
+   <p><strong>Hobbies:</strong> {{character.hobbies}}</p>
+   {% endif %} {% endif %} {% endfor %} {% endfor %} {{ content }}
+   <h3>Fanart of {{page.title}}</h3>
+   {% for gallery in site.data.galleries.items %} {% if gallery.tag == "fanart"
+   %} {% for fanart in gallery.images %} {% if fanart.tags contains character %}
+   <img src="{{gallery.assetpath}}/{{fanart.file}}" style="width: 100px" /> {%
+   endif %} {% endfor %} {% endif %} {% endfor %}
+
+   <h3>{{page.title}} bonus content</h3>
+   <h3>Pages featuring {{page.title}}</h3>
+   {% for comicpage in site.categories.comic %} {% if comicpage.tags contains
+   character %} {% include thumbnail-page.html %} {% endif %} {% endfor %}
+</main>

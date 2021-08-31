@@ -1,0 +1,19 @@
+items:
+   - name: Home
+     url: index.html
+   - name: About
+     url: about.html
+   - name: Characters
+     url: characters.html
+   - name: Archive
+     url: archive.html
+   - name: Links
+     url: links.html
+   - name: Merch
+     url: https://www.hellovoid.online/
+   - name: News
+     url: news.html
+   - name: Fanart
+     url: fanart.html
+   - name: Community Discord
+     url: discord.html

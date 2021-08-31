@@ -1,0 +1,40 @@
+.gallery__list
+  display: flex
+  align-content: stretch
+  align-items: stretch
+  flex-wrap: wrap
+  list-style-type: none
+  margin: 0
+  padding: 0
+  height: 100%
+  .gallery__list__item
+    height: 20vh
+    flex-grow: 1
+    padding: 0
+    display: block
+    margin: 20px
+    cursor: pointer
+    // margin: 20px
+    &:last-child
+      flex-grow: 10
+    .gallery__list__image
+      max-height: 100%
+      max-width: 100%
+      object-fit: cover
+      vertical-align: bottom
+      width: 100%
+      height: 100%
+      pointer-events: none
+  .gallery__list__item__expanded
+    width: 100%
+    height: 100%
+    flex-grow: 1
+    display: block
+    margin: 20px
+    cursor: pointer
+    .gallery__list__image
+      width: 100%
+      height: 100%
+      pointer-events: none
+
+  

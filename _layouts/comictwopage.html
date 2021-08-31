@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% for post in site.categories.comic %} {% if post.url == page.url %} {% assign
+post_index0 = forloop.index0 %} {% assign post_index1 = forloop.index %} {%
+endif %} {% endfor %} {% for post in site.categories.comic %} {% if post_index0
+== forloop.index %} {% assign next_post = post.url %} {% endif %} {% if
+post_index1 == forloop.index0 %} {% assign prev_post = post.url %} {% endif %}
+{% endfor %} {% capture prev %}{{prev_post}}{% endcapture %} {% capture next
+%}{{next_post}}{% endcapture %} {% if prev_post %} {% if next_post %} {% include
+two-pages-with-nav.html first_or_last=first_or_last prev=prev next=next %} {%
+else %} {% include two-pages-with-nav.html first_or_last=first_or_last prev=prev
+%} {% endif %} {% else %} {% if next_post %} {% include two-pages-with-nav.html
+first_or_last=first_or_last next=next %} {% endif %} {% endif %}
+
+{{content}} {%
+include comments.html %}

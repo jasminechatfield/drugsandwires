@@ -1,0 +1,118 @@
+categories:
+   - name: Main
+     characters:
+        - name: Dan
+          tag: dan
+          description:
+             - "A former virtual reality operator who’s perpetually drifting in and out of various addictions."
+             - "A prominent player in the local VR scene, Dan had to retire after suffering worm-induced brain damage. Nowadays, he spends his time working shitty jobs, struggling to adapt to reality, and occasionally hanging out with his friendly neighborhood modder, Lin."
+          hobbies: "Existential crises, Beat Generation literature, being too picky about his goddamn coffee when he’s barely being able to afford instant noodles."
+        - name: Lin
+          tag: lin
+          description:
+             - "A med school reject who now makes her living installing illegal bodymods and providing medical care to the dregs of society. Lin loves cybernetics, but is somewhat less interested in the people they’re attached to. As a result, her methods of working aren’t particularly gentle."
+             - "Lin befriended Dan while he was still using VR, and saved his brain from being completely fried by the worm."
+          hobbies: "Organ trade, dodgy medical experiments, robots, intimidation, hentai."
+   - name: The Operators
+     description: Freelance VR operator scene of Stradania.
+     characters:
+        - name: Nate
+          tag: nate
+          description:
+             - "AKA Cybernator. One of the sharpest (and cockiest) operators on the scene, which is no mean feat when you haven’t even hit legal drinking age yet. Thanks to indulgent parents and the wonders of mail order, Nate is neck-deep in the latest, shiniest tech, some of which might even work as advertised."
+             - "Despite going together about as well as nails and a chalkboard, Nate and Dan have teamed up on a number of VR contracts over the years. That partnership ended on something of a sour note after their last job left Dan with a nasty worm problem."
+          hobbies: "Hacking, violent video games, pathological gadget-hoarding."
+        - name: Vlad
+          tag: vlad
+          description:
+             - Better known (and disdained) in Dreamspace circles by his operator handle, 666_Satan_666, Vlad Adsky is a natural-born opportunist. He often claims to be responsible for introducing Satanism to Unylsk, though strangely enough, most of the city’s actual Satanists want nothing to do with him.
+             - Beyond acting as managing editor and figurehead of prominent scene ‘zine Fear_and_Loading, Vlad fancies himself as a Byronic poet, philosopher, and general renaissance man. Unfortunately, none of these pursuits have been terribly profitable for him; his long-suffering girlfriend, Tasha, is the one stuck paying rent and utilities.
+        - name: Mira
+          tag: mira
+          description:
+             - "As “Terminatrixx”, Mira is one of the Dreamspace scene’s most popular mindtrippers, and with good reason: her erotic and fetish sims are second to none. Nowadays, she mainly works for wealthier tourists who are willing to pay a little extra for the “forbidden trips” they can’t get at home."
+        - name: Fixer
+          tag: fixer
+          description:
+             - Or “Fixer242”, if you’re feeling formal. Top-tier mindtripper, hardcore rivethead, and shameless ‘tech elitist, Fixer has been a part of the Dreamspace scene for as long as anybody can remember. Don’t get him started on rigs or cables – you’ll be there all night.
+        - name: Code4Food
+          tag: code4food
+          description:
+             - "You know you’ve got problems when even your fellow Dreamspace operators call you a weirdo. Though still a skilled trip developer, too many long hours in VR have started eroding her already-tenuous grip on reality."
+        - name: Shitparade
+          tag: shitparade
+          description:
+             - "Once upon a time, “The Shitparade” was Fear_and_Loading‘s most notorious columnist, eagerly racking up the hatemail with a weekly, gleefully ego-bruising roundup of the “worst of the worst” in mindtrips. Sadly (or thankfully, depending on who you ask), all that ended when the worm struck."
+        - name: Eve
+          tag: eve
+          description: "Dan’s ex-girlfriend. A straight-edge psych student, Eve became a prominent Dreamspace operator in the early years of the VR scene, and was responsible for Dan going independent. The two ultimately broke up due to Dan’s various drug issues."
+        - name: Sandman
+          tag: sandman
+          description: "Old-school software cracker turned Dreamspace guru – and, more recently, high-profile fugitive."
+   - name: Legit Deliveries
+     description: Dan's work collegues.
+     characters:
+        - name: Dan's Manager
+          tag: dansmanager
+          description:
+             - Dan’s manager is a harsh taskmaster, but with a workstaff of junkies and petty crooks, you do what you have to.
+        - name: Nagy
+          tag: nagy
+          description:
+             - "Every once in a blue moon, Legit Deliveries would have to truck out a shipment beyond the relative safety of Unylsk’s city walls to the toxic countryside up north. That’s when they called Nagy, the only Legit employee willing to risk life and limb out in the “Dregs” – at least until he got banged up on multiple charges of dognapping. A prison stint doesn’t seem to have done anything for his attitude towards other people’s personal property, but at least farmers are getting their packages again."
+        - name: Vitaly
+          tag: vitaly
+          description:
+             - "Young, obnoxious, and obsessed with Western pop culture, Vitaly is the product of too much MTV and not nearly enough parental boundaries. He’d like you to think he’s pretty street, and hopes like hell nobody realizes that Mom and Dad paid for that sweet bling."
+   - name: Synacon
+     description: Miami-based VR software company struggling to shift its new OS.
+     characters:
+        - name: Marilyn
+          tag: marilyn
+          description:
+             - Sole heir to the notorious Dixon-Adriatica Paper Company, “MHF” took daddy’s ill-gotten money and weaponized it, becoming one of the world’s wealthiest individuals in the process. In the span of six years, her alternative investment fund has acquired, dismantled, and shuttered almost one hundred businesses running the gamut from aerospace to pork futures.
+        - name: Troy
+          tag: troy
+          description:
+             - A luckless member of Synacon’s sales team tasked with goosing international sales for Dreamspace 95.
+        - name: Teddy Wexler
+          tag: teddywexler
+          description:
+             - Synacon’s Director of Sales is a relatively recent addition to the company. Depending on who you ask, he’s either a take-no-prisoners dealmaker who believes in working hard and playing harder, or a slithering opportunist who only jumped ship to virtual reality to escape the impending bankruptcy of his supercar dealership.
+        - name: Dr. Lully
+          tag: drlully
+          description:
+             - Synacon co-founder and one of the key minds behind the Dreamspace software. Formerly a researcher at Florida’s Pesanta Medical University, Lully has grown to appreciate the suit-and-tie lifestyle; even Marilyn Hope-Fokker is a minor terror compared to the dog-eat-dog world of academia.
+   - name: Digital Serenity
+     description: Stradania’s only legal VR salon.
+     characters:
+        - name: Filosof
+          tag: filosof
+          description:
+             - "Sly, wry, and never seen in public without his trademark red suit, the “Philosopher” is a senior figure in the Digital Serenity VR franchise."
+        - name: NoK00l
+          tag: nok00l
+          description:
+             - "A Digital Serenity op addicted to overpriced foreign cyberwear. Despite his handle, he thinks he’s actually pretty damned cool, thank you. Then again, he once spent half a month’s salary on a pair of KSOSAI tactical socks."
+        - name: Dreamspaece
+          tag: dreamspaece
+          description:
+             - "Dreamspaece refers to herself as a “VR curator”, which is a terribly elaborate way of saying she spends most of her time rebundling other people’s trips and passing them off as her own work. Not to be confused with Dreammspace, Dreemspace, or Dreamscape."
+        - name: "1111111111111111111111"
+          tag: "11"
+          description:
+             - "Formerly a top-ranked mindtripper, “11” jumped ship to Digital Serenity with his brother [Blank] soon after Skullfuck.exe started decimating operator ranks. Something of a Judas figure in op circles."
+        - name: "[Blank]"
+          tag: blank
+          description:
+             - 11’s younger and tragically dumber brother. With a handle like [Blank], you might be tempted to imagine him as some kind of cryptic-er-than-thou cyberspace renegade, but no – he just accidentally pressed “Enter” when the Dreamspace name entry screen first came up and still hasn’t figured out how to fix it.
+   - name: The Rest
+     characters:
+        - name: Tasha
+          tag: tasha
+          description:
+             - "Vlad’s girlfriend, although there’s some spirited betting in the operator community as to how long that‘s going to last. Between letting Vlad live rent-free at her apartment, paying his bills, financing his various endeavors, and putting up with his endless womanizing, she’s probably in line for a sainthood somewhere."
+        - name: SIM
+          tag: sim
+          description:
+             - "Lin’s computerized surgical assistant. Arguably the only one at the Kutting Edge Klinik with any significant grasp on medicine, human anatomy, or common sense."

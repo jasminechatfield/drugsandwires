@@ -1,0 +1,22 @@
+<div class="characters">
+   {% for category in site.data.characters.categories %}
+   <div class="characters__category">
+      <h1>{{category.name}}</h1>
+      {% if category.description %}
+      <p>{{category.description}}</p>
+      {% endif %} {% for character in category.characters %}
+      <div class="characters__category__character">
+         <h2>
+            <a href="/characters/{{character.tag}}.html">{{character.name}}</a>
+         </h2>
+         {% for paragraph in character.description %}
+         <p>{{paragraph}}</p>
+         {% endfor %} {% if character.hobbies %}
+         <h3>{{character.name}}'s Hobbies</h3>
+         <p>{{character.hobbies}}</p>
+         {% endif %}
+      </div>
+      {% endfor %}
+   </div>
+   {% endfor %}
+</div>

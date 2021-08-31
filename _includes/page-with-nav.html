@@ -1,0 +1,79 @@
+<div class="comic__page__wrapper">
+   <div class="comic__page">
+      <div class="comic__navigation">
+         {% if include.prev %}
+         <a
+            href="{{site.categories.comic.last.url}}"
+            class="comic__navigation__option"
+            >first</a
+         >
+         <a href="{{include.prev}}" class="comic__navigation__option">back</a>
+         {% else %}
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
+
+         {% endif %}
+         <a href="/comic/random.html" class="comic__navigation__option"
+            >random</a
+         >
+         {% if include.next %}
+         <a href="{{include.next}}" class="comic__navigation__option">next</a>
+         <a
+            href="{{site.categories.comic.first.url}}"
+            class="comic__navigation__option"
+            >latest</a
+         >
+         {% else %}
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
+
+         {% endif %}
+      </div>
+      {% if include.next %}
+      <a href="{{include.next}}" class="comic__navigation__option">
+         {% endif %} {% if page.imagepath %}
+         <img src="/assets/img/pages/{{page.imagepath}}" alt="{{page.title}}" />
+         {% else %} {% if page.page > 9 %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page}}"
+         />
+         {% else %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page}}"
+         />
+         {% endif %}{% endif %} {% if include.next %}
+      </a>
+      {% endif %}
+      <div class="comic__navigation">
+         {% if include.prev %}
+         <a
+            href="{{site.categories.comic.last.url}}"
+            class="comic__navigation__option"
+            >first</a
+         >
+         <a href="{{include.prev}}" class="comic__navigation__option">back</a>
+         {% else %}
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
+
+         {% endif %}
+         <a href="/comic/random.html" class="comic__navigation__option"
+            >random</a
+         >
+         {% if include.next %}
+         <a href="{{include.next}}" class="comic__navigation__option">next</a>
+         <a
+            href="{{site.categories.comic.first.url}}"
+            class="comic__navigation__option"
+            >latest</a
+         >
+         {% else %}
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
+
+         {% endif %}
+      </div>
+   </div>
+</div>

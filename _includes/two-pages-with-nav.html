@@ -1,0 +1,96 @@
+<div class="comic__page__wrapper">
+   <div class="comic__page">
+      <div class="comic__navigation">
+         {% if include.prev %}
+         <a
+            href="{{site.categories.comic.last.url}}"
+            class="comic_navigation_option"
+            >first</a
+         >
+         <a href="{{include.prev}}" class="comic_navigation_option">back</a>
+         {% else %}
+         <text class="comic_navigation_option"></text>
+         <text class="comic_navigation_option"></text>
+
+         {% endif %}
+         <a href="/comic/random.html" class="comic_navigation_option">random</a>
+         {% if include.next %}
+         <a href="{{include.next}}" class="comic_navigation_option">next</a>
+         <a
+            href="{{site.categories.comic.first.url}}"
+            class="comic_navigation_option"
+            >latest</a
+         >
+         {% else %}
+         <text class="comic_navigation_option"></text>
+         <text class="comic_navigation_option"></text>
+
+         {% endif %}
+      </div>
+      {% if include.next %}
+      <a href="{{include.next}}" class="comic__navigation__option">
+        {% else %}
+        <a href="/" class="comic__navigation__option">
+         {% endif %}
+         {% if page.imagepath %}
+         <img
+            src="/assets/img/pages/{{page.imagepath}}"
+            alt="{{page.title}}"
+         />
+         {% else %} {% if page.page1 > 9 %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page1}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page1}}"
+         />
+         {% else %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page1}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page1}}"
+         />
+         {% endif %}{% endif %} {% if page.imagepath2 %}
+         <img
+            src="/assets/img/pages/{{page.imagepath2}}"
+            alt="{{page.title}}"
+         />
+         {% else %} {% if page.page2 > 9 %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page2}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page2}}"
+         />
+         {% else %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page2}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page2}}"
+         />
+         {% endif %}{% endif %}
+      </a>
+
+      <div class="comic__navigation">
+         {% if include.prev %}
+         <a
+            href="{{site.categories.comic.last.url}}"
+            class="comic_navigation_option"
+            >first</a
+         >
+         <a href="{{include.prev}}" class="comic_navigation_option">back</a>
+         {% else %}
+         <text class="comic_navigation_option"></text>
+         <text class="comic_navigation_option"></text>
+
+         {% endif %}
+         <a href="/comic/random.html" class="comic_navigation_option">random</a>
+         {% if include.next %}
+         <a href="{{include.next}}" class="comic_navigation_option">next</a>
+         <a
+            href="{{site.categories.comic.first.url}}"
+            class="comic_navigation_option"
+            >latest</a
+         >
+         {% else %}
+         <text class="comic_navigation_option"></text>
+         <text class="comic_navigation_option"></text>
+
+         {% endif %}
+      </div>
+   </div>
+</div>

@@ -1,0 +1,38 @@
+items:
+   - name: Fanart and Trades
+     tag: fanart
+     assetpath: /assets/img/galleries/fanart
+     images:
+        - name: Dan and Eve
+          artist-name: VVaspen
+          artist-url: http://vvaspen.tumblr.com/
+          file: Dan-and-Eve-by-VVaspen.jpeg
+          tags: dan eve
+          description:
+          submitted:
+        - name: Dan
+          artist-name: Pugh
+          artist-url: https://vk.com/club76359257
+          file: Dan-by-Pugh.png
+          tags: dan
+        - name: Dan and Lin
+          artist-name: Pugh
+          artist-url: https://vk.com/club76359257
+          file: Dan-and-Lin-by-Pugh-1024x724.png
+          tags: dan lin
+        - name: Lin
+          artist-name: Phoenixan
+          artist-comic: Center World
+          artist-url: http://phoenixan.com/
+          file: lin_by_recycledoj.jpeg
+          tags: lin
+        - name: Lin
+          artist-name: Crumblewithme
+          artist-url: http://crumblewithme.tumblr.com/
+          file: Lin-by-Crumblewithme.jpeg
+          tags: lin
+        - name: Dan
+          artist-name: Marina
+          artist-url: https://twitter.com/ozuzoozuzo
+          file: dan_by_marina.png
+          tags: dan
