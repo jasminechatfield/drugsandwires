@@ -52,7 +52,7 @@ title: "Home"
 {% endif %}
 
 {{page.content}}
-{{page.url}}
+
 {% include comments.html %}
 
 {% endfor %}

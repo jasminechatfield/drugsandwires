@@ -16,10 +16,24 @@
       type="hidden"
       value="{{ page.url | replace: '.html', '' }}"
    />
-   {{ page.url | replace: '.html', '' }}
+
    <button type="submit">Submit</button>
 </form>
 
-<p>comment</p>
-<p>comment</p>
-<p>comment</p>
+<h2>Comments</h2>
+{% assign replaceurl = page.url | replace: ".html", "" | remove_first: "/" %} {%
+assign spliturl = replaceurl | split: "/" %}
+<!-- {{ spliturl | size }} -->
+{% assign urlpart1 = spliturl[0] %} {% assign urlpart2 = spliturl[1] %} {%
+assign urlpart3 = spliturl[2] %}
+
+<ul>
+   {% for comment_hash in site.data.comments[urlpart1][urlpart2][urlpart3] %}
+   {% assign comment = comment_hash[1] %}
+   <li>
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.message}}</p>
+      <button>Reply</button>
+   </li>
+   {% endfor %}
+</ul>
