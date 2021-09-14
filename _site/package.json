@@ -1,0 +1,19 @@
+{
+  "name": "drugsandwires",
+  "version": "1.0.0",
+  "description": "New site build for [Drugs and Wires](https://www.drugsandwires.fail) webcomic built in Jekyll.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasminechatfield/drugsandwires.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasminechatfield/drugsandwires/issues"
+  },
+  "homepage": "https://github.com/jasminechatfield/drugsandwires#readme"
+}

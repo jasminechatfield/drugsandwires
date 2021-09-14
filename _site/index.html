@@ -82,6 +82,17 @@
    </div>
 </div>
 
+<h3>Leave a comment</h3>
+<form method="POST" action="https://dnwcomments.herokuapp.com/v3/entry/github/drugsandwires/drugsandwires/main">
+   <label>Name: <input type="text" name="fields[name]" /></label>
+   <label>Website URL (optional): <input type="text" name="fields[url]" /></label>
+   <label>
+      Comment message:
+      <textarea name="fields[message]"></textarea>
+   </label>
+   <button type="submit">Submit</button>
+</form>
+
 <p>comment</p>
 <p>comment</p>
 <p>comment</p>
