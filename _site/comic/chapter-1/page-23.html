@@ -112,7 +112,7 @@
  <h3>Leave a comment</h3>
 <form
    method="POST"
-   action="https://dnwcomments.herokuapp.com/v3/entry/github/drugsandwires/drugsandwires/main"
+   action="https://dnwcomments.herokuapp.com/v3/entry/github/drugsandwires/drugsandwires/main/comments"
 >
    <label>Name: <input type="text" name="fields[name]" /></label>
    <label
@@ -122,6 +122,11 @@
       Comment message:
       <textarea name="fields[message]"></textarea>
    </label>
+   <input
+      name="options[location]"
+      type="hidden"
+      value="/comic/chapter-1/page-23"
+   />
    <button type="submit">Submit</button>
 </form>
 
