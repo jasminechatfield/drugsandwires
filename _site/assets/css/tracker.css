@@ -1,0 +1,64 @@
+body {
+  background-color: white;
+  font-family: Courier New, Courier, monospace; }
+  body h1 {
+    margin-left: 100px; }
+  @media only screen and (min-width: 1600px) {
+    body main {
+      padding: 0 100px 100px 100px; } }
+  body main .progress {
+    background-color: #ededed;
+    width: 500px;
+    height: 25px; }
+    body main .progress.progress--5 {
+      width: 70%;
+      min-width: 500px; }
+    body main .progress.progress--1 .progress__bar {
+      background-color: #E65FA3; }
+    body main .progress.progress--2 .progress__bar {
+      background-color: #FDD349; }
+    body main .progress.progress--3 .progress__bar {
+      background-color: #8FD1B5; }
+    body main .progress.progress--4 .progress__bar {
+      background-color: #757ACC; }
+    body main .progress.progress--5 .progress__bar {
+      background-color: #E173D8; }
+    body main .progress .progress__bar {
+      height: 25px;
+      background-color: #FDD349; }
+
+table {
+  margin-top: 100px;
+  border-spacing: 0; }
+  table th {
+    padding: 10px;
+    text-align: left; }
+    table th:last-child {
+      text-align: right; }
+  table td {
+    padding: 5px 20px; }
+    table td:last-child {
+      text-align: right; }
+    table td.symbol {
+      text-align: center;
+      font-size: 30px;
+      padding: 0;
+      color: white; }
+      table td.symbol.tick {
+        color: black; }
+  table .functionality {
+    background-color: #ED87B9; }
+  table .migration {
+    background-color: #E65FA3; }
+  table .wireframes {
+    background-color: #FBBD4E; }
+  table .design {
+    background-color: #FDD349; }
+  table .completedpages {
+    background-color: #8FD1B5; }
+  table .cms {
+    background-color: #42B0C7; }
+  table .entiresite {
+    background-color: #757ACC; }
+  table .ongoingsupport {
+    background-color: #E173D8; }

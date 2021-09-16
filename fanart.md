@@ -4,4 +4,4 @@ title: Fanart
 gallery-tag: fanart
 ---
 
-Here is some fan art la la la change this
+Mainly just experimenting with functionality so far etc etc change this text
