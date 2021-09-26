@@ -7,7 +7,9 @@
             class="comic__navigation__option"
             >first</a
          >
-         <a href="{{include.prev}}" class="comic__navigation__option">back</a>
+         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
+            >back</a
+         >
          {% else %}
          <text class="comic__navigation__option"></text>
          <text class="comic__navigation__option"></text>
@@ -17,7 +19,9 @@
             >random</a
          >
          {% if include.next %}
-         <a href="{{include.next}}" class="comic__navigation__option">next</a>
+         <a href="{{include.next}}" class="comic__navigation__option" id="next"
+            >next</a
+         >
          <a
             href="{{site.categories.comic.first.url}}"
             class="comic__navigation__option"
@@ -53,7 +57,9 @@
             class="comic__navigation__option"
             >first</a
          >
-         <a href="{{include.prev}}" class="comic__navigation__option">back</a>
+         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
+            >back</a
+         >
          {% else %}
          <text class="comic__navigation__option"></text>
          <text class="comic__navigation__option"></text>
@@ -63,7 +69,9 @@
             >random</a
          >
          {% if include.next %}
-         <a href="{{include.next}}" class="comic__navigation__option">next</a>
+         <a href="{{include.next}}" class="comic__navigation__option" id="next"
+            >next</a
+         >
          <a
             href="{{site.categories.comic.first.url}}"
             class="comic__navigation__option"

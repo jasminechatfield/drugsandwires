@@ -1,5 +1,6 @@
 ﻿Task,Stage 1,Stage 2,Stage 3,Stage 4,Category,Notes
 Page navigation,Yes,Yes,Yes,No,Functionality,"first, previous, next, latest"
+Keyboard navigation,Yes,Yes,Yes,No,Functionality,
 Comment functionality,Yes,Yes,No,No,Functionality,
 News functionality,Yes,Yes,No,No,Functionality,
 Character functionality,Yes,Yes,No,No,Functionality,
@@ -62,4 +63,4 @@ Training materials,No,No,No,No,Ongoing support,
 6 month bug fix and support,No,No,No,No,Ongoing support,
 Ticket 1,No,No,No,No,Ongoing support,
 Ticket 2,No,No,No,No,Ongoing support,
-Ticket 3,No,No,No,No,Ongoing support,
+Ticket 3,Yes,Yes,No,No,Ongoing support,
