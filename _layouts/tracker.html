@@ -60,7 +60,7 @@
 {% assign project_2 = percentage_2 | times: 0.3 %}
 {% assign project_3 = percentage_3 | times: 0.2 %}
 {% assign project_4 = percentage_4 | times: 0.1 %}
-{% assign project_completed = project_1 | add: project_2 | add: project_3 | add: project_4 %}
+{% assign project_completed = project_1 | plus: project_2 | plus: project_3 | plus: project_4 %}
 {{project_completed}}%
 <div class="progress progress--5"><div class="progress__bar" style="width:{{project_completed}}%"></div></div>
 
