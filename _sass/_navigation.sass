@@ -1,6 +1,49 @@
 .navigation
-  display: flex
+  display: none
   justify-content: space-evenly
+  background-color: black
+  +for-tablet-portrait-up
+    display: flex
+    padding-bottom: 1rem
+  .navigation__item
+    +for-desktop-up
+      width: 170px
   .navigation__link
-    font-size: 1.5rem
+    display: block
     text-decoration: none
+
+    .navigation__item__image
+      position: relative
+      +for-desktop-up
+        width: 135px
+        height: 135px
+        margin: auto
+      .navigation__item__image--normal
+        position: absolute
+        top: 0
+        left: 0
+        +for-desktop-up
+          width: 130px
+          height: 130px
+        
+      .navigation__item__image--hover
+        display: none
+        position: absolute
+        bottom: 0
+        right: 0
+        +for-desktop-up
+          width: 130px
+          height: 130px
+        
+    .navigation__item__text
+      font-size: 1.5rem
+      font-family: "Quantico", sans-serif
+      text-transform: uppercase
+      text-align: center
+    &:hover
+      .navigation__item__image
+        .navigation__item__image--normal
+          display: none
+        .navigation__item__image--hover
+          display: unset
+      

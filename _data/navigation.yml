@@ -1,19 +1,29 @@
 items:
-   - name: Home
-     url: index.html
    - name: About
      url: about.html
+     image: /assets/img/site/menu_about.png
+     image-hover: /assets/img/site/menu_about_hover.png
    - name: Characters
      url: characters.html
+     image: /assets/img/site/menu_characters.png
+     image-hover: /assets/img/site/menu_characters_hover.png
    - name: Archive
      url: archive.html
+     image: /assets/img/site/menu_archive.png
+     image-hover: /assets/img/site/menu_archive_hover.png
    - name: Links
      url: links.html
+     image: /assets/img/site/menu_links.png
+     image-hover: /assets/img/site/menu_links_hover.png
    - name: Merch
      url: https://www.hellovoid.online/
+     image: /assets/img/site/menu_merch.png
+     image-hover: /assets/img/site/menu_merch_hover.png
+   - name: Gallery
+     url: fanart.html
+     image: /assets/img/site/menu_gallery.png
+     image-hover: /assets/img/site/menu_gallery_hover.png
    - name: News
      url: news.html
-   - name: Fanart
-     url: fanart.html
-   - name: Community Discord
-     url: discord.html
+     image: /assets/img/site/menu_news.png
+     image-hover: /assets/img/site/menu_news_hover.png

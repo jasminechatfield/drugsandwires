@@ -1,12 +1,38 @@
 <nav>
    <div class="navigation">
-      {% for item in site.data.navigation.items %} {% if item.url contains
-      "http" %}
-      <a href="{{ item.url }}" class="navigation__link" target="_blank"
-         >{{item.name}}</a
-      >
-      {% else %}
-      <a href="/{{item.url}}" class="navigation__link">{{item.name}} </a>
-      {% endif %} {% endfor %}
+      {% for item in site.data.navigation.items %}
+      <div class="navigation__item">
+         {% if item.url contains "http" %}
+
+         <a href="{{ item.url }}" class="navigation__link" target="_blank"
+            ><div class="navigation__item__image">
+               <img
+                  src="{{ item.image }}"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="{{ item.image-hover }}"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">{{item.name}}</div>
+         </a>
+         {% else %}
+         <a href="/{{item.url}}" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="{{ item.image }}"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="{{ item.image-hover }}"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">{{item.name}}</div>
+         </a>
+         {% endif %}
+      </div>
+      {% endfor %}
    </div>
 </nav>
