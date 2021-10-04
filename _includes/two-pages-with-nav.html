@@ -4,26 +4,49 @@
          {% if include.prev %}
          <a
             href="{{site.categories.comic.last.url}}"
-            class="comic_navigation_option"
-            >first</a
+            class="comic__navigation__option"
          >
-         <a href="{{include.prev}}" class="comic_navigation_option" id="prev">back</a>
+            <img
+               src="/assets/img/site/nav_first.png"
+               alt="First"
+               class="comic__navigation__image"
+            />
+         </a>
+         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
+            ><img
+               src="/assets/img/site/nav_prev.png"
+               alt="Previous"
+               class="comic__navigation__image"
+         /></a>
          {% else %}
-         <text class="comic_navigation_option"></text>
-         <text class="comic_navigation_option"></text>
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
 
          {% endif %}
-         <a href="/comic/random.html" class="comic_navigation_option">random</a>
+         <a href="/comic/random.html" class="comic__navigation__option"
+            ><img
+               src="/assets/img/site/nav_random.png"
+               alt="Random"
+               class="comic__navigation__image"
+         /></a>
          {% if include.next %}
-         <a href="{{include.next}}" class="comic_navigation_option" id="next">next</a>
+         <a href="{{include.next}}" class="comic__navigation__option" id="next"
+            ><img
+               src="/assets/img/site/nav_next.png"
+               alt="Next"
+               class="comic__navigation__image"
+         /></a>
          <a
             href="{{site.categories.comic.first.url}}"
-            class="comic_navigation_option"
-            >latest</a
-         >
+            class="comic__navigation__option"
+            ><img
+               src="/assets/img/site/nav_last.png"
+               alt="Latest"
+               class="comic__navigation__image"
+         /></a>
          {% else %}
-         <text class="comic_navigation_option"></text>
-         <text class="comic_navigation_option"></text>
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
 
          {% endif %}
       </div>
@@ -36,31 +59,37 @@
          <img
             src="/assets/img/pages/{{page.imagepath}}"
             alt="{{page.title}}"
+            class="comic__page__image"
          />
          {% else %} {% if page.page1 > 9 %}
          <img
             src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page1}}.jpeg"
             alt="Chapter {{page.chapter}} Page {{page.page1}}"
+            class="comic__page__image"
          />
          {% else %}
          <img
             src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page1}}.jpeg"
             alt="Chapter {{page.chapter}} Page {{page.page1}}"
+            class="comic__page__image"
          />
          {% endif %}{% endif %} {% if page.imagepath2 %}
          <img
             src="/assets/img/pages/{{page.imagepath2}}"
             alt="{{page.title}}"
+            class="comic__page__image"
          />
          {% else %} {% if page.page2 > 9 %}
          <img
             src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page2}}.jpeg"
             alt="Chapter {{page.chapter}} Page {{page.page2}}"
+            class="comic__page__image"
          />
          {% else %}
          <img
             src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page2}}.jpeg"
             alt="Chapter {{page.chapter}} Page {{page.page2}}"
+            class="comic__page__image"
          />
          {% endif %}{% endif %}
       </a>
@@ -69,26 +98,49 @@
          {% if include.prev %}
          <a
             href="{{site.categories.comic.last.url}}"
-            class="comic_navigation_option"
-            >first</a
+            class="comic__navigation__option"
          >
-         <a href="{{include.prev}}" class="comic_navigation_option" id="prev">back</a>
+            <img
+               src="/assets/img/site/nav_first.png"
+               alt="First"
+               class="comic__navigation__image"
+            />
+         </a>
+         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
+            ><img
+               src="/assets/img/site/nav_prev.png"
+               alt="Previous"
+               class="comic__navigation__image"
+         /></a>
          {% else %}
-         <text class="comic_navigation_option"></text>
-         <text class="comic_navigation_option"></text>
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
 
          {% endif %}
-         <a href="/comic/random.html" class="comic_navigation_option">random</a>
+         <a href="/comic/random.html" class="comic__navigation__option"
+            ><img
+               src="/assets/img/site/nav_random.png"
+               alt="Random"
+               class="comic__navigation__image"
+         /></a>
          {% if include.next %}
-         <a href="{{include.next}}" class="comic_navigation_option" id="next">next</a>
+         <a href="{{include.next}}" class="comic__navigation__option" id="next"
+            ><img
+               src="/assets/img/site/nav_next.png"
+               alt="Next"
+               class="comic__navigation__image"
+         /></a>
          <a
             href="{{site.categories.comic.first.url}}"
-            class="comic_navigation_option"
-            >latest</a
-         >
+            class="comic__navigation__option"
+            ><img
+               src="/assets/img/site/nav_last.png"
+               alt="Latest"
+               class="comic__navigation__image"
+         /></a>
          {% else %}
-         <text class="comic_navigation_option"></text>
-         <text class="comic_navigation_option"></text>
+         <text class="comic__navigation__option"></text>
+         <text class="comic__navigation__option"></text>
 
          {% endif %}
       </div>

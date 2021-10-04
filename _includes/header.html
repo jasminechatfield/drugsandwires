@@ -49,6 +49,94 @@
       </div>
    </div>
    <div class="header__menu">
-      <button>Menu</button>
+      <button class="header__menu__button" id="header__menu__button">
+         Menu
+      </button>
+      <div
+         class="header__menu__navigation hidden"
+         id="header__menu__navigation"
+      >
+         <div
+            class="header__menu__navigation__button__container"
+            id="header__menu__navigation__button__container"
+         >
+            <button class="header__menu__navigation__button">Close menu</button>
+         </div>
+         <div class="header__menu__navigation__social">
+            <img
+               src="/assets/img/site/icon_twitter.png"
+               alt="Twitter"
+               class="header__icons__icon"
+            />
+            <img
+               src="/assets/img/site/icon_facebook.png"
+               alt="Facebook"
+               class="header__icons__icon"
+            />
+            <img
+               src="/assets/img/site/icon_instagram.png"
+               alt="Instagram"
+               class="header__icons__icon"
+            />
+         </div>
+         <div class="header__menu__navigation__main">
+            {% for item in site.data.navigation.items %}
+            <div class="navigation__item">
+               {% if item.url contains "http" %}
+
+               <a href="{{ item.url }}" class="navigation__link" target="_blank"
+                  ><div class="navigation__item__image">
+                     <img
+                        src="{{ item.image }}"
+                        class="navigation__item__image--normal"
+                     />
+                     <img
+                        src="{{ item.image-hover }}"
+                        class="navigation__item__image--hover"
+                     />
+                  </div>
+                  <div class="navigation__item__text">{{item.name}}</div>
+               </a>
+               {% else %}
+               <a href="/{{item.url}}" class="navigation__link"
+                  ><div class="navigation__item__image">
+                     <img
+                        src="{{ item.image }}"
+                        class="navigation__item__image--normal"
+                     />
+                     <img
+                        src="{{ item.image-hover }}"
+                        class="navigation__item__image--hover"
+                     />
+                  </div>
+                  <div class="navigation__item__text">{{item.name}}</div>
+               </a>
+               {% endif %}
+            </div>
+            {% endfor %}
+         </div>
+         <div class="header__menu__navigation__support">
+            <img
+               src="/assets/img/site/icon_patreon.png"
+               alt="Heart icon, text saying 'Support us on Patreon'"
+               class="header__icons__icon"
+            />
+            <img
+               src="/assets/img/site/icon_rss.png"
+               alt="RSS"
+               class="header__icons__icon"
+            />
+            <img
+               src="/assets/img/site/icon_tapas.png"
+               alt="Tapas"
+               class="header__icons__icon"
+            />
+            <img
+               src="/assets/img/site/icon_webtoon.png"
+               alt="Webtoons"
+               class="header__icons__icon"
+            />
+         </div>
+      </div>
    </div>
 </div>

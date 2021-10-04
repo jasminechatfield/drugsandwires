@@ -3,5 +3,11 @@
   color: $orange
   padding: 10px 25px
   max-width: 1000px
-  margin: 0 auto
+  margin: 0 0.75rem
   box-sizing: border-box
+  +for-tablet-portrait-up
+    margin: 0 1.5rem
+  +for-tablet-landscape-up
+    margin: 0 2rem
+  +for-desktop-up
+    margin: 0 auto
