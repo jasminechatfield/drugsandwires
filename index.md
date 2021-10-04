@@ -59,7 +59,7 @@ title: "Home"
 
 ## Latest News
 
-{% for post in site.categories.news  limit:1 %}
+{% for post in site.categories.news  limit:3 %}
 
 ### [{{post.title}}]({{post.url}})
 
