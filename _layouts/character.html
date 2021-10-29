@@ -7,6 +7,7 @@ layout: frame
    site.data.characters.categories %} {% for character in category.characters %}
    {% assign lowercase = character.tag | downcase %} {% if lowercase ==
    page.character %}
+   <img src="/assets/img/characters/{{character.tag}}_long.jpg" />
    <h2>{{character.name}}</h2>
    {% for paragraph in character.description %}
    <p>{{paragraph}}</p>

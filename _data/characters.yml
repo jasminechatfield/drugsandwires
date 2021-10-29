@@ -53,7 +53,7 @@ categories:
      description: Dan's work collegues.
      characters:
         - name: Dan's Manager
-          tag: dansmanager
+          tag: dans-manager
           description:
              - Dan’s manager is a harsh taskmaster, but with a workstaff of junkies and petty crooks, you do what you have to.
         - name: Nagy
@@ -76,11 +76,11 @@ categories:
           description:
              - A luckless member of Synacon’s sales team tasked with goosing international sales for Dreamspace 95.
         - name: Teddy Wexler
-          tag: teddywexler
+          tag: teddy-wexler
           description:
              - Synacon’s Director of Sales is a relatively recent addition to the company. Depending on who you ask, he’s either a take-no-prisoners dealmaker who believes in working hard and playing harder, or a slithering opportunist who only jumped ship to virtual reality to escape the impending bankruptcy of his supercar dealership.
         - name: Dr. Lully
-          tag: drlully
+          tag: lully
           description:
              - Synacon co-founder and one of the key minds behind the Dreamspace software. Formerly a researcher at Florida’s Pesanta Medical University, Lully has grown to appreciate the suit-and-tie lifestyle; even Marilyn Hope-Fokker is a minor terror compared to the dog-eat-dog world of academia.
    - name: Digital Serenity

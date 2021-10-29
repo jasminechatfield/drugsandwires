@@ -1,4 +1,5 @@
 ---
 imagepath: wirepedia/vr-hardware.png
-title: Dreamspace Hardware
+title: D&W Extras - Dreamspace Hardware
+redirect: https://www.drugsandwires.fail/dnwcomic/dw-extras-dreamspace-hardware/
 ---

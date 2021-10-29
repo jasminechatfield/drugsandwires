@@ -13,6 +13,6 @@ two-pages-with-nav.html first_or_last=first_or_last prev=prev next=next %} {%
 else %} {% include two-pages-with-nav.html first_or_last=first_or_last prev=prev
 %} {% endif %} {% else %} {% if next_post %} {% include two-pages-with-nav.html
 first_or_last=first_or_last next=next %} {% endif %} {% endif %}
-
-{{content}} {%
-include comments.html %}
+<h3>{{page.title}}</h3>
+ {{content}}
+ {% include tags.html %} {% include comments.html %}
