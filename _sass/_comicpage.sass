@@ -1,10 +1,46 @@
 .comic__page__wrapper
   display: block
   text-align: center
+  +for-tablet-portrait-up
+      margin: 0 -1.5rem 1rem -1.5rem
   .comic__page
     display: inline-block
-    max-width: 720px
     width: 100%
+    a
+      display: block
     .comic__page__image
       width: 100%
       max-width: 720px
+      box-sizing: border-box
+
+.comic__info
+  background-color: black
+  border: $orange 3px solid
+  padding: 0.75rem 1rem
+  width: 100%
+  box-sizing: border-box
+  +for-tablet-portrait-up
+    padding: 1rem 1.5rem 0.5rem 1.5rem
+  &__meta
+    +for-tablet-portrait-up
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 1rem
+  &__title
+    margin-block-start: 0
+    margin-block-end: 0
+    font-size: 1.1rem
+    text-transform: uppercase
+    +for-tablet-portrait-up
+      font-size: 1.5rem
+  &__date
+    margin-block-start: 0
+    margin-block-end: 0
+    font-weight: 700
+    +for-tablet-portrait-up
+      font-size: 1.25rem
+  &__text
+    font-size: 0.875rem
+    +for-tablet-portrait-up
+      font-size: 1rem

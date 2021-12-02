@@ -7,8 +7,21 @@ title: News
 
 {% for post in site.categories.news %}
 
-### [{{post.title}}]({{post.url}})
+<div class="news__item">
+<div class="news__item__image">
+<img src="/assets/img/news/{{post.image}}" /></div>
+<div class="news__item__info">
+<h3 class="news__item__title"><a href="{{post.url}}">{{post.title}}</a></h3>
 
-{{post.content}}
+<!-- <strong>{{post.date | date: "%b %e %Y"}}</strong> -->
+
+<p class="news__item__summary">{{post.summary}}</p>
+
+<a href="{{post.url}}" class="news__item__button"><button>Read more ></button></a>
+
+</div>
+</div>
+
 {% endfor %}
+
 

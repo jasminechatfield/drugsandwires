@@ -12,9 +12,16 @@ post_index1 == forloop.index0 %} {% assign prev_post = post.url %} {% endif %}
 page-with-nav.html first_or_last=first_or_last prev=prev next=next %} {% else %}
 {% include page-with-nav.html first_or_last=first_or_last prev=prev %} {% endif
 %} {% else %} {% if next_post %} {% include page-with-nav.html
-first_or_last=first_or_last next=next %} {% endif %} {% endif %} 
-<h3>{{page.title}}</h3>
-{{content}} 
+first_or_last=first_or_last next=next %} {% endif %} {% endif %}
+<div class="comic__info">
+   <div class="comic__info__meta">
+      <h3 class="comic__info__title">{{page.title}}</h3>
 
-{% include tags.html %}
+      <p class="comic__info__date">
+         {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+      </p>
+   </div>
+   <div class="comic__info__text">{{content}}</div>
+   {% include tags.html %}
+</div>
 {% include comments.html %}

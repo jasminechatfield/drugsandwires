@@ -1,0 +1,157 @@
+.comments
+  background-color: black
+  margin: 1rem -0.75rem 0 -0.75rem
+  padding: 1rem 0.75rem
+  +for-desktop-up
+    margin-top: 0.5rem
+  &__view
+    &__title
+      text-transform: uppercase
+      font-weight: 100
+      font-size: 1.4rem
+      +for-tablet-portrait-up
+        font-size: 1.75rem
+      +for-desktop-up
+        margin-left: -1.5rem
+    &__list
+      padding: 0
+      list-style-type: none
+      &__item
+        border: $purple 3px solid
+        padding: 0.75rem 0.75rem 0 0.75rem
+        +for-tablet-portrait-up
+          min-height: calc(110px + 0.75rem)
+          position: relative
+        +for-tablet-landscape-up
+          padding: 1rem 1.5rem 0 1.5rem
+          min-height: calc(110px + 1rem)
+        &__data
+          display: flex
+          justify-content: space-between
+          align-items: center
+          +for-tablet-portrait-up
+            padding-top: 0.25rem
+        &__avatar
+          +for-tablet-portrait-up
+            width: 110px
+            height: 110px
+            float: left
+            background-color: $purple
+            border-radius: 100px
+            box-sizing: border-box
+            padding-bottom: 0.75rem
+            margin-right: 1rem
+          +for-tablet-landscape-up
+            padding-bottom: 1rem
+            margin-right: 1.5rem
+        &__name
+          margin-block-start: 0
+          margin-block-end: 0
+          text-transform: uppercase
+          font-weight: 700
+          font-size: 1rem
+          color: $purple
+          +for-tablet-portrait-up
+            font-size: 1.125rem
+          +for-tablet-landscape-up
+            font-size: 1.25rem
+        &__datetime
+          margin-block-start: 0
+          margin-block-end: 0
+          color: $purple
+          font-size: 0.75rem
+          font-weight: 700
+          +for-tablet-landscape-up
+            font-size: 1.25rem
+        &__message
+          font-size: 0.875rem
+          margin-block-start: 0
+          margin-block-end: 0
+          margin: 0.75rem 0 1.5rem 0
+          +for-tablet-portrait-up
+            font-size: 1rem
+        &__button
+          margin-right: -0.75rem
+          text-align: right
+          +for-tablet-portrait-up
+          +for-tablet-landscape-up
+            margin-right: -1.5rem
+          button
+            background-color: $purple
+            border: none
+            color: black
+            text-transform: uppercase
+            font-size: 1rem
+            font-weight: 600
+            width: 250px
+            font-family: 'Anonymous Pro', monospace
+            padding: 0.5rem
+            text-align: center
+            +for-tablet-portrait-up
+              width: 200px
+              font-size: 1.25rem
+  &__form
+    &__short
+      +for-tablet-portrait-up
+        display: flex
+        justify-content: space-between
+        .comments__form__label
+          width: 45%
+          margin: 0
+          +for-tablet-landscape-up
+            width: 47%
+    &__title
+      text-transform: uppercase
+      font-weight: 100
+      margin-block-end: 0
+      margin-block-start: 0
+      font-size: 1.4rem
+      margin-bottom: 1.25rem
+      +for-tablet-portrait-up
+        font-size: 1.75rem
+      +for-desktop-up
+        margin-left: -1.5rem
+    &__label
+      display: block
+      font-size: 1.2222rem
+      margin: 1rem 0
+      font-weight: 700
+      +for-tablet-portrait-up
+        margin: 0
+      span
+        font-size: 1rem
+    &__input
+      box-sizing: border-box
+      display: block
+      margin: 0.75rem 0
+      border: 3px $orange solid
+      background-image: url("/assets/img/site/tile.png")
+      width: 100%
+      padding: 0.75rem
+      color: $whiteish
+      font-family: 'Anonymous Pro', monospace
+      font-weight: 100
+      font-size: 1rem
+      line-height: 1.2rem
+    &__button
+      margin: 2.25rem 0
+      text-align: right
+      +for-tablet-portrait-up
+        margin: 1.5rem 0
+      button
+        width: 100%
+        background-color: $green
+        border: none
+        padding: 1rem
+        font-family: 'Anonymous Pro', monospace
+        font-size: 1.25rem
+        text-transform: uppercase
+        font-weight: 600
+        +for-tablet-portrait-up
+          width: 40%
+        +for-tablet-landscape-up
+          width: 30%
+        +for-desktop-up
+          width: 25%
+    textarea
+      height: 10rem

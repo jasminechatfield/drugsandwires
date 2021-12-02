@@ -390,8 +390,31 @@
 
 
   <div class="newsbox">
-    <p>Short news in the news box</p>
-  </div>
+   <div class="newsbox__sim">
+      <img src="/assets/img/site/newsbox_sim.png" />
+   </div>
+   <svg
+      viewbox="0 0 75 75"
+      height="75"
+      width="100"
+      class="newsbox__speech"
+      role="presentation"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+   >
+      <polygon points="5,50 95,5 95,65" stroke="#FFAA00" fill="#0D0700" />
+   </svg>
+   <div class="newsbox__bubble">
+      <p class="newsbox__text">
+         _Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut
+         egestas tortor. Nunc turpis ante, vulputate non euismod vitae, tempor
+         sit amet augue. Donec a sapien tortor. Quisque vel eros quis nulla
+         consequat tristique. Praesent dictum, nisl sed mollis rutrum, justo
+         orci tempus odio, quis maximus mauris ligula eu lorem.
+      </p>
+   </div>
+</div>
+
 </header>
 <div class="page__main__wrapper">
 <main>
@@ -439,104 +462,144 @@
    </div>
 </div>
 
-<h3>Leave a comment</h3>
-<form method="POST" action="https://dnwcomments.herokuapp.com/v3/entry/github/drugsandwires/drugsandwires/main/comments">
-   <label>Name: <input type="text" name="fields[name]" /></label>
-   <label>Website URL (optional): <input type="text" name="fields[url]" /></label>
-   <label>
-      Comment message:
-      <textarea name="fields[message]"></textarea>
-   </label>
-   <input name="options[location]" type="hidden" value="/comic/chapter-8/page-18" />
-
-   <button type="submit">Submit</button>
-</form>
-
-<h2>Comments</h2>
-
-<!-- 3 -->
-
-<ul>
+<div class="comic__info">
+<div class="comic__info__meta">
+   <h3 class="comic__info__title">Chapter 8 Page 18</h3>
+   <p class="comic__info__date">
+      October 18, 2021
+   </p></div>
+   <div class="comic__info__text"><p>_Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut egestas tortor. Nunc turpis ante, vulputate non euismod vitae, tempor sit amet augue. Donec a sapien tortor. Quisque vel eros quis nulla consequat tristique. Praesent dictum, nisl sed mollis rutrum, justo orci tempus odio, quis maximus mauris ligula eu lorem.</p>
+</div>
+   <div class="tags">
    
-</ul>
+   <a href="/characters/mira" class="tags__tag"><button class="tags__tag__button">mira</button></a>
+   
+</div>
 
-<h2 id="latest-news">Latest News</h2>
+</div>
 
-<h3 id="blue-pill-arcade-is-complete"><a href="/news/blue-pill-arcade-is-complete.html">Blue Pill Arcade is complete</a></h3>
+<aside class="comments">
+   <div class="comments__form">
+      <h3 class="comments__form__title">Leave a comment</h3>
+      <form method="POST" action="https://dnwcomments.herokuapp.com/v3/entry/github/drugsandwires/drugsandwires/main/comments">
+         <div class="comments__form__short">
+            <label class="comments__form__label">Name
+               <input type="text" name="fields[name]" class="comments__form__input" required="" placeholder="Your name" /></label>
 
-<p><strong>Jul  2 2020</strong></p>
-<p>Blue Pill Arcade, Drugs &amp; Wires prequel comic, is now finished!</p>
+            <label class="comments__form__label">Email
+               <input type="email" name="fields[email]" class="comments__form__input" required="" placeholder="Email address" /></label>
+         </div>
+         <label class="comments__form__label">Website <span>optional</span>
+            <input type="text" class="comments__form__input" name="fields[url]" placeholder="Your website URL" /></label>
+         <label class="comments__form__label">
+            Comment
+            <textarea class="comments__form__input" name="fields[message]" required="" placeholder="Enter your message here"></textarea>
+         </label>
+         <input name="options[location]" type="hidden" value="/comic/chapter-8/page-18" />
+         <div class="comments__form__button">
+            <button type="submit">Post comment</button>
+         </div>
+      </form>
+   </div>
+   <div class="comments__view">
+       
+      <!-- 3 -->
+          
+      <h2 class="comments__view__title">1 comment</h2>
+      
+      <ul class="comments__view__list">
+          
+         <li class="comments__view__list__item">
+            <div class="comments__view__list__item__avatar"></div>
+            <div class="comments__view__list__item__data">
+               <h3 class="comments__view__list__item__name">
+                  Jazz
+               </h3>
+               <p class="comments__view__list__item__datetime">
+                  November 30 2021 @ 18:50
+               </p>
+            </div>
+            <p class="comments__view__list__item__message">
+               Test comment
+            </p>
+            <div class="comments__view__list__item__button">
+               <button>Reply</button>
+            </div>
+         </li>
+         
+      </ul>
+   </div>
+</aside>
 
-<p>BPA takes us back to the year 1993 and explores Dan and Eve’s relationship and the early days of VR in Stradania.</p>
+<div class="news__latest">
+<h2 class="news__latest__title">Latest News</h2>
 
-<p>You don’t need to read D&amp;W or the original Dreamspace prequel as BPA is meant to be completely standalone.</p>
 
-<p>~Please note that part 3 is for adult readers only.~</p>
 
-<ul>
-  <li>Physical copies are available in our <a href="https://www.hellovoid.online/">merch store</a>. (Please check the Covid page for the list of countries we can ship to) We’ll look into printing a single volume once we’re out of issue 3.</li>
-  <li>Digital PDFs are now available to all of our $5 tier <a href="https://www.patreon.com/drugsandwires">Patreon</a> supporters, but you can also pick them up on <a href="https://gumroad.com/drugsandwires">Gumroad</a>!</li>
-</ul>
+<div class="news__item">
+<div class="news__item__image">
+<img src="/assets/img/news/bpa3cover.jpg" /></div>
+<div class="news__item__info">
+<h3 class="news__item__title"><a href="/news/blue-pill-arcade-is-complete.html">Blue Pill Arcade is complete</a></h3>
 
-<h3 id="dans-long-lost-tracks-are-released"><a href="/news/dans-tracks.html">Dan’s long lost tracks are released!</a></h3>
+<!-- <strong>Jul  2 2020</strong> -->
 
-<p><strong>Apr  1 2020</strong></p>
-<p><img src="/assets/img/news/" alt="" /></p>
-<figcaption>
+<p class="news__item__summary">Blue Pill Arcade, Drugs &amp; Wires prequel comic, is now finished! BPA takes us back to the year 1993 and explores Dan and Eve’s relationship and the early days of VR in Stradania.</p>
 
-</figcaption>
+<a href="/news/blue-pill-arcade-is-complete.html" class="news__item__button"><button>Read more &gt;</button></a>
 
-<p>Not many people know that, but our boy Dan used to make music in his university days. Thanks to the wonders of technology his <a href="https://danielanonyme.bandcamp.com/album/privation-sensorielle">1992 debut</a> “Privation Sensorielle” has been digitised and preserved for generations to come, possibly against its creator’s will.</p>
+</div>
+</div>
 
-<p><a href="https://danielanonyme.bandcamp.com/album/privation-sensorielle">https://danielanonyme.bandcamp.com/alb </a></p>
 
-<h3 id="fanart-contest-winners"><a href="/news/fanart-contest-winners.html">Fanart Contest Winners</a></h3>
 
-<p><strong>Apr 22 2019</strong></p>
-<p>Our second fanart contest has just wrapped up! Thanks to everyone who participated - we got so many beautiful entries from folks, judging was difficult to say the least.</p>
+<div class="news__item">
+<div class="news__item__image">
+<img src="/assets/img/news/" /></div>
+<div class="news__item__info">
+<h3 class="news__item__title"><a href="/news/dans-tracks.html">Dan's long lost tracks are released!</a></h3>
 
-<p>Here’s all the entries, all links and credits available below (if provided):</p>
+<!-- <strong>Apr  1 2020</strong> -->
 
-<p><img src="/assets/img/news/" alt="" /></p>
-<figcaption>
+<p class="news__item__summary">Not many people know that, but our boy Dan used to make music in his university days. Thanks to the wonders of technology his 1992 debut "Privation Sensorielle" has been digitised and preserved for generations to come, possibly against its creator's will.</p>
 
-</figcaption>
+<a href="/news/dans-tracks.html" class="news__item__button"><button>Read more &gt;</button></a>
 
-<p><img src="/assets/img/news/" alt="" /></p>
-<figcaption>
+</div>
+</div>
 
-</figcaption>
 
-<h2 id="winners--runner-ups">Winners &amp; Runner-ups</h2>
 
-<p>Our Fanart category winner is <strong><a href="https://twitter.com/Oirecnite">Symberzite</a></strong> with a brilliant Bladerunner/D&amp;W mashup. Check out their piece on <a href="https://twitter.com/Oirecnite/status/1118909108327976961">twitter</a>!</p>
+<div class="news__item">
+<div class="news__item__image">
+<img src="/assets/img/news/" /></div>
+<div class="news__item__info">
+<h3 class="news__item__title"><a href="/news/fanart-contest-winners.html">Fanart Contest Winners</a></h3>
 
-<p>Fanart runner-up is <a href="https://leona-florianova.tumblr.com/"><strong>Leona Florianova</strong></a> because who can resist those colours? <a href="https://leona-florianova.tumblr.com/post/184280688748/this-shouldnt-be-happening-lin-looking-just-a">Check out her piece on Tumblr</a></p>
+<!-- <strong>Apr 22 2019</strong> -->
 
-<p>Now for Original Characters! Our OC winner is <strong>ekrixart</strong> with their character Niles. <a href="https://ekrixart.tumblr.com/post/184180785043/my-boy-niles-for-the-drugsandwires-fanart">Check them out on tumblr! </a> We love the idea for the mods and how they’re all both functional and plausible in D&amp;W world.</p>
+<p class="news__item__summary">Our second fanart contest has just wrapped up! Thanks to everyone who participated - we got so many beautiful entries from folks, judging was difficult to say the least.</p>
 
-<p>Our OC Runner-Up is <strong>Flygohr</strong> - that character sheet presentation is A+. <a href="https://www.instagram.com/flygohr/">Check out his work on Instagram</a></p>
+<a href="/news/fanart-contest-winners.html" class="news__item__button"><button>Read more &gt;</button></a>
 
-<p>Links to other participants and entries: (let me know if I missed you - some entries were emailed without any links)</p>
+</div>
+</div>
 
-<ul>
-  <li><a href="https://www.instagram.com/p/BvKadxkg0qS/">Chat-Mot</a></li>
-  <li><a href="https://vk.com/createdbypugh">Pugh</a></li>
-  <li><a href="https://www.instagram.com/out_erspace_art/">out_erspace</a></li>
-  <li><a href="https://creativemoai.tumblr.com/post/184138897211/wanted-to-give-lin-a-fun-look-she-looks-a">creativemoai</a></li>
-  <li><a href="https://twitter.com/Katheudo3664/status/1119057207289688064">Katheudo</a></li>
-</ul>
 
-<p>-Winners and runner-ups will receive a signed Vol.1 of Drugs &amp; Wires, winners will also get part 1 of Blue Pill Arcade, a phone charm and a personalised sketch from Cryo.</p>
 
-<p>Thanks so much to everyone who joined - we’ll try and update our fan gallery as soon as our website is fixed. (FYI, our site is still experiencing some issues so I’m not even sure when we’ll able to update the comic on here. Hopefully soon!)</p>
+<a href="/news" class="news__latest__button"><button>More news &gt;&gt;&gt;</button></a>
 
+</div>
 </main>
 
 </div>
 <footer>
   <div class="footer">
- <p> © 2015–2021 Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995 </p>
+    <div class="footer__sticker">
+    <img src="/assets/img/site/y2ksticker.jpg" />
+  </div>
+ <p class="footer__copyright"> © 2015–2021 Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995 </p>
+  <span></span>
 </div>
 </footer>
 </div>

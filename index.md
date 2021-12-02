@@ -51,18 +51,42 @@ title: "Home"
 {% endif %}
 {% endif %}
 
-{{page.content}}
+<div class="comic__info">
+<div class="comic__info__meta">
+   <h3 class="comic__info__title">{{page.title}}</h3>
+   <p class="comic__info__date">
+      {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+   </p></div>
+   <div class="comic__info__text">{{page.content}}</div>
+   {% include tags.html %}
+</div>
 
 {% include comments.html %}
 
 {% endfor %}
 
-## Latest News
+<div class="news__latest">
+<h2 class="news__latest__title">Latest News</h2>
 
 {% for post in site.categories.news  limit:3 %}
 
-### [{{post.title}}]({{post.url}})
+<div class="news__item">
+<div class="news__item__image">
+<img src="/assets/img/news/{{post.image}}" /></div>
+<div class="news__item__info">
+<h3 class="news__item__title"><a href="{{post.url}}">{{post.title}}</a></h3>
 
-<strong>{{post.date | date: "%b %e %Y"}}</strong>
-{{post.content}}
+<!-- <strong>{{post.date | date: "%b %e %Y"}}</strong> -->
+
+<p class="news__item__summary">{{post.summary}}</p>
+
+<a href="{{post.url}}" class="news__item__button"><button>Read more ></button></a>
+
+</div>
+</div>
+
 {% endfor %}
+
+<a href="/news" class="news__latest__button"><button>More news >>></button></a>
+
+</div>

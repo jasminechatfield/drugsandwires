@@ -1,70 +1,59 @@
 .navigation
   display: none
-  justify-content: space-evenly
-  background-color: black
   +for-tablet-portrait-up
+    justify-content: space-evenly
+    background-color: black
     display: flex
+    padding: 0 1rem 3rem 1rem
+    position: relative
+  +for-desktop-up
     padding-bottom: 1rem
   .navigation__item
-    +for-tablet-portrait-up
-      width: 100px
-    +for-tablet-landscape-up
-      width: 130px
-    +for-desktop-up
-      width: 170px
+    flex: 1 1 0px
+    position: relative
+    
   .navigation__link
     display: block
     text-decoration: none
-
+    margin: auto
     .navigation__item__image
+      display: block
+      width: 100%
       position: relative
-      margin: auto
-      +for-tablet-portrait-up
-        width: 70px
-        height: 70px
       +for-tablet-landscape-up
-        width: 100px
-        height: 100px
-      +for-desktop-up
-        width: 135px
-        height: 135px
-        
+        padding: 0.4rem
+        box-sizing: border-box
       .navigation__item__image--normal
-        position: absolute
-        top: 0
-        left: 0
-        +for-tablet-portrait-up
-          width: 67px
-          height: 67px
+        display: block
+        width: 95%
+        margin: 0 5% 5% 0
         +for-tablet-landscape-up
-          width: 95px
-          height: 95px
+          width: 97%
+          margin: 0 3% 3% 0
         +for-desktop-up
-          width: 130px
-          height: 130px
-        
+          width: 98%
+          margin: 0 2% 2% 0
       .navigation__item__image--hover
         display: none
-        position: absolute
-        bottom: 0
-        right: 0
-        +for-tablet-portrait-up
-          width: 67px
-          height: 67px
+        width: 95%
+        margin: 5% 0 0 5%
         +for-tablet-landscape-up
-          width: 95px
-          height: 95px
+          margin: 3% 0 0 3%
+          width: 97%
         +for-desktop-up
-          width: 130px
-          height: 130px
+          margin: 2% 0 0 2%
+          width: 98%
         
     .navigation__item__text
       
       font-family: "Quantico", sans-serif
       text-transform: uppercase
       text-align: center
+      font-weight: 800
       +for-tablet-portrait-up
         font-size: 1rem
+        padding-top: 0.5rem
+        padding-right: 2.5%
       +for-desktop-up
         font-size: 1.5rem
     &:hover
@@ -74,5 +63,5 @@
         .navigation__item__image--normal
           display: none
         .navigation__item__image--hover
-          display: unset
+          display: block
       
