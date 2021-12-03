@@ -3,3 +3,5 @@ importscript.txt
 */comments-to-migrate/
 .DS_Store
 */.DS_Store
+.jekyll-cache
+.sass-cache

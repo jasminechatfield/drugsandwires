@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: characterlist
 title: Characters
 ---
 
 # Characters
 
-{% include characters.html %}
+Click on a character to view their character page:

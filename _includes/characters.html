@@ -1,24 +1,39 @@
-<div class="characters">
-   {% for category in site.data.characters.categories %}
-   <div class="characters__category">
-      <h1>{{category.name}}</h1>
+{% for category in site.data.characters.categories %}
+<div class="characters__category characters__category--{{category.color}}">
+   <h3 class="characters__category__title">{{category.name}}</h1>
 
-      {% if category.description %}
-      <p>{{category.description}}</p>
-      {% endif %} {% for character in category.characters %}
-      <div class="characters__category__character">
-         <h2>
-            <a href="/characters/{{character.tag}}.html">{{character.name}}</a>
-         </h2>
-         <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
-         {% for paragraph in character.description %}
-         <p>{{paragraph}}</p>
-         {% endfor %} {% if character.hobbies %}
-         <h3>{{character.name}}'s Hobbies</h3>
-         <p>{{character.hobbies}}</p>
-         {% endif %}
-      </div>
+   {% if category.description %}
+   <p class="characters__category__description">{{category.description}}</p>
+   {% else %}
+   <span class="characters__category__description"></span>
+   {% endif %}
+   <div class="characters__category__list">
+      {% for character in category.characters %}
+      
+         <div class="characters__character">
+            <a href="/characters/{{character.tag}}">
+            <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
+            <div class="characters__character__info">
+               <div class="characters__character__info__extra">
+                  <span class="characters__character__info__extra__spacing"></span>
+                  <h2 class="characters__character__name">
+                     {{character.name}}
+                  </h2>
+     
+                  <p>{{character.summary}}</p>
+                  <button class="characters__character__info__button">
+                     ➔ ➔ ➔
+                  </button>
+                  <!-- {% if character.hobbies %}
+               <h3>{{character.name}}'s Hobbies</h3>
+               <p>{{character.hobbies}}</p>
+               {% endif %} -->
+               </div>
+            </div>
+            </a>
+         </div>
+      
       {% endfor %}
    </div>
-   {% endfor %}
 </div>
+{% endfor %}
