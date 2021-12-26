@@ -4,19 +4,19 @@
       <img
          src="/assets/img/pages/ch0{{comicpage.chapter}}/page0{{comicpage.page}}.jpeg"
          alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
-         width="100px"
+         loading="lazy"
       />
       {% else %}
       <img
          src="/assets/img/pages/ch0{{comicpage.chapter}}/page00{{comicpage.page}}.jpeg"
          alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
-         width="100px"
+         loading="lazy"
       />
       {% endif %} {% else %}
       <img
          src="/assets/img/pages/{{comicpage.imagepath}}"
          alt="{{comicpage.title}}"
-         width="100px"
+         loading="lazy"
       />
       {% endif %}
    </a>
