@@ -9,6 +9,19 @@ categories:
              - "A former virtual reality operator who’s perpetually drifting in and out of various addictions."
              - "A prominent player in the local VR scene, Dan had to retire after suffering worm-induced brain damage. Nowadays, he spends his time working shitty jobs, struggling to adapt to reality, and occasionally hanging out with his friendly neighborhood modder, Lin."
           hobbies: "Existential crises, Beat Generation literature, being too picky about his goddamn coffee when he’s barely being able to afford instant noodles."
+          bonus:
+             - name: "Dan's lost album"
+               type: linkimage
+               image: news/albumartfinel.jpeg
+             - name: "Not in public"
+               type: image
+               image: news/notinpublic.jpeg
+               url: /news/dans-tracks.html
+               offsite: false
+             - name: "Dan's Twitter"
+               type: link
+               url: https://twitter.com/nonamenihilist
+               offsite: true
         - name: Lin
           tag: lin
           summary: "A med school reject who now makes her living installing illegal bodymods and providing medical care to the dregs of society."
