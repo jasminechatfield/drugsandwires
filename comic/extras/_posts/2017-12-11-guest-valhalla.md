@@ -2,7 +2,7 @@
 imagepath:
 tags:
 title: Guest Art Week 3 by Valhalla Halvorson [Flashing Gif]
-redirect: https://www.drugsandwires.fail/dnwcomic/guest-art-week-3-by-valhalla-halvorson-flashing-gif/
+alias: /dnwcomic/guest-art-week-3-by-valhalla-halvorson-flashing-gif/
 ---
 
 This week's beautiful guest art is another animated GIF! Our last chapter's obviously lacked in the Dan Tripping Out department, so I'm glad we can still get our fix thanks to our guest artists!

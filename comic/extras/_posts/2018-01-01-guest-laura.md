@@ -2,7 +2,7 @@
 imagepath:
 tags:
 title: Guest Art Week 6 by Laura Watton
-redirect: https://www.drugsandwires.fail/dnwcomic/guest-art-week-6-by-laura-watton/
+alias: /dnwcomic/guest-art-week-6-by-laura-watton/
 ---
 
 Appropriately enough, today's guest piece hails from an artist whose comic actually _launched_ in 1995!

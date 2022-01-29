@@ -2,7 +2,7 @@
 imagepath:
 tags: fixer nate vlad
 title: "Guest Comic: Funkopolis"
-redirect: https://www.drugsandwires.fail/dnwcomic/guest-comic-funkopolis/
+alias: /dnwcomic/guest-comic-funkopolis/
 ---
 
 -  [Read Martyr Youth ](https://tapastic.com/series/martyryouth)

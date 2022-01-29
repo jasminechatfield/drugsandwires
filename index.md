@@ -66,7 +66,7 @@ title: "Home"
     var HYVOR_TALK_WEBSITE = 6020;
     var HYVOR_TALK_CONFIG = {
         url: false,
-        id: {{ page.identifier }}
+        id: "{{ page.alias }}"
     };
 </script>
 <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
