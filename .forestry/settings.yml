@@ -4,12 +4,24 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Site
+- type: document
+  path: _config.yml
+  label: Site Config
+  match: "**/*"
+- type: document
+  path: _data/navigation.yml
+  label: Navigation
+  match: "**/*"
 - type: directory
   path: news
   label: News
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: heading
+  label: Comic
 - type: directory
   path: comic
   label: Comic Pages
