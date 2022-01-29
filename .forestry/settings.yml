@@ -9,11 +9,9 @@ sections:
 - type: document
   path: _config.yml
   label: Site Config
-  match: "**/*"
 - type: document
   path: _data/navigation.yml
   label: Navigation
-  match: "**/*"
 - type: directory
   path: news
   label: News
@@ -28,6 +26,10 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: document
+  path: _data/galleries.yml
+  label: Image Galleries
+  match: "**/*"
 - type: heading
   label: Characters
 - type: document
