@@ -2,7 +2,7 @@
 imagepath:
 tags:
 title: Guest Art Week 1 by Hari [Flashing Gif Warning]
-redirect: https://www.drugsandwires.fail/dnwcomic/guest-art-week-1-by-hari/
+alias: /dnwcomic/guest-art-week-1-by-hari/
 ---
 
 Hey folks! While we're currently on a break, we've got a few weeks of beautiful guest art coming up. Do check out their amazing work elsewhere and show them some love here and on social media!

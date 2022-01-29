@@ -2,7 +2,7 @@
 imagepath:
 tags:
 title: Guest Art Week 7 by Laura Watton
-redirect: https://www.drugsandwires.fail/dnwcomic/guest-art-week-7-by-laura-watton/
+alias: /dnwcomic/guest-art-week-7-by-laura-watton/
 ---
 
 Our seventh and final week of guest art features [Laura](http://www.pinkapplejam.com/)'s take on everybody's favorite twosome.

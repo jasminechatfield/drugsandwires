@@ -2,7 +2,7 @@
 imagepath:
 tags:
 title: Dates & Wires is out!
-redirect: https://www.drugsandwires.fail/dnwcomic/dates-wires-is-out/
+alias: /dnwcomic/dates-wires-is-out/
 ---
 
 Dates & Wires, the first official D&W visual novel is [now available on itch.io!](https://ioblack.itch.io/dates-and-wires)

@@ -2,7 +2,7 @@
 imagepath:
 tags: dan lin
 title: Happy New Year!
-redirect: https://www.drugsandwires.fail/dnwcomic/happy-new-year/
+alias: /dnwcomic/happy-new-year/
 ---
 
 New Year is a much bigger thing in Russia than Christmas, so it was only fair to make a NY special inspired by Russian festive postcards. Hoping to finish some NY-themed strips for the Patreon folk too, but as I'm currently back in Latvia and struggling with my portable equipment (making this was quite an adventure), that might have to wait.
