@@ -3,7 +3,8 @@
   width: 100%
   display: grid
   grid-template-columns: 2fr 1fr
-  padding: 1rem
+  padding: 1rem 1rem 0 1rem
+  margin-bottom: 0.5rem
   box-sizing: border-box
   +for-tablet-portrait-up
     grid-template-columns: 1fr 1fr
@@ -14,24 +15,24 @@
   .header__background
     position: absolute
     width: 100%
-    background-image: url("/assets/img/site/header_bg_overlay.png")
-    background-color: $purple
+    background-image: url("/assets/img/site/header_bg_overlay_mob.png")
     z-index: -1000
     background-size: cover
     background-repeat: no-repeat
     background-blend-mode: multiply
-    top: -100px
+    top: -130px
     left: 0
     height: 250px
     +for-tablet-portrait-up
-      top: 0
-      border-top: 25px solid black
+      background-image: url("/assets/img/site/header_bg_overlay.png")
+      top: 8vw
       height: 225px
     +for-tablet-landscape-up
-      height: 250px
+      height: 275px
     +for-desktop-up
-      top: -120px
-      height: 500px     
+      top: -4rem
+      height: 500px 
+      background-position: bottom    
   .header__title
     .header__title__link
       display: block

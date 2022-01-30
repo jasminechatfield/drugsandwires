@@ -6,26 +6,43 @@
     display: flex
     align-items: flex-end
     text-align: right
-    padding: 0
+    padding-bottom: 0
+    position: relative
   +for-desktop-up
-    margin-left: calc(((100vw - 1200px) / 2) * -1)
-    margin-right: calc(((100vw - 1200px) / 2) * -1)
     text-align: center
     justify-content: space-between
+    
+  &__background
+    +for-tablet-portrait-up
+      background-image: url("/assets/img/site/header_bg_overlay_upside.png")
+      position: absolute
+      width: 100%
+      z-index: -1000
+      background-size: cover
+      background-repeat: no-repeat
+      background-blend-mode: multiply
+      bottom: -1rem
+      height: 225px
+    +for-tablet-landscape-up
+      height: 275px
+      bottom: -2rem
+      margin-bottom: 0rem
+    +for-desktop-up
+      top: -100px
   &__sticker
     width: 40%
     margin: 0 auto
     padding: 1rem 0
     +for-tablet-portrait-up
       width: 35%
-      padding: 2rem
+      padding: 0 2rem
     +for-tablet-landscape-up
       width: 25%
-      padding: 2rem 4rem
+      padding: 1rem 4rem
     +for-desktop-up
       width: 30%
       max-width: 375px
-      padding: 2rem 5rem 3rem 5rem
+      padding: 1rem 5rem 2rem 5rem
       // padding: 0
       box-sizing: border-box
       margin: 0
@@ -37,14 +54,14 @@
     line-height: 1.25rem
     font-family: 'Quantico', sans-serif
     +for-tablet-portrait-up
-      padding: 3rem
+      padding: 1rem 3rem
       font-size: 1.25rem
       line-height: 1.75rem
       font-weight: 900
     +for-tablet-landscape-up
-      padding: 2rem 4rem 2rem 10rem
+      padding: 1rem 4rem 1rem 10rem
     +for-desktop-up
-      padding: 0 0 3rem 0
+      padding: 0 0 2rem 0
       box-sizing: border-box
   span
     display: none
