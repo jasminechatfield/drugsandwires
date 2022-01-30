@@ -1,19 +1,30 @@
 body
-  background-color: black
-  background-image: linear-gradient($purple, $purple)
+  background-color: #000000
+  background-image: url('/assets/img/site/bg.jpg')
+  background-image: url('/assets/img/site/bg.jpg'), linear-gradient($purple, $purple)
+  background-repeat: no-repeat, repeat
+  background-size: auto 75%, cover
+  background-position: bottom
+  background-attachment: fixed
   margin: 0
-
+  background-blend-mode: normal, normal
+  +for-tablet-portrait-up
+    background-size: contain, cover
+  +for-tablet-landscape-up
+    background-size: contain, cover
+  +for-desktop-up
+    background-size: 100% auto, cover
 .page__wrapper
   max-width: 1200px
   margin: auto
-
 .page__main__wrapper
-  background-color: $purple
+  // background-color: $purple
   box-sizing: border-box
   max-width: 1000px
   margin: 0 0.75rem
   padding: 0 0 0rem 0
   +for-tablet-portrait-up
+    box-shadow: 10px 0px 20px #00000060, -10px 0px 20px #00000060
     background-color: black
     margin: 0 1.5rem
     padding: 0 1rem 1.5rem 1rem
