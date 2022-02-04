@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Come See D&W at Thought Bubble!
-redirect: https://www.drugsandwires.fail/come-see-dw-at-thought-bubble/
+alias: /come-see-dw-at-thought-bubble/
 tags: cryoclaire events news thought-bubble
 ---
 

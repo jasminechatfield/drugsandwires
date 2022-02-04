@@ -1,7 +1,7 @@
 ---
 layout: news
 title: New Neon Shudder EP Available!
-redirect: https://www.drugsandwires.fail/new-neon-shudder-ep-available/
+alias: /new-neon-shudder-ep-available/
 tags: neon-shudder odds-and-ends
 ---
 

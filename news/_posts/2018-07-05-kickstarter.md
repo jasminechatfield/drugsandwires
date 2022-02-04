@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Drugs & Wires Vol.1 Kickstarter is now live!
-redirect: https://www.drugsandwires.fail/drugs-wires-vol-1-kickstarter-is-now-live/
+alias: /drugs-wires-vol-1-kickstarter-is-now-live/
 ---
 
 {% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2018/07/cover1resized.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2018/07/cover1resized.jpg" alt="cover1resized" caption="" %}

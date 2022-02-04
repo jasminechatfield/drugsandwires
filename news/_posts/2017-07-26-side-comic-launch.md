@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Blue Pill Arcade - Side Comic Launch
-redirect: https://www.drugsandwires.fail/blue-pill-arcade-side-comic-launch/
+alias: /blue-pill-arcade-side-comic-launch/
 ---
 
 {% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2017/07/ohnoooo1.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2017/07/ohnoooo1.jpg" alt="ohnoooo1" caption="" %}

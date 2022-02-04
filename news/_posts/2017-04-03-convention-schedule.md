@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Drugs & Wires #3 & Convention Schedule"
-redirect: https://www.drugsandwires.fail/drugs-wires-3-convention-schedule/
+alias: /drugs-wires-3-convention-schedule/
 ---
 
 Hey everyone, haven't posted here in a while! Actually, I'm pretty sure this is my first time writing a news post on here - normally Io's much better at it, but I've got way more free time on my hands these days, so it's only fair I start updating more often.

@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Cyber Monday Special: Free Shipping on 2+ D&W Shirts!"
-redirect: https://www.drugsandwires.fail/cyber-monday-special-free-shipping-on-2-dw-shirts/
+alias: /cyber-monday-special-free-shipping-on-2-dw-shirts/
 tags: merch shirts
 ---
 

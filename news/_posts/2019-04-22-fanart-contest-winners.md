@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Fanart Contest Winners
-redirect: https://www.drugsandwires.fail/fanart-contest-winners-2/
+alias: /fanart-contest-winners-2/
 summary: "Our second fanart contest has just wrapped up! Thanks to everyone who participated - we got so many beautiful entries from folks, judging was difficult to say the least."
 ---
 

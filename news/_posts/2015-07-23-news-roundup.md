@@ -1,6 +1,6 @@
 ---
 title: "News Roundup: Russian Edition, Comic Chameleon, TV Tropes!"
-redirect: https://www.drugsandwires.fail/news-roundup-russian-edition-comic-chameleon-tv-tropes/
+alias: /news-roundup-russian-edition-comic-chameleon-tv-tropes/
 layout: news
 tags: news
 ---

@@ -1,6 +1,6 @@
 ---
 title: Join Cryoclaire at the Leeds Thought Bubble Expo!
-redirect: https://www.drugsandwires.fail/join-cryoclaire-at-the-leeds-thought-bubble-expo/
+alias: /join-cryoclaire-at-the-leeds-thought-bubble-expo/
 layout: news
 ---
 

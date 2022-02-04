@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Meet Cryoclaire at MCM London Comic Con (And Buy Our Stuff)!
-redirect: https://www.drugsandwires.fail/meet-cryoclaire-at-mcm-london-comic-con-and-buy-our-stuff/
+alias: /meet-cryoclaire-at-mcm-london-comic-con-and-buy-our-stuff/
 tags: cryoclaire events mcm-london-comic-con news
 ---
 

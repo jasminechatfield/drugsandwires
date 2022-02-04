@@ -1,7 +1,7 @@
 ---
 layout: news
 title: New Neon Shudder Album!
-redirect: https://www.drugsandwires.fail/new-neon-shudder-album/
+alias: /new-neon-shudder-album/
 ---
 
 {% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2016/06/cadence_cover.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2016/06/cadence_cover-300x300.jpg" alt="Cadence Album Cover by Neon Shudder" caption="" %}

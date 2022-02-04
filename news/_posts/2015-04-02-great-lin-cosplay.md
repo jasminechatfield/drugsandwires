@@ -1,6 +1,6 @@
 ---
 title: Great Lin Cosplay by Nix!
-redirect: https://www.drugsandwires.fail/great-lin-cosplay-by-nix/
+alias: /great-lin-cosplay-by-nix/
 image: lin-by-nix.jpeg
 imagealt: "Lin cosplay by Nix"
 layout: news

@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "D&W Issue #1 and Struggles of a Cyberjunkie Now Available in Print!"
-redirect: https://www.drugsandwires.fail/dw-issue-1-and-struggles-of-a-cyberjunkie-now-available-in-print/
+alias: /dw-issue-1-and-struggles-of-a-cyberjunkie-now-available-in-print/
 tags: merch news
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Schedule Update & Things!
-redirect: https://www.drugsandwires.fail/schedule-update-things/
+alias: /schedule-update-things/
 ---
 
 {% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2018/05/Capture.png" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2018/05/Capture.png" alt="Capture" caption="" %}

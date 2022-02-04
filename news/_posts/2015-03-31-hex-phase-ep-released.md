@@ -1,6 +1,6 @@
 ---
 title: Hex Phase EP Released!
-redirect: https://www.drugsandwires.fail/hex-phase-ep-released/
+alias: /hex-phase-ep-released/
 image: hexphase.jpeg
 imagealt: "hex phase cover art"
 layout: news

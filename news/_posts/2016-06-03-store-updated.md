@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "D&W Store Updated With Issue #2, Dreamspace & Tattoos!"
-redirect: https://www.drugsandwires.fail/dw-store-updated-with-issue-2-dreamspace-tattoos/
+alias: /dw-store-updated-with-issue-2-dreamspace-tattoos/
 tags: merch news
 ---
 

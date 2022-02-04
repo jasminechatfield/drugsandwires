@@ -1,6 +1,6 @@
 ---
 title: Catch D&W Streaming on Picarto Tuesdays and Saturdays!
-redirect: https://www.drugsandwires.fail/catch-dw-streaming-on-picarto/
+alias: /catch-dw-streaming-on-picarto/
 image: DWtv.jpg
 imagealt: "D&W TV"
 layout: news

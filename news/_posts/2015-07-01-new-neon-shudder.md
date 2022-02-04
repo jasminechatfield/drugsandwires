@@ -1,6 +1,6 @@
 ---
 title: New Neon Shudder EP Now Available!
-redirect: https://www.drugsandwires.fail/new-neon-shudder-ep-now-available/
+alias: /new-neon-shudder-ep-now-available/
 image: ghostprocess.jpg
 imagealt: "Ghost Process EP Cover"
 layout: news

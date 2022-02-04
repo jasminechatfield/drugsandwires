@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Dreamspace: Analogue Edition Now Available on Tapastic!"
-redirect: https://www.drugsandwires.fail/dreamspace-analogue-edition-now-available-on-tapastic/
+alias: /dreamspace-analogue-edition-now-available-on-tapastic/
 ---
 
 {% include newsimage.html imageurl="http://www.drugsandwires.fail/wp-content/uploads/2016/01/0b133bbdddd94b94aa470d022ef15925.jpg" imageurl2="http://www.drugsandwires.fail/wp-content/uploads/2016/01/0b133bbdddd94b94aa470d022ef15925-300x207.jpg" alt="Dreamspace Analogue Edition" caption="" %}

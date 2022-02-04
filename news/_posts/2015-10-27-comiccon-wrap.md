@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Comic Con is a Wrap!
-redirect: https://www.drugsandwires.fail/comic-con-is-a-wrap/
+alias: /comic-con-is-a-wrap/
 tags: events mcm-london-comic-con odds-and-ends
 ---
 

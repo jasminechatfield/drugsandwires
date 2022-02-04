@@ -1,6 +1,6 @@
 ---
 title: D&W Apparel Now Available!
-redirect: https://www.drugsandwires.fail/dw-apparel-now-available/
+alias: /dw-apparel-now-available/
 image: meat.png
 imagealt: "Less Meat, More 1337"
 layout: news

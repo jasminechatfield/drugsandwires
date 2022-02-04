@@ -1,6 +1,6 @@
 ---
 title: Meet Cryoclaire at the MCM London Comic Con!
-redirect: https://www.drugsandwires.fail/meet-cryoclaire-at-mcm-london-comic-con/
+alias: /meet-cryoclaire-at-mcm-london-comic-con/
 layout: news
 ---
 

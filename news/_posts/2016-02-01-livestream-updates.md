@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Livestream Updates and D&W on Reddit!
-redirect: https://www.drugsandwires.fail/livestream-updates-and-dw-on-reddit/
+alias: /livestream-updates-and-dw-on-reddit/
 ---
 
 {% include newsimage.html imageurl="http://www.drugsandwires.fail/wp-content/uploads/2016/02/radicallivestream3.png" imageurl2="http://www.drugsandwires.fail/wp-content/uploads/2016/02/radicallivestream3-300x270.png" alt="Radical Livestream 3.03" caption="" %}
