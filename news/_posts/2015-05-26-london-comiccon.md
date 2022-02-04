@@ -1,6 +1,6 @@
 ---
 title: MCM London Comic Con Wrap-Up!
-redirect: https://www.drugsandwires.fail/mcm-london-comic-con-wrap-up/
+alias: /mcm-london-comic-con-wrap-up/
 image: booth.jpeg
 imagealt: "The D&W booth at MCM Comic Con London."
 layout: news

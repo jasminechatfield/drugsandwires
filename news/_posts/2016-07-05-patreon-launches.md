@@ -1,7 +1,7 @@
 ---
 layout: news
 title: D&W Patreon Launches!
-redirect: https://www.drugsandwires.fail/dw-patreon-launches/
+alias: /dw-patreon-launches/
 ---
 
 <iframe src="https://www.youtube.com/embed/g63busVcEfM" width="900" height="485" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

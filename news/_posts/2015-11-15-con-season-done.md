@@ -1,7 +1,7 @@
 ---
 layout: news
 title: 2015 Con Season is Officially Done!
-redirect: https://www.drugsandwires.fail/2015-con-season-is-officially-done/
+alias: /2015-con-season-is-officially-done/
 tags: news events
 ---
 

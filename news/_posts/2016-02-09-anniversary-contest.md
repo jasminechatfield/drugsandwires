@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Drugs & Wires Anniversary Contest!
-redirect: https://www.drugsandwires.fail/drugs-wires-anniversary-contest/
+alias: /drugs-wires-anniversary-contest/
 tags: contest
 ---
 

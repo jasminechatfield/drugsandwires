@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Meet Our Fanart Contest Winners!
-redirect: https://www.drugsandwires.fail/fanart-contest-winners/
+alias: /fanart-contest-winners/
 tags: fanart news
 ---
 

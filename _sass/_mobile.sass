@@ -1,0 +1,20 @@
+.mobile
+  +for-phone-only
+    &--black
+      background-color: black
+      padding-left: 0.75rem
+      padding-right: 0.75rem
+      margin: 0 -0.75rem
+      position: relative
+      &::before
+        content: ''
+        background-image: url('/assets/img/site/header_bg_overlay_upside.png')
+        position: absolute
+        top: -75px
+        left: -0
+        z-index: -10
+        width: 100vw
+        height: 250px
+        background-size: cover
+        background-repeat: no-repeat
+        background-blend-mode: multiply

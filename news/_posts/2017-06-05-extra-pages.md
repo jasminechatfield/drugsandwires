@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Extra D&W Pages Coming This Month!
-redirect: https://www.drugsandwires.fail/extra-dw-pages-coming-this-month/
+alias: /extra-dw-pages-coming-this-month/
 ---
 
 With the generous help of our [Patreon](https://www.patreon.com/drugsandwires) supporters, we've reached our first major stretch goal: an extra page of _Drugs &amp; Wires_ each month!

@@ -1,7 +1,7 @@
 ---
 layout: news
 title: MCM London Comic Con is Almost Here!
-redirect: https://www.drugsandwires.fail/mcm-london-comic-con-is-almost-here/
+alias: /mcm-london-comic-con-is-almost-here/
 tags: merch news
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Drugs & Wires Livestream Moves to Wednesdays!
-redirect: https://www.drugsandwires.fail/drugs-wires-livestream-moves-to-wednesdays/
+alias: /drugs-wires-livestream-moves-to-wednesdays/
 image: radicallivestream2.jpg
 imagealt: "Radical Livestream, Take 2"
 layout: news

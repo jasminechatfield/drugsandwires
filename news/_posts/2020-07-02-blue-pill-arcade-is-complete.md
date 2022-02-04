@@ -2,7 +2,7 @@
 layout: news
 title: Blue Pill Arcade is complete
 image: "bpa3cover.jpg"
-redirect: https://www.drugsandwires.fail/blue-pill-arcade-is-complete/
+alias: /blue-pill-arcade-is-complete/
 summary: "Blue Pill Arcade, Drugs & Wires prequel comic, is now finished! BPA takes us back to the year 1993 and explores Dan and Eve’s relationship and the early days of VR in Stradania."
 ---
 
