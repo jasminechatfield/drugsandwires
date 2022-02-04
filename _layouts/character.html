@@ -9,7 +9,7 @@ layout: default
       </button></a
    >
 </div>
-<div class="character">
+<div class="character mobile--black">
    {% assign character = page.character %} {% for category in
    site.data.characters.categories %} {% for character in category.characters %}
    {% assign lowercase = character.tag | downcase %} {% if lowercase ==
@@ -19,7 +19,9 @@ layout: default
          <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
       </div>
       <div class="character__image--large">
-         <img src="/assets/img/characters/{{character.tag}}_long.jpg" />
+         <div class="character__image--large__inner">
+            <img src="/assets/img/characters/{{character.tag}}_long.jpg" />
+         </div>
       </div>
       <div class="character__factfile__column">
          <h2 class="character__name">{{character.name}}</h2>
@@ -31,15 +33,17 @@ layout: default
             {% endif %} {{ content }}
          </div>
          <div class="character__fanart">
-            <h3>Fanart of {{page.title}}</h3>
-            {% for gallery in site.data.galleries.items %} {% if gallery.tag ==
-            "fanart" %} {% for fanart in gallery.images %} {% if fanart.tags
-            contains character.tag %}
-            <img
-               src="{{gallery.assetpath}}/{{fanart.file}}"
-               style="width: 100px"
-            />
-            {% endif %} {% endfor %} {% endif %} {% endfor %}
+            <h3 class="character__fanart__title">Fanart of {{page.title}}</h3>
+            <div class="character__fanart__gallery">
+               {% for gallery in site.data.galleries.items %} {% if gallery.tag
+               == "fanart" %} {% for fanart in gallery.images %} {% if
+               fanart.tags contains character.tag %}
+               <img
+                  src="{{gallery.assetpath}}/{{fanart.file}}"
+                  style="width: 100px"
+               />
+               {% endif %} {% endfor %} {% endif %} {% endfor %}
+            </div>
          </div>
          {% if character.bonus %}
          <div class="character__bonus">
