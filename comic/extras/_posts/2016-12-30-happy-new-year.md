@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/noviygod.jpg
 tags: dan lin
 title: Happy New Year!
 alias: /dnwcomic/happy-new-year/
