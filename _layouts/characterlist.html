@@ -2,11 +2,13 @@
 layout: frame
 ---
 
-<div class="page__main__wrapper page__main__wrapper--black">
+<div class="page__main__wrapper">
    <main>
       <div class="characters">
          <div class="characters__page">{{content}}</div>
-         {% include characters.html %}
+         <div class="characters__list mobile--black">
+            {% include characters.html %}
+         </div>
       </div>
    </main>
 </div>
