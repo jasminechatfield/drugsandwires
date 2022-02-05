@@ -1,23 +1,51 @@
 <div class="comic__thumbnail">
    <a href="{{comicpage.url}}">
-      {% if comicpage.page %}{% if comicpage.page > 9 %}
-      <img
-         src="/assets/img/pages/ch0{{comicpage.chapter}}/page0{{comicpage.page}}.jpeg"
-         alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
-         loading="lazy"
-      />
+      {% if comicpage.imagepaths %}
+         {% assign paths = comicpage.imagepaths | split: " " %}
+         {% for path in paths %}
+            <img
+            src="/assets/img/pages/{{path}}"
+            alt="{{comicpage.title}}"
+            loading="lazy"
+            />
+         {% endfor %}
+      {% elsif comicpage.imagepath %}
+         <img
+            src="/assets/img/pages/{{comicpage.imagepath}}"
+            alt="{{comicpage.title}}"
+            loading="lazy"
+         />
+      {% elsif comicpage.pages %}
+         {% assign pagenos = comicpage.pages | split: " " %}
+         {% for pageno in pagenos %}
+            {% if pageno.size > 1 %}
+               <img
+                  src="/assets/img/pages/ch0{{comicpage.chapter}}/page0{{pageno}}.jpeg"
+                  alt="Chapter {{comicpage.chapter}} Page {{pageno}}"
+                  loading="lazy"
+               />
+            {% else %}
+               <img
+                  src="/assets/img/pages/ch0{{comicpage.chapter}}/page00{{pageno}}.jpeg"
+                  alt="Chapter {{comicpage.chapter}} Page {{pageno}}"
+                  loading="lazy"
+               />
+            {% endif %}
+         {% endfor %}
       {% else %}
-      <img
-         src="/assets/img/pages/ch0{{comicpage.chapter}}/page00{{comicpage.page}}.jpeg"
-         alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
-         loading="lazy"
-      />
-      {% endif %} {% else %}
-      <img
-         src="/assets/img/pages/{{comicpage.imagepath}}"
-         alt="{{comicpage.title}}"
-         loading="lazy"
-      />
+         {% if comicpage.page > 9 %}
+            <img
+            src="/assets/img/pages/ch0{{comicpage.chapter}}/page0{{comicpage.page}}.jpeg"
+            alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
+            loading="lazy"
+            />
+         {% else %}
+            <img
+            src="/assets/img/pages/ch0{{comicpage.chapter}}/page00{{comicpage.page}}.jpeg"
+            alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
+            loading="lazy"
+            />
+         {% endif %}
       {% endif %}
    </a>
 </div>
