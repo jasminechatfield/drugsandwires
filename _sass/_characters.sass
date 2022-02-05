@@ -2,10 +2,11 @@
   +for-tablet-portrait-up
     padding-top: 3rem
   &__page
+    background-color: black
     border: solid $orange 3px
     margin: 1rem 0
     padding: 0.75rem 1rem
-    background-color: black
+    // background-color: black
     +for-tablet-portrait-up
       margin-top: 0
       
@@ -21,6 +22,14 @@
       margin-block-end: 0.5rem
       +for-tablet-portrait-up
         font-size: 1.125rem
+  &__list
+    padding-bottom: 2rem
+    +for-phone-only
+      background-color: black
+      padding-top: 1rem
+      margin-top: -1rem
+    +for-tablet-landscape-up
+      padding-bottom: 0
   &__category
     border-width: 3px
     border-style: solid
@@ -183,11 +192,6 @@
       max-width: 150px
       max-height: 150px
       overflow: hidden
-      -webkit-transition: opacity, 1s steps(6, end)
-      -moz-transition: opacity, 1s steps(6, end)
-      -ms-transition: opacity, 1s steps(6, end)
-      -o-transition: opacity, 1s steps(6, end)
-      transition: opacity, 1s steps(6, end)
       opacity: 0
       +for-tablet-portrait-up
         max-width: 200px
