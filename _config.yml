@@ -8,3 +8,8 @@ defaults:
         type: "posts"
      values:
         layout: "comic"
+   - scope:
+        path: "galleries"
+        type: "posts"
+     values:
+        layout: "galleryimage"

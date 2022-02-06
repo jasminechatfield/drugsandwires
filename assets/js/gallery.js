@@ -1,10 +1,10 @@
 (function () {
    console.log("hello");
    const gallery = {
-      items: document.getElementsByClassName("gallery__list__item"),
+      items: document.getElementsByClassName("gallery__list__item--clicky"),
       doToggle: function (e) {
          e.target.classList.toggle("gallery__list__item__expanded");
-         e.target.classList.toggle("gallery__list__item");
+         e.target.classList.toggle("gallery__list__item--clicky");
       }
    };
    console.log(gallery);
