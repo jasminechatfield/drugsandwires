@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="galleryimage">
+   <h1 class="galleryimage__header">
+      <span class="galleryimage__header__title">{{ page.title }}</span>
+      <span class="galleryimage__header__title"
+         >by {% if page.artisturl %} {% if page.artistcomic %}
+         <a href="{{page.artisturl}}" target="_blank">{{page.artistcomic}}</a>'s
+         {{page.artist}} {% else %}
+         <a href="{{page.artisturl}}" target="_blank">{{page.artist}}</a>
+         {% endif %} {% else %} {{page.artist}} {% endif %}</span
+      >
+   </h1>
+   <img
+      src="/assets/img/galleries/{{page.categories[1]}}/{{page.image}}"
+      class="galleryimage__image"
+   />
+</div>

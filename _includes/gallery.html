@@ -1,0 +1,27 @@
+<ul class="gallery__list">
+   {% for post in site.categories[include.gallery] %}
+    {% if include.tag %}
+      {% if post.tags contains include.tag %}
+        <li class="gallery__list__item gallery__list__item--notclicky">
+          <a href="{{post.url}}">
+            <p>{{post.title}} by {{post.artist}}</p>
+            <img
+                src="/assets/img/galleries/fanart/{{post.image}}"
+                class="gallery__list__image"
+                loading="lazy"
+          /></a>
+        </li>
+      {% endif %}
+    {% else %}
+   <li class="gallery__list__item gallery__list__item--notclicky">
+      <a href="{{post.url}}">
+         <p>{{post.title}} by {{post.artist}}</p>
+         <img
+            src="/assets/img/galleries/fanart/{{post.image}}"
+            class="gallery__list__image"
+            loading="lazy"
+      /></a>
+   </li>
+   {% endif %}
+   {% endfor %}
+</ul>

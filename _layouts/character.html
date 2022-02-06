@@ -35,14 +35,7 @@ layout: default
          <div class="character__fanart">
             <h3 class="character__fanart__title">Art of {{page.title}}</h3>
             <div class="character__fanart__gallery">
-               {% for gallery in site.data.galleries.items %} {% if gallery.tag
-               == "fanart" %} {% for fanart in gallery.images %} {% if
-               fanart.tags contains character.tag %}
-               <img
-                  src="{{gallery.assetpath}}/{{fanart.file}}"
-                  style="width: 100px"
-               />
-               {% endif %} {% endfor %} {% endif %} {% endfor %}
+               {% include gallery.html gallery="galleries" tag=character.tag %}
             </div>
          </div>
          {% if character.bonus %}
