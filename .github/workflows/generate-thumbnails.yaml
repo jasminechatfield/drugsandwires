@@ -11,22 +11,26 @@ jobs:
       steps:
          - uses: actions/checkout@v1
          - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of pages from jpegs"
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.jpeg
          - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of pages from pngs"
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.png
          - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of gallery images from jpegs"
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.jpeg
          - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of gallery images from pngs"
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.png
-         - name: Commit report
+         - name: Commit generated thumbnails
            run: |
               git config --global user.name 'Jasmine Chatfield'
               git config --global user.email 'jasminechatfield@users.noreply.github.com'
