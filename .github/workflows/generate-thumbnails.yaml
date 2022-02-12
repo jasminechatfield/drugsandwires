@@ -1,0 +1,16 @@
+name: Generate thumbnails
+
+on:
+   push:
+      branches:
+         - main
+
+jobs:
+   build:
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v1
+         - uses: jruipinto/ImageMagick-action@v1
+           with:
+              # ImageMagick command to be executed
+              command: mogrify -resize x250 -format webp assets/img/pages/*/*.jpeg
