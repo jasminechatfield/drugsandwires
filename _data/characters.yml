@@ -13,10 +13,28 @@ categories:
              - name: "Dan's lost album"
                type: linkimage
                image: news/albumartfinel.jpeg
+               url: /news/dans-tracks.html
+               offsite: false
              - name: "Not in public"
                type: image
                image: news/notinpublic.jpeg
+               offsite: false
+             - name: "Dan's Twitter"
+               type: link
+               url: https://twitter.com/nonamenihilist
+               offsite: true
+             - name: "Dan's Twitter"
+               type: link
+               url: https://twitter.com/nonamenihilist
+               offsite: true
+             - name: "Dan's lost album"
+               type: linkimage
+               image: news/albumartfinel.jpeg
                url: /news/dans-tracks.html
+               offsite: false
+             - name: "Not in public"
+               type: image
+               image: news/notinpublic.jpeg
                offsite: false
              - name: "Dan's Twitter"
                type: link
