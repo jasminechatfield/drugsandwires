@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<h2>Archive</h2>
+{% if page.chapter %}
+
+<h3>Chapter {{page.chapter}}</h3>
+{{ content }}
+{% capture chapterkey %}chapter-{{page.chapter}}{% endcapture %}
+{% assign chapterposts = site.posts | where_exp:"post", "post.categories contains chapterkey" | reverse %}
+{% for page in chapterposts %}
+<a href="{{page.url}}">
+  {% include page.html %}
+</a>
+{% endfor %}
+{% elsif page.type %}
+<h3>{{page.type | capitalize }}</h3>
+{{ content }}
+{% assign chapterposts = site.posts | where_exp:"post", "post.categories contains page.type" | reverse %}
+{% for page in chapterposts %}
+<a href="{{page.url}}">
+  {% include page.html %}
+</a>
+{% endfor %}
+{% endif %}
