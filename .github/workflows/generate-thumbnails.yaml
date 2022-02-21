@@ -36,6 +36,14 @@ jobs:
               git config --global user.email 'jasminechatfield@users.noreply.github.com'
               git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
               git checkout "${GITHUB_REF:11}"
-              git add .
-              git commit -am "Thumbnails"
+              git commit --allow-empty -am "Thumbnails"
               git push
+         - uses: actions/cache@v2
+           with:
+              path: vendor/bundle
+              key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+              restore-keys: |
+                 ${{ runner.os }}-gems-
+         - uses: helaili/jekyll-action@v2
+           with:
+              token: ${{ secrets.GITHUB_TOKEN }}

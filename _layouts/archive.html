@@ -2,56 +2,61 @@
 layout: default
 ---
 
-<div class="archive">
+<div class="archive mobile--black">
    <div class="archive__header">
       <img
          class="archive__header__image"
          src="/assets/img/site/menu_archive_hover.png"
       />
-      <h2 class="news__header__title">Archive</h2>
+      <h2 class="archive__header__title">Archive</h2>
    </div>
 
-   {{content}}
+   <div class="archive__content">
+      {{content}}
+   </div>
 
-   <br />
-   
-   {% assign chapter_list = site.pages | where: "layout", "chapter" | sort: "chapter" %}
-   {% for item in chapter_list %}
-      {% if item.chapter %}
-         {% capture chapterkey %}chapter-{{item.chapter}}{% endcapture %}
-         <div class="archive__item">
-            <img src="/assets/img/archive/contents{{item.chapter}}.jpeg" />
-            <br />
-           
-            {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains chapterkey" | reverse %}
-            {% for page in chapterposts limit: 1 %}
-            <a href="{{page.url}}">
-               Jump to first page of chapter {{ page.chapter }}
-            {% endfor %}
-            </a>
-            <br/>
-            <a href="{{item.url}}">View all chapter {{item.chapter}}</a>
-            <br/>
-            <hr />
-         </div>
-      {% endif %}
-   {% endfor %}
-   
-   {% assign extras_list = chapter_list | sort: "weight" %}
-   {% for item in extras_list %}
-      {% if item.type %}
-         <div class="archive__item">
-            <img src="/assets/img/archive/contents{{item.type}}.jpeg" />
-            <br />
-            {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains item.type" | reverse %}
-            {% for page in chapterposts limit: 1 %}
-            <a href="{{page.url}}">Jump to first page of {{item.type}}</a>
-            {% endfor %}
-            <br/>
-            <a href="{{item.url}}">View all {{item.type}}</a>
-            <br/>
-            <hr/>
-         </div>
-      {% endif %}
-   {% endfor %}
+   <div class="archive__list"> 
+      {% assign chapter_list = site.pages | where: "layout", "chapter" | sort: "chapter" %}
+      {% for item in chapter_list %}
+         {% if item.chapter %}
+            {% unless item.url contains 'page' %}
+            {% capture chapterkey %}chapter-{{item.chapter}}{% endcapture %}
+            <div class="archive__list__item">
+               <div class="archive__list__item__image">
+                  <img src="/assets/img/archive/contents{{item.chapter}}.jpeg" />
+               </div>
+               <div class="archive__list__item__options">
+                  {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains chapterkey" | reverse %}
+                  {% for page in chapterposts limit: 1 %}
+                     <a href="{{page.url}}" class="archive__list__item__options__link">
+                        Jump to first page of chapter {{ page.chapter }}
+                     </a>
+                  {% endfor %}
+                  <a href="{{item.url}}" class="archive__list__item__options__link">View all chapter {{item.chapter}}</a>
+               </div>
+            </div>
+            {% endunless %}
+         {% endif %}
+      {% endfor %}
+
+      {% assign extras_list = chapter_list | sort: "weight" %}
+      {% for item in extras_list %}
+         {% if item.type %}
+         {% unless item.url contains 'page' %}
+            <div class="archive__list__item">
+               <div class="archive__list__item__image">
+                  <img src="/assets/img/archive/contents{{item.type}}.jpeg" />
+               </div>
+               <div class="archive__list__item__options">
+                  {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains item.type" | reverse %}
+                  {% for page in chapterposts limit: 1 %}
+                     <a href="{{page.url}}" class="archive__list__item__options__link">Jump to first page of {{item.type}}</a>
+                  {% endfor %}
+                  <a href="{{item.url}}" class="archive__list__item__options__link">View all {{item.type}}</a>
+               </div>
+            </div>
+            {% endunless %}
+         {% endif %}
+      {% endfor %}
+   </div>
 </div>

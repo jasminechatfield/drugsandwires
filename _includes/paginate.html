@@ -1,0 +1,34 @@
+{% if paginator.total_pages > 1 %}
+
+<ul class="paginate">
+   {% if paginator.previous_page %}
+   <li class="previous paginate__nav">
+      <a
+         href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+         >&larr; Newer Posts</a
+      >
+      <img
+         src="/assets/img/site/nav_prev.png"
+         alt="Previous"
+         class="comic__navigation__image"
+      />
+   </li>
+   {% else %}
+   <li></li>
+   {% endif %} {% if paginator.next_page %}
+   <li class="next paginate__nav">
+      <a
+         href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+         >Older Posts &rarr;</a
+      >
+      <img
+         src="/assets/img/site/nav_next.png"
+         alt="Next"
+         class="comic__navigation__image"
+      />
+   </li>
+   {% else %}
+   <li></li>
+   {% endif %}
+</ul>
+{% endif %}

@@ -2,12 +2,25 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Drugs and Wires"
 permalink: /:categories/:title:output_ext
+pagination:
+   enabled: true
+   per_page: 5
+   permalink: "/page/:num/"
+   title: " - page :num"
+   limit: 0
+   sort_field: "date"
 defaults:
    - scope:
         path: "comic"
         type: "posts"
      values:
         layout: "comic"
+   - scope:
+        path: "comic"
+        type: "pages"
+     values:
+        pagination:
+           enabled: true
    - scope:
         path: "galleries"
         type: "posts"

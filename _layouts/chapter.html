@@ -2,26 +2,23 @@
 layout: default
 ---
 
+<div class="archive">
+   <div class="archive__header">
+      <img
+         class="archive__header__image"
+         src="/assets/img/site/menu_archive_hover.png"
+      />
+      <h2 class="archive__header__title">Archive</h2>
+   </div>
 
-<h2>Archive</h2>
-{% if page.chapter %}
-
-<h3>Chapter {{page.chapter}}</h3>
-{{ content }}
-{% capture chapterkey %}chapter-{{page.chapter}}{% endcapture %}
-{% assign chapterposts = site.posts | where_exp:"post", "post.categories contains chapterkey" | reverse %}
-{% for page in chapterposts %}
-<a href="{{page.url}}">
-  {% include page.html %}
-</a>
-{% endfor %}
-{% elsif page.type %}
-<h3>{{page.type | capitalize }}</h3>
-{{ content }}
-{% assign chapterposts = site.posts | where_exp:"post", "post.categories contains page.type" | reverse %}
-{% for page in chapterposts %}
-<a href="{{page.url}}">
-  {% include page.html %}
-</a>
-{% endfor %}
-{% endif %}
+   <h3 class="archive__chapter__header">{% if page.chapter %}Chapter {{page.chapter}}{% else %}{{page.type}}{% endif %}</h3>
+   {{ content }} 
+   
+   {% include paginate.html %}
+   
+   {% for page in paginator.posts %}
+   <a href="{{page.url}}"> {% include page.html %} </a>
+   {% endfor %}
+   
+   {% include paginate.html %}
+</div>
