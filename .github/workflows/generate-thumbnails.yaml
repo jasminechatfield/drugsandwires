@@ -27,6 +27,7 @@ jobs:
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.jpeg
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of gallery images from pngs"
+           allow-failure: true
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.png
