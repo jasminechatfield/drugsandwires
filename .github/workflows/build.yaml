@@ -1,4 +1,4 @@
-name: Generate thumbnails
+name: Build
 
 on:
    push:

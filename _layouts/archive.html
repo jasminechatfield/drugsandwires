@@ -23,16 +23,9 @@ layout: default
             {% capture chapterkey %}chapter-{{item.chapter}}{% endcapture %}
             <div class="archive__list__item">
                <div class="archive__list__item__image">
-                  <img src="/assets/img/archive/contents{{item.chapter}}.jpeg" />
-               </div>
-               <div class="archive__list__item__options">
-                  {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains chapterkey" | reverse %}
-                  {% for page in chapterposts limit: 1 %}
-                     <a href="{{page.url}}" class="archive__list__item__options__link">
-                        Jump to first page of chapter {{ page.chapter }}
-                     </a>
-                  {% endfor %}
-                  <a href="{{item.url}}" class="archive__list__item__options__link">View all chapter {{item.chapter}}</a>
+                  <a href="{{item.url}}">
+                     <img src="/assets/img/archive/contents{{item.chapter}}.jpeg" />
+                  </a>
                </div>
             </div>
             {% endunless %}
@@ -45,15 +38,10 @@ layout: default
          {% unless item.url contains 'page' %}
             <div class="archive__list__item">
                <div class="archive__list__item__image">
-                  <img src="/assets/img/archive/contents{{item.type}}.jpeg" />
-               </div>
-               <div class="archive__list__item__options">
-                  {% assign chapterposts = site.posts | where_exp:"post", "post.categories contains item.type" | reverse %}
-                  {% for page in chapterposts limit: 1 %}
-                     <a href="{{page.url}}" class="archive__list__item__options__link">Jump to first page of {{item.type}}</a>
-                  {% endfor %}
-                  <a href="{{item.url}}" class="archive__list__item__options__link">View all {{item.type}}</a>
-               </div>
+                  <a href="{{item.url}}">
+                     <img src="/assets/img/archive/contents{{item.type}}.jpeg" />
+                  </a>
+               </div>                 
             </div>
             {% endunless %}
          {% endif %}

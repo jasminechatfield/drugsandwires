@@ -5,30 +5,21 @@
    <li class="previous paginate__nav">
       <a
          href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-         >&larr; Newer Posts</a
       >
-      <img
-         src="/assets/img/site/nav_prev.png"
-         alt="Previous"
-         class="comic__navigation__image"
-      />
+         <img src="/assets/img/site/nav_prev.png" alt="Previous" />
+      </a>
    </li>
    {% else %}
-   <li></li>
+   <li class="paginate__nav"></li>
    {% endif %} {% if paginator.next_page %}
    <li class="next paginate__nav">
       <a
          href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-         >Older Posts &rarr;</a
-      >
-      <img
-         src="/assets/img/site/nav_next.png"
-         alt="Next"
-         class="comic__navigation__image"
-      />
+         ><img src="/assets/img/site/nav_next.png" alt="Next"
+      /></a>
    </li>
    {% else %}
-   <li></li>
+   <li class="paginate__nav"></li>
    {% endif %}
 </ul>
 {% endif %}
