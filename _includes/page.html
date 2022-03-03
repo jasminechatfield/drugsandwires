@@ -1,49 +1,62 @@
 <div class="comic__page__wrapper">
-   {% if page.imagepaths %}
-   {% assign paths = page.imagepaths | split: " " %}
-   {% for path in paths %}
-      <img
-      src="/assets/img/pages/{{path}}"
-      alt="{{page.title}}"
-      class="comic__page__image"
-      />
-   {% endfor %}
-{% elsif page.imagepath %}
-   <img
-      src="/assets/img/pages/{{page.imagepath}}"
-      alt="{{page.title}}"
-      class="comic__page__image"
-   />
-{% elsif page.pages %}
-   {% assign pagenos = page.pages | split: " " %}
-   {% for pageno in pagenos %}
-      {% if pageno.size > 1 %}
+   <div class="comic__page">
+      <a href="{{page.url}}" class="comic__page__link">
+      {% if page.imagepaths %}
+      {% assign paths = page.imagepaths | split: " " %}
+      {% for path in paths %}
          <img
-            src="/assets/img/pages/ch0{{page.chapter}}/page0{{pageno}}.jpeg"
-            alt="Chapter {{page.chapter}} Page {{page.page1}}"
+         src="/assets/img/pages/{{path}}"
+         alt="{{page.title}}"
+         class="comic__page__image"
+         />
+      {% endfor %}
+   {% elsif page.imagepath %}
+      <img
+         src="/assets/img/pages/{{page.imagepath}}"
+         alt="{{page.title}}"
+         class="comic__page__image"
+      />
+   {% elsif page.pages %}
+      {% assign pagenos = page.pages | split: " " %}
+      {% for pageno in pagenos %}
+         {% if pageno.size > 1 %}
+            <img
+               src="/assets/img/pages/ch0{{page.chapter}}/page0{{pageno}}.jpeg"
+               alt="Chapter {{page.chapter}} Page {{page.page1}}"
+               class="comic__page__image"
+            />
+         {% else %}
+            <img
+               src="/assets/img/pages/ch0{{page.chapter}}/page00{{pageno}}.jpeg"
+               alt="Chapter {{page.chapter}} Page {{page.page1}}"
+               class="comic__page__image"
+            />
+         {% endif %}
+      {% endfor %}
+   {% else %}
+      {% if page.page > 9 %}
+         <img
+            src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page}}"
             class="comic__page__image"
          />
       {% else %}
          <img
-            src="/assets/img/pages/ch0{{page.chapter}}/page00{{pageno}}.jpeg"
-            alt="Chapter {{page.chapter}} Page {{page.page1}}"
+            src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page}}.jpeg"
+            alt="Chapter {{page.chapter}} Page {{page.page}}"
             class="comic__page__image"
          />
       {% endif %}
-   {% endfor %}
-{% else %}
-   {% if page.page > 9 %}
-      <img
-         src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page}}.jpeg"
-         alt="Chapter {{page.chapter}} Page {{page.page}}"
-         class="comic__page__image"
-      />
-   {% else %}
-      <img
-         src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page}}.jpeg"
-         alt="Chapter {{page.chapter}} Page {{page.page}}"
-         class="comic__page__image"
-      />
    {% endif %}
-{% endif %}
+   <div class="comic__info__meta">
+      <h3 class="comic__info__title">{{page.title}}</h3>
+      <p class="comic__info__date">
+         {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+      </p>
+   </div>
+</a>
+
+   </div>
+
+ 
 </div>

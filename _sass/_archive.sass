@@ -1,11 +1,13 @@
 .archive
   box-sizing: border-box
+  padding-top: 2rem
+  padding-bottom: 2rem
   +for-tablet-portrait-up
     padding: 1rem
   &__header
     border: 3px solid $yellow
     width: 100%
-    margin: 1rem auto 2rem auto
+    margin: 0 auto 2rem auto
     position: relative
     padding: 0 3rem
     box-sizing: border-box
@@ -44,6 +46,16 @@
     box-sizing: border-box
     +for-tablet-portrait-up
       margin-top: 3rem
+      margin-bottom: 3rem
+    p
+      max-width: max-content
+      padding: 1rem
+      margin: 1rem auto
+      border: $yellow 3px solid
+      text-align: center
+      box-sizing: border-box
+      +for-tablet-portrait-up
+        width: 60%
   &__list
     box-sizing: border-box
     &__item
@@ -91,8 +103,16 @@
       text-transform: uppercase
       font-size: 1.625rem
       margin: 0 auto
-      width: max-content
+      text-align: center
       border: 3px solid $yellow
       padding: 0.5rem
       +for-tablet-portrait-up
         font-size: 2.25rem
+        width: max-content
+      +for-tablet-landscape-up
+        margin-bottom: 3rem
+  .comic__page__wrapper
+    margin-bottom: 2rem
+    .comic__info__meta
+      display: flex
+      justify-content: space-between
