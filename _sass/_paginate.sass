@@ -1,10 +1,13 @@
 .paginate
   display: flex
-  justify-content: center
+  justify-content: space-between
   list-style-type: none
   padding: 0
+  +for-tablet-landscape-up
+    justify-content: space-around
+
   &__nav
-    width: 90px
+    width: 80px
     a
       display: block
       img 

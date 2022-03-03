@@ -5,13 +5,23 @@
     width: 100%
     box-sizing: border-box
     +for-tablet-portrait-up
-        margin: 0 -1rem 1rem -1rem
-        width: calc(100% + 2rem)
+      margin: 0 -1rem 1rem -1rem
+      width: calc(100% + 2rem)
   &__page
     display: inline-block
     width: 100%
+    box-sizing: border-box
     a
       display: block
+      
+    &__link
+      width: 100%
+      box-sizing: border-box
+      margin: 0 auto
+      text-decoration: none
+      color: $whiter
+      +for-tablet-landscape-up
+        width: max-content
     &__image
       max-width: 100%
       box-sizing: border-box

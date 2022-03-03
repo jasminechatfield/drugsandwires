@@ -1,6 +1,6 @@
 <div class="comic__page__wrapper">
    <div class="comic__page">
-      <a href="{{page.url}}">
+      <a href="{{page.url}}" class="comic__page__link">
       {% if page.imagepaths %}
       {% assign paths = page.imagepaths | split: " " %}
       {% for path in paths %}
@@ -48,13 +48,15 @@
          />
       {% endif %}
    {% endif %}
-</a>
-   </div>
-
    <div class="comic__info__meta">
       <h3 class="comic__info__title">{{page.title}}</h3>
       <p class="comic__info__date">
          {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
       </p>
    </div>
+</a>
+
+   </div>
+
+ 
 </div>
