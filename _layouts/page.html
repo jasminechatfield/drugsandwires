@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="page{% if page.color %} page--{{ page.color }}{% endif %}">
+   {% if page.titleimage %}
+    <div class="page__header page__header--withimage">
+        <img class="page__header__image" src="/assets/img{{page.titleimage}}" />
+    {% else %}
+      <div class="page__header">     
+    {% endif %}
+       <h2 class="page__header__title">{{ page.title }}</h2>
+    </div>
+   {{ content }}
+</div>

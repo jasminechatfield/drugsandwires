@@ -20,7 +20,7 @@ items:
      image: /assets/img/site/menu_merch.png
      image-hover: /assets/img/site/menu_merch_hover.png
    - name: Gallery
-     url: fanart
+     url: art
      image: /assets/img/site/menu_gallery.png
      image-hover: /assets/img/site/menu_gallery_hover.png
    - name: News

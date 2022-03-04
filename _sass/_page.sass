@@ -1,0 +1,75 @@
+.page
+  box-sizing: border-box
+  padding-top: 2rem
+  padding-bottom: 2rem
+  +for-tablet-portrait-up
+    padding: 1rem
+  +for-tablet-landscape-up
+    padding-bottom: 3rem
+  &__header
+    border: 3px solid $orange
+    width: 100%
+    margin: 0 auto 2rem auto
+    position: relative
+    padding: 0 3rem
+    box-sizing: border-box
+    +for-tablet-portrait-up
+      margin: 1rem auto
+      width: 85%
+    +for-tablet-landscape-up
+      width: 60%
+      margin: 0 auto 3rem auto
+    +for-desktop-up
+      margin-bottom: 4rem
+    &__title
+      text-align: right
+      font-size: 2rem
+      text-transform: uppercase
+      margin-block-start: 0.5rem
+      margin-block-end: 0.5rem
+      +for-tablet-portrait-up
+        font-size: 3.25rem
+      +for-tablet-landscape-up
+        text-align: center
+        margin-left: 0
+    &__image
+      width: 75px
+      height: 75px
+      position: absolute
+      left: 0.5rem
+      top: -0.5rem
+      +for-tablet-portrait-up    
+        width: 125px
+        height: 125px
+        top: -1.25rem
+    &--withimage
+      .page__header__title
+        +for-tablet-landscape-up
+          margin-left: 75px
+  p, li
+    line-height: 1.4rem
+    font-size: 1.125rem
+  h3
+    font-size: 1.5rem
+    margin-block-start: 2em
+    color: $orange
+  strong
+    color: $orange
+  a
+    color: $orange
+    text-decoration: none
+  &--green
+    h3
+      color: $green
+    a
+      color: $green
+    strong
+      color: $green
+    .page__header
+      border-color: $green
+  &--yellow
+  &--purple
+  &--orange
+  &--white
+  &--pink
+    
