@@ -2,6 +2,7 @@
 layout: page
 title: About
 titleimage: /site/menu_about.png
+color: orange
 ---
 
 ### What is Drugs and Wires?

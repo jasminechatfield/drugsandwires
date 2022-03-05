@@ -49,6 +49,11 @@
   p, li
     line-height: 1.4rem
     font-size: 1.125rem
+    padding-left: 1rem
+  ul, ol
+    padding-inline-start: 1rem
+    +for-tablet-portrait-up
+      padding-inline-start: 2rem
   h3
     font-size: 1.5rem
     margin-block-start: 2em
@@ -68,8 +73,47 @@
     .page__header
       border-color: $green
   &--yellow
+    h3
+      color: $yellow
+    a
+      color: $yellow
+    strong
+      color: $yellow
+    .page__header
+      border-color: $yellow
   &--purple
+    h3
+      color: $purple
+    a
+      color: $purple
+    strong
+      color: $purple
+    .page__header
+      border-color: $purple
   &--orange
+    h3
+      color: $orange
+    a
+      color: $orange
+    strong
+      color: $orange
+    .page__header
+      border-color: $orange
   &--white
+    h3
+      color: $whiter
+    a
+      color: $whiter
+    strong
+      color: $whiter
+    .page__header
+      border-color: $whiter
   &--pink
-    
+    h3
+      color: $pink
+    a
+      color: $pink
+    strong
+      color: $pink
+    .page__header
+      border-color: $pink
