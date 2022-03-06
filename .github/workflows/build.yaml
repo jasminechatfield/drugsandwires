@@ -12,16 +12,19 @@ jobs:
          - uses: actions/checkout@v1
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of pages from jpegs"
+           continue-on-error: true
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.jpeg
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of pages from pngs"
+           continue-on-error: true
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.png
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of pages from gifs"
+           continue-on-error: true
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.gif
@@ -45,6 +48,7 @@ jobs:
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.png
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of gallery images from gifs"
+           continue-on-error: true
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.gif
