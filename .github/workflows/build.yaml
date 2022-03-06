@@ -21,6 +21,11 @@ jobs:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/pages/*/*.png
          - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of pages from gifs"
+           with:
+              # ImageMagick command to be executed
+              command: mogrify -resize x250 -format webp assets/img/pages/*/*.gif
+         - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of gallery images from jpegs"
            continue-on-error: true
            with:
@@ -38,6 +43,11 @@ jobs:
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.png
+         - uses: jruipinto/ImageMagick-action@v1
+           name: "Generate thumbnails of gallery images from gifs"
+           with:
+              # ImageMagick command to be executed
+              command: mogrify -resize x250 -format webp assets/img/galleries/*/*.gif
          - name: Commit generated thumbnails
            run: |
               git config --global user.name 'Jasmine Chatfield'
