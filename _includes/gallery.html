@@ -2,30 +2,42 @@
    {% for post in site.categories[include.gallery] %}
     {% if include.tag %}
       {% if post.tags contains include.tag %}
-     
-      {% assign splitimage = post.image | split: "." %}
-      
-        <li class="gallery__list__item gallery__list__item--notclicky">
+        {% assign splitimage = post.image | split: "." %}
+        {% assign splitimagesize = splitimage | size %}
+        <li class="gallery__list__item">
           <a href="{{post.url}}">
-            <p> {{post.title}} by {{post.artist}} </p>
             <img
-                src="/assets/img/galleries/{{include.gallery}}/{{ splitimage[0] }}.webp"
+                src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
                 class="gallery__list__image"
                 loading="lazy"
-          /></a>
+              />
+          </a>
+          <div class="gallery__list__item__meta">
+            <a href="{{post.url}}">
+              <p>{{post.title}}</p>
+              <p>by {{post.artist}}</p>
+            </a>
+          </div>
         </li>
       {% endif %}
     {% else %}
-    {% assign splitimage = post.image | split: "." %}
-   <li class="gallery__list__item gallery__list__item--notclicky">
-      <a href="{{post.url}}">
-        <p>{{post.title}} by {{post.artist}}</p>
+      {% assign splitimage = post.image | split: "." %}
+      {% assign splitimagesize = splitimage | size %}
+      <li class="gallery__list__item">
+       <a href="{{post.url}}">
          <img
-            src="/assets/img/galleries/{{include.gallery}}/{{ splitimage[0] }}.webp"
+            src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
             class="gallery__list__image"
             loading="lazy"
-      /></a>
-   </li>
-   {% endif %}
-   {% endfor %}
+          />
+        </a>
+        <div class="gallery__list__item__meta">
+          <a href="{{post.url}}">
+            <p>{{post.title}}</p>
+            <p>by {{post.artist}}</p>
+          </a>
+       </div>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
