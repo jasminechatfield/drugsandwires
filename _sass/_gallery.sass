@@ -1,27 +1,87 @@
-.gallery__list
-  display: flex
-  align-content: stretch
-  align-items: stretch
-  flex-wrap: wrap
-  list-style-type: none
-  margin: 0
-  padding: 0
-  height: 100%
-  .gallery__list__item
-    height: 20vh
-    flex-grow: 1
-    padding: 0
-    display: block
-    margin: 20px
-    cursor: pointer
-    // margin: 20px
-    &:last-child
-      flex-grow: 10
-    a
+.gallery
+  &__list
+    display: flex
+    align-content: stretch
+    align-items: stretch
+    flex-wrap: wrap
+    list-style-type: none
+    +for-tablet-landscape-up
+      margin: 0 -40px
+    padding: 0 !important
+    height: 100%
+    &--black
+      background-color: black
+    &--purple
+      background-color: $purple
+    &--orange
+      background-color: $orange
+    &--yellow
+      background-color: $yellow
+    &--green
+      background-color: $green
+    &--pink
+      background-color: $pink
+    &__item
+      height: 20vh
+      flex-grow: 1
+      padding: 0
       display: block
-      width: 100%
-      height: 100%
-    .gallery__list__image
+      margin: 20px
+      cursor: pointer
+      position: relative
+      padding-left: 0 !important
+      &:last-child
+        flex-grow: 10
+      a
+        display: block
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        text-decoration: none
+        color: black
+      &:hover
+        .gallery__list__item__meta
+          opacity: 1
+      &__meta
+        opacity: 0
+        box-sizing: border-box
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        border-width: 3px
+        border-style: solid
+        background-color: #00000050
+        &--black
+          border-color: black
+          p
+            background-color: black
+            color: $whiter
+        &--purple
+          border-color: $purple
+          p
+            background-color: $purple
+        &--orange
+          border-color: $orange
+          p
+            background-color: $orange
+        &--yellow
+          border-color: $yellow
+          p
+            background-color: $yellow
+        &--green
+          border-color: $green
+          p
+            background-color: $green
+        &--pink
+          border-color: $pink
+          p
+            background-color: $pink
+        p            
+          text-align: center
+          color: black
+          text-transform: uppercase
+    &__image
       max-height: 100%
       max-width: 100%
       object-fit: cover
@@ -29,16 +89,10 @@
       width: 100%
       height: 100%
       pointer-events: none
-  .gallery__list__item__expanded
-    width: 100%
-    height: 100%
-    flex-grow: 1
-    display: block
-    margin: 20px
-    cursor: pointer
-    .gallery__list__image
-      width: 100%
-      height: 100%
-      pointer-events: none
-
-  
+  &--compact
+    .gallery__list
+      margin: 0
+      &__item
+        margin: 0
+        height: 15vh
+    

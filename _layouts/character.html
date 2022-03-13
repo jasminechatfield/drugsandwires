@@ -2,63 +2,69 @@
 layout: default
 ---
 
-<div class="character__return">
-   <a href="/characters">
-      <button class="character__return__button">
-         <<< Back to all characters
-      </button></a
-   >
-</div>
-<div class="character mobile--black">
-   {% assign character = page.character %} {% for category in
-   site.data.characters.categories %} {% for character in category.characters %}
-   {% assign lowercase = character.tag | downcase %} {% if lowercase ==
-   page.character %}
-   <div class="character__factfile">
-      <div class="character__image--small">
-         <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
-      </div>
-      <div class="character__image--large">
-         <div class="character__image--large__inner">
-            <img src="/assets/img/characters/{{character.tag}}_long.jpg" />
+{% assign pagecharacter = page.character | downcase %}
+{% for category in site.data.characters.categories %}
+   {% for character in category.characters %}
+      {% assign tagcharacter = character.tag | downcase %}
+      {% if pagecharacter == tagcharacter %}
+         {% assign color = category.color %}
+         <div class="character__return character__return--{{ color }}">
+            <a href="/characters">
+               <button class="character__return__button">
+                  <<< Back to all characters
+               </button>
+            </a>
          </div>
-      </div>
-      <div class="character__factfile__column">
-         <h2 class="character__name">{{character.name}}</h2>
-         <div class="character__about">
-            {% for paragraph in character.description %}
-            <p>{{paragraph}}</p>
-            {% endfor %} {% if character.hobbies %}
-            <p><strong>Hobbies:</strong> {{character.hobbies}}</p>
-            {% endif %} {{ content }}
-         </div>
-         <div class="character__fanart">
-            <h3 class="character__fanart__title">Art of {{page.title}}</h3>
-            <div class="character__fanart__gallery">
-               {% include gallery.html gallery="galleries" tag=character.tag %}
-            </div>
-         </div>
-         {% if character.bonus %}
-         <div class="character__bonus">
-            <h3>{{page.title}} bonus content</h3>
-            <div class="character__bonus__content">
-               {% for content in character.bonus %}
-               <div class="character__bonus__cell">
-                  {% include bonuscontent.html item=content %}
+         <div class="character character--{{ color }} mobile--black">
+            <div class="character__factfile">
+               <div class="character__image--small">
+                  <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
                </div>
-               {% endfor %}
+               <div class="character__image--large">
+                  <div class="character__image--large__inner">
+                     <img src="/assets/img/characters/{{character.tag}}_long.jpg" />
+                  </div>
+               </div>
+               <div class="character__factfile__column">
+                  <h2 class="character__name">{{character.name}}</h2>
+                  <div class="character__about">
+                     {% for paragraph in character.description %}
+                        <p>{{paragraph}}</p>
+                     {% endfor %}
+                     {% if character.hobbies %}
+                        <p><strong>Hobbies:</strong> {{character.hobbies}}</p>
+                     {% endif %}
+                     {{ content }}
+                  </div>
+                  <div class="character__fanart">
+                     <h3 class="character__fanart__title">Art of {{page.title}}</h3>
+                     <div class="character__fanart__gallery">
+                        {% include gallery.html gallery="fanart" tag=character.tag compact=true color=color %}
+                     </div>
+                  </div>
+                  {% if character.bonus %}
+                     <div class="character__bonus">
+                        <h3>{{page.title}} bonus content</h3>
+                        <div class="character__bonus__content">
+                           {% for content in character.bonus %}
+                           <div class="character__bonus__cell">
+                              {% include bonuscontent.html item=content %}
+                           </div>
+                           {% endfor %}
+                        </div>
+                     </div>
+                  {% endif %}
+               </div>
+            </div>
+            <div class="character__pages">
+               <h3>Pages featuring {{page.title}}</h3>
+               <div class="character__pages__thumbnails">
+                  {% for comicpage in site.categories.comic %} {% if comicpage.tags
+                  contains character.tag %} {% include thumbnail-page.html %} {% endif %}
+                  {% endfor %}
+               </div>
             </div>
          </div>
-         {% endif %}
-      </div>
-   </div>
-   <div class="character__pages">
-      <h3>Pages featuring {{page.title}}</h3>
-      <div class="character__pages__thumbnails">
-         {% for comicpage in site.categories.comic %} {% if comicpage.tags
-         contains character.tag %} {% include thumbnail-page.html %} {% endif %}
-         {% endfor %}
-      </div>
-   </div>
-   {% endif %} {% endfor %} {% endfor %}
-</div>
+      {% endif %}
+   {% endfor %}
+{% endfor %}

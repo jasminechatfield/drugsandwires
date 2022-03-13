@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: page
+color: purple
+titleimage: /site/menu_gallery.png
 title: Gallery
 ---
 
-# Fanart
+## Fanart
 
-{% include gallery.html gallery="fanart" %}
+{% include gallery.html gallery="fanart" color="purple" blackbg=true %}

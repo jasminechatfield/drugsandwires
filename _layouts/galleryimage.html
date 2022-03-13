@@ -2,26 +2,33 @@
 layout: default
 ---
 
-<div class="galleryimage">
-   <h1 class="galleryimage__header">
-      <span class="galleryimage__header__title">
-        {{ page.title }}
-      </span>
-      <span class="galleryimage__header__title">
-        by 
-        {% if page.artisturl %}
-          {% if page.artistcomic %}
-            <a href="{{page.artisturl}}" target="_blank">{{page.artistcomic}}</a>'s {{page.artist}}
+<div class="page page--purple mobile--black">
+   <div class="page__header page__header--withimage">
+       <img class="page__header__image" src="/assets/img//site/menu_gallery_hover.png" />
+      <h2 class="page__header__title">Gallery</h2>
+   </div>
+  <div class="galleryimage">
+    <h1 class="galleryimage__header">
+        <span class="galleryimage__header__title">
+          {{ page.title }}
+        </span>
+        <span class="galleryimage__header__title">
+          by 
+          {% if page.artisturl %}
+            {% if page.artistcomic %}
+              <a href="{{page.artisturl}}" target="_blank">{{page.artistcomic}}</a>'s {{page.artist}}
+            {% else %}
+              <a href="{{page.artisturl}}" target="_blank">{{page.artist}}</a>
+            {% endif %}
           {% else %}
-            <a href="{{page.artisturl}}" target="_blank">{{page.artist}}</a>
+            {{page.artist}}
           {% endif %}
-        {% else %}
-          {{page.artist}}
-        {% endif %}
-      </span>
-   </h1>
-   <img
-      src="/assets/img/galleries/{{page.categories[1]}}/{{page.image}}"
-      class="galleryimage__image"
-   />
+        </span>
+    </h1>
+    <img
+        src="/assets/img/galleries/{{page.categories[1]}}/{{page.image}}"
+        class="galleryimage__image"
+    />
+  </div>
+  {{ content }}
 </div>
