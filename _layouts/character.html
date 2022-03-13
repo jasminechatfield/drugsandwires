@@ -39,7 +39,7 @@ layout: default
                   <div class="character__fanart">
                      <h3 class="character__fanart__title">Art of {{page.title}}</h3>
                      <div class="character__fanart__gallery">
-                        {% include gallery.html gallery="fanart" tag=character.tag compact=true color=color %}
+                        {% include gallery.html gallery="fanart" tag=character.tag compact=true color=color blackbg=true %}
                      </div>
                   </div>
                   {% if character.bonus %}
