@@ -1,43 +1,46 @@
-<ul class="gallery__list">
-   {% for post in site.categories[include.gallery] %}
-    {% if include.tag %}
-      {% if post.tags contains include.tag %}
+<div class="gallery {% if include.compact %}gallery--compact{% endif %}">
+  {% capture color %}{% if include.color %}{{ include.color }}{% else %}black{% endif %}{% endcapture %}
+  <ul class="gallery__list gallery__list--{% if include.blackbg %}black{% else %}{{ color }}{% endif %}">
+    {% for post in site.categories[include.gallery] %}
+      {% if include.tag %}
+        {% if post.tags contains include.tag %}
+          {% assign splitimage = post.image | split: "." %}
+          {% assign splitimagesize = splitimage | size %}
+          <li class="gallery__list__item">
+            <a href="{{post.url}}">
+              <img
+                  src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
+                  class="gallery__list__image"
+                  loading="lazy"
+                />
+            </a>
+            <div class="gallery__list__item__meta gallery__list__item__meta--{{ color }}">
+              <a href="{{post.url}}">
+                <p>{{post.title}}</p>
+                <p>by {{post.artist}}</p>
+              </a>
+            </div>
+          </li>
+        {% endif %}
+      {% else %}
         {% assign splitimage = post.image | split: "." %}
         {% assign splitimagesize = splitimage | size %}
         <li class="gallery__list__item">
-          <a href="{{post.url}}">
-            <img
-                src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
-                class="gallery__list__image"
-                loading="lazy"
-              />
+        <a href="{{post.url}}">
+          <img
+              src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
+              class="gallery__list__image"
+              loading="lazy"
+            />
           </a>
-          <div class="gallery__list__item__meta">
+          <div class="gallery__list__item__meta gallery__list__item__meta--{{ color }}">
             <a href="{{post.url}}">
               <p>{{post.title}}</p>
               <p>by {{post.artist}}</p>
             </a>
-          </div>
+        </div>
         </li>
       {% endif %}
-    {% else %}
-      {% assign splitimage = post.image | split: "." %}
-      {% assign splitimagesize = splitimage | size %}
-      <li class="gallery__list__item">
-       <a href="{{post.url}}">
-         <img
-            src="/assets/img/galleries/{{include.gallery}}/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
-            class="gallery__list__image"
-            loading="lazy"
-          />
-        </a>
-        <div class="gallery__list__item__meta">
-          <a href="{{post.url}}">
-            <p>{{post.title}}</p>
-            <p>by {{post.artist}}</p>
-          </a>
-       </div>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

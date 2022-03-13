@@ -5,4 +5,6 @@ titleimage: /site/menu_gallery.png
 title: Gallery
 ---
 
-{% include gallery.html gallery="fanart" %}
+## Fanart
+
+{% include gallery.html gallery="fanart" color="purple" blackbg=true %}

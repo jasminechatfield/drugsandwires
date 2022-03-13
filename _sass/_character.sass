@@ -5,15 +5,13 @@
     background-color: black
   &__return  
     +for-tablet-portrait-up
-      text-align: right
-     
+      text-align: right 
     button
       width: 100%
       border: none
       font-family: 'Anonymous Pro', monospace
       font-size: 1.25rem
       font-weight: 700
-      background-color: orange
       margin: 2rem 0
       padding: 1rem 0.5rem
       text-align: center
@@ -26,6 +24,21 @@
       +for-tablet-landscape-up
         width: 100%
         margin-bottom: 2rem
+    &--yellow
+      button
+        background-color: $yellow
+    &--orange
+      button
+        background-color: $orange
+    &--green
+      button
+        background-color: $green
+    &--purple
+      button
+        background-color: $purple
+    &--pink
+      button
+        background-color: $pink
   img
     max-width: 100%
   &__factfile
@@ -210,4 +223,58 @@
           width: 33%
         +for-tablet-landscape-up
           width: 20% 
-          
+  &--yellow
+    .character__image--small
+      border-color: $yellow
+    .character__name
+      border-color: $yellow
+    h3
+      border-color: $yellow
+    .character__bonus__content__item__meta
+      border-color: $yellow
+      p
+        background-color: $yellow
+  &--orange
+    .character__image--small
+      border-color: $orange
+    .character__name
+      border-color: $orange
+    h3
+      border-color: $orange
+    .character__bonus__content__item__meta
+      border-color: $orange
+      p
+        background-color: $orange
+  &--green
+    .character__image--small
+      border-color: $green
+    .character__name
+      border-color: $green
+    h3
+      border-color: $green
+    .character__bonus__content__item__meta
+      border-color: $green
+      p
+        background-color: $green
+  &--purple
+    .character__image--small
+      border-color: $purple
+    .character__name
+      border-color: $purple
+    h3
+      border-color: $purple
+    .character__bonus__content__item__meta
+      border-color: $purple
+      p
+        background-color: $purple
+  &--pink
+    .character__image--small
+      border-color: $pink
+    .character__name
+      border-color: $pink
+    h3
+      border-color: $pink
+    .character__bonus__content__item__meta
+      border-color: $pink
+      p
+        background-color: $pink

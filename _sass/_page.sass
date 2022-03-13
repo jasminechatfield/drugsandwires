@@ -19,18 +19,20 @@
     +for-tablet-landscape-up
       width: 60%
       margin: 0 auto 3rem auto
-    +for-desktop-up
-      margin-bottom: 4rem
+
     &__title
-      text-align: right
-      font-size: 2rem
-      text-transform: uppercase
-      margin-block-start: 0.5rem
-      margin-block-end: 0.5rem
+      border: none !important
+      text-align: right !important
+      font-size: 2rem !important
+      text-transform: uppercase !important
+      margin-top: 0.5rem !important
+      margin-bottom: 0.5rem !important
+      padding: 0 !important
+      width: 100% !important
       +for-tablet-portrait-up
-        font-size: 3.25rem
+        font-size: 3.25rem !important
       +for-tablet-landscape-up
-        text-align: center
+        text-align: center !important
         margin-left: 0
     &__image
       width: 75px
@@ -54,6 +56,21 @@
     padding-inline-start: 1rem
     +for-tablet-portrait-up
       padding-inline-start: 2rem
+  h2
+    margin-block-start: 0
+    margin-block-end: 0
+    text-transform: uppercase
+    font-size: 1.625rem
+    margin: 0 auto
+    text-align: center
+    border-width: 3px
+    border-style: solid
+    padding: 0.5rem
+    +for-tablet-portrait-up
+      font-size: 2.25rem
+      width: max-content
+    +for-tablet-landscape-up
+      margin-bottom: 3rem
   h3
     font-size: 1.5rem
     margin-block-start: 2em
@@ -64,6 +81,8 @@
     color: $orange
     text-decoration: none
   &--green
+    h2
+      border-color: $green
     h3
       color: $green
     a
@@ -73,6 +92,8 @@
     .page__header
       border-color: $green
   &--yellow
+    h2
+      border-color: $yellow
     h3
       color: $yellow
     a
@@ -82,6 +103,8 @@
     .page__header
       border-color: $yellow
   &--purple
+    h2
+      border-color: $purple
     h3
       color: $purple
     a
@@ -91,6 +114,8 @@
     .page__header
       border-color: $purple
   &--orange
+    h2
+      border-color: $orange
     h3
       color: $orange
     a
@@ -100,6 +125,8 @@
     .page__header
       border-color: $orange
   &--white
+    h2
+      border-color: $whiter
     h3
       color: $whiter
     a
@@ -109,6 +136,8 @@
     .page__header
       border-color: $whiter
   &--pink
+    h2
+      border-color: $pink
     h3
       color: $pink
     a

@@ -5,10 +5,22 @@
     align-items: stretch
     flex-wrap: wrap
     list-style-type: none
-    margin: 0
+    +for-tablet-landscape-up
+      margin: 0 -40px
     padding: 0 !important
     height: 100%
-    background-color: $purple
+    &--black
+      background-color: black
+    &--purple
+      background-color: $purple
+    &--orange
+      background-color: $orange
+    &--yellow
+      background-color: $yellow
+    &--green
+      background-color: $green
+    &--pink
+      background-color: $pink
     &__item
       height: 20vh
       flex-grow: 1
@@ -37,15 +49,35 @@
         width: 100%
         height: 100%
         top: 0
-        border: $purple solid 3px
+        border-width: 3px
+        border-style: solid
         background-color: #00000050
-        &--visible
-          opacity: 1
-          background-color: $purple
-          &:hover
-            background-color: unset
-        p
-          background-color: $purple
+        &--black
+          border-color: black
+          p
+            background-color: black
+            color: $whiter
+        &--purple
+          border-color: $purple
+          p
+            background-color: $purple
+        &--orange
+          border-color: $orange
+          p
+            background-color: $orange
+        &--yellow
+          border-color: $yellow
+          p
+            background-color: $yellow
+        &--green
+          border-color: $green
+          p
+            background-color: $green
+        &--pink
+          border-color: $pink
+          p
+            background-color: $pink
+        p            
           text-align: center
           color: black
           text-transform: uppercase
@@ -57,6 +89,10 @@
       width: 100%
       height: 100%
       pointer-events: none
-      
-
+  &--compact
+    .gallery__list
+      margin: 0
+      &__item
+        margin: 0
+        height: 15vh
     
