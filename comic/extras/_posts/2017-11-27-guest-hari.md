@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/week1-hari.gif
 tags:
 title: Guest Art Week 1 by Hari [Flashing Gif Warning]
 alias: /dnwcomic/guest-art-week-1-by-hari/

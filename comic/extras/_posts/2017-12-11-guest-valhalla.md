@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/week3-valhalla.gif
 tags:
 title: Guest Art Week 3 by Valhalla Halvorson [Flashing Gif]
 alias: /dnwcomic/guest-art-week-3-by-valhalla-halvorson-flashing-gif/

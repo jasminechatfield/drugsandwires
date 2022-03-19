@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/datesandwires.jpeg
 tags:
 title: Dates & Wires is out!
 alias: /dnwcomic/dates-wires-is-out/
