@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/christmas2020.jpeg
 tags:
 title: Seasons Greetings
 alias: /dnwcomic/seasons-greetings/

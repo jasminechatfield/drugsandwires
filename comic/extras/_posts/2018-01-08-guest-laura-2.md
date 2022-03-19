@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/week7-laura.jpeg
 tags:
 title: Guest Art Week 7 by Laura Watton
 alias: /dnwcomic/guest-art-week-7-by-laura-watton/
