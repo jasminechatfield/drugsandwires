@@ -42,8 +42,8 @@ sections:
   create: all
   match: "*"
   new_doc_ext: md
-upload_dir: assets/img/pages/ch08
-public_path: assets/img/pages/ch08
+upload_dir: assets/img/galleries/bonus
+public_path: assets/img/galleries/bonus
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
