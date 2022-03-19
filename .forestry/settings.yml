@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: galleries
+  label: Galleries
+  create: all
+  match: "**/*"
 - type: heading
   label: Site
 - type: document
@@ -26,9 +31,6 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
-- type: document
-  path: _data/galleries.yml
-  label: Image Galleries
 - type: heading
   label: Characters
 - type: document
