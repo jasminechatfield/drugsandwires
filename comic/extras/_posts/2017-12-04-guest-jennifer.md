@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/week2-jennifer.jpeg
 tags:
 title: Guest Art Week 2 by Jennifer
 alias: /dnwcomic/guest-art-week-2-by-jennifer/

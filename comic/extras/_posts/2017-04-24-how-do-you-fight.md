@@ -1,5 +1,5 @@
 ---
-imagepath:
+imagepath: extras/hh.jpeg
 tags:
 title: How Do You Fight a Problem Like Addiction?
 alias: /dnwcomic/how-do-you-fight-a-problem-like-addiction/
