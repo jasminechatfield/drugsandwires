@@ -1,6 +1,7 @@
 ---
 layout: news
 title: Fanart Contest Winners
+image: fanart-contest1.jpg
 alias: /fanart-contest-winners-2/
 summary: "Our second fanart contest has just wrapped up! Thanks to everyone who participated - we got so many beautiful entries from folks, judging was difficult to say the least."
 ---
@@ -9,9 +10,9 @@ Our second fanart contest has just wrapped up! Thanks to everyone who participat
 
 Here's all the entries, all links and credits available below (if provided):
 
-{% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2019/04/fanart-contest1.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2019/04/fanart-contest1.jpg" alt="" %}
+{% include newsimage.html image="fanart-contest1.jpg" alt="" %}
 
-{% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2019/04/fanart-contest2.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2019/04/fanart-contest2.jpg" alt="" %}
+{% include newsimage.html imageurl="fanart-contest2.jpg" alt="" %}
 
 ## Winners &amp; Runner-ups
 

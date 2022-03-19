@@ -2,9 +2,8 @@
 layout: news
 title: Schedule Update & Things!
 alias: /schedule-update-things/
+summary: Hey everyone! Cryo here with a very much belated news update. We really don't update this thing often enough.
 ---
-
-{% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2018/05/Capture.png" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2018/05/Capture.png" alt="Capture" caption="" %}
 
 Hey everyone! Cryo here with a very much belated news update. We really don't update this thing often enough.
 
