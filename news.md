@@ -1,15 +1,18 @@
 ---
-layout: default
+layout: page
 title: News
+color: pink
+titleimage: /site/menu_news_hover.png
 ---
-
-# News
 
 {% for post in site.categories.news %}
 
 <div class="news__item">
 <div class="news__item__image">
-<img src="/assets/img/news/{{post.image}}" /></div>
+{% if post.image %}
+<img src="/assets/img/news/{{post.image}}" />
+{% endif %}
+</div>
 <div class="news__item__info">
 <h3 class="news__item__title"><a href="{{post.url}}">{{post.title}}</a></h3>
 
@@ -23,5 +26,3 @@ title: News
 </div>
 
 {% endfor %}
-
-
