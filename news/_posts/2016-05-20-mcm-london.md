@@ -2,10 +2,10 @@
 layout: news
 title: MCM London Comic Con is Almost Here!
 alias: /mcm-london-comic-con-is-almost-here/
-tags: merch news
+image: mcm2016.jpg
+imagealt: "MCM 2016 Location Map"
+summary: "It's that time again: MCM London Comic Con is almost upon us! As in years past, Cryoclaire will be setting up shop in the Comic Village with all the trimmings."
 ---
-
-{% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2016/05/mcm2016.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2016/05/mcm2016-1024x729.jpg" alt="MCM 2016 Location Map" caption="" %}
 
 It's that time again: [MCM London Comic Con](http://www.mcmcomiccon.com/london/) is almost upon us! As in years past, Cryoclaire will be setting up shop in the Comic Village with all the trimmings, including:
 

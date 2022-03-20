@@ -4,6 +4,7 @@ alias: /great-lin-cosplay-by-nix/
 image: lin-by-nix.jpeg
 imagealt: "Lin cosplay by Nix"
 layout: news
+summary: "Though her knowledge of the human body is shaky at best and her medical ethics went out the window a long time ago, Lin the modder somehow still finds customers willing to drop good money for her services. Casually indifferent to other humans, she's developed a bit of a soft spot for Dan over the years - much as you would for a puppy that can't seem to stop tripping over its own tail."
 ---
 
 Though her knowledge of the human body is shaky at best and her medical ethics went out the window a long time ago, Lin the modder somehow still finds customers willing to drop good money for her services. Casually indifferent to other humans, she's developed a bit of a soft spot for Dan over the years - much as you would for a puppy that can't seem to stop tripping over its own tail.

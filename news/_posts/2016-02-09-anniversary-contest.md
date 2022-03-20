@@ -2,10 +2,10 @@
 layout: news
 title: Drugs & Wires Anniversary Contest!
 alias: /drugs-wires-anniversary-contest/
-tags: contest
+image: dnwgiveaway.png
+imagealt: "First Anniversary Giveaway"
+summary: 'Hey, everyone! Drugs & Wires celebrates its first anniversary on March 22nd, 2016, and we''d like to mark the occasion by saying "thank you" to our awesome readers with not one, but two giveaway contests!'
 ---
-
-{% include newsimage.html imageurl="http://www.drugsandwires.fail/wp-content/uploads/2016/02/dnwgiveaway.png" imageurl2="http://www.drugsandwires.fail/wp-content/uploads/2016/02/dnwgiveaway.png" alt="First Anniversary Giveaway" caption="" %}
 
 ### Hey, everyone! Drugs &amp; Wires celebrates its first anniversary on March 22nd, 2016, and we'd like to mark the occasion by saying "thank you" to our awesome readers with not one, but two giveaway contests!
 
