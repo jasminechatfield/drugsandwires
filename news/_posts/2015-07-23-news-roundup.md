@@ -2,7 +2,7 @@
 title: "News Roundup: Russian Edition, Comic Chameleon, TV Tropes!"
 alias: /news-roundup-russian-edition-comic-chameleon-tv-tropes/
 layout: news
-tags: news
+summary: "It's been a busy couple of weeks behind the scenes! What's new?"
 ---
 
 It's been a busy couple of weeks behind the scenes!

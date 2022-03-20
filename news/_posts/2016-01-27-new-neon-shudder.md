@@ -3,9 +3,10 @@ layout: news
 title: New Neon Shudder EP Available!
 alias: /new-neon-shudder-ep-available/
 tags: neon-shudder odds-and-ends
+image: neuromantic.jpg
+imagealt: "Neuromantic EP Cover"
+summary: "Our buddy Signalrun (AKA Neon Shudder) has had a busy couple of months: following an appropriately spooky (or indeed, spoopy) Halloween release and several previews from his first full-length album, he's ringing in 2016 with an all-new EP, entitled (viii) neuromantic: the communion of nature and technology. This pay-what-you-want release features four tracks of synth-driven atmospherics, including a collaboration with fellow PA-based (x)-wavers Reapers."
 ---
-
-{% include newsimage.html imageurl="http://www.drugsandwires.fail/wp-content/uploads/2016/01/a0045034813_16.jpg" imageurl2="http://www.drugsandwires.fail/wp-content/uploads/2016/01/a0045034813_16-300x300.jpg" alt="Neuromantic EP Cover" caption="" %}
 
 Our buddy Signalrun (AKA Neon Shudder) has had a busy couple of months: following an appropriately spooky (or indeed, spoopy)[ Halloween release](http://neonshudder.bandcamp.com/album/o-8015) and several previews from his first full-length album, he's ringing in 2016 with an all-new EP, entitled [(viii) neuromantic: the communion of nature and technology](http://neonshudder.bandcamp.com/album/viii-neuromantic-the-communion-of-nature-and-technology). This pay-what-you-want release features four tracks of synth-driven atmospherics, including a collaboration with fellow PA-based (x)-wavers Reapers.
 

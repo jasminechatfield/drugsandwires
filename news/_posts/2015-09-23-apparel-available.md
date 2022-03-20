@@ -4,7 +4,7 @@ alias: /dw-apparel-now-available/
 image: meat.png
 imagealt: "Less Meat, More 1337"
 layout: news
-tags: merch news post-format-link spreadshirt
+summary: Clothing has always been high up on our personal merch wishlist, so we're happy to announce that we've just dropped our very first set of Drugs & Wires tees, tank tops, and hoodies on Spreadshirt.
 ---
 
 _(Just in time for our six month anniversary, too.)_

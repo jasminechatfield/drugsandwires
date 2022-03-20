@@ -2,6 +2,7 @@
 layout: news
 title: D&W Patreon Launches!
 alias: /dw-patreon-launches/
+summary: "That's right: it's official. If you follow us on social media, you'll probably know that we've been toying with the idea of setting up a Patreon for quite a while now - all the cool webcomics artists are doing it, so why not us? But we always hit a bit of a hurdle when it came to content: we're not quite in a position where we can offer things like more frequent comic updates, but still want to give people something substantial for their support."
 ---
 
 <iframe src="https://www.youtube.com/embed/g63busVcEfM" width="900" height="485" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

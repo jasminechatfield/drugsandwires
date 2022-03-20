@@ -4,6 +4,7 @@ alias: /mcm-london-comic-con-wrap-up/
 image: booth.jpeg
 imagealt: "The D&W booth at MCM Comic Con London."
 layout: news
+summary: 'A big and hearty "thank you" to everybody who came out to see Cryoclaire and Will - our Head of Keen and D&W Hypeman-at-Large - at MCM last weekend!'
 ---
 
 A big and hearty "thank you" to everybody who came out to see Cryoclaire and Will - our Head of Keen and D&amp;W Hypeman-at-Large - at MCM last weekend! We sold plenty of stuff (including the very last copies of _Dreamspace: Analogue Edition_ and the first of our all-new [Cyborg Trash sketch commissions](http://cryoclaire.tumblr.com/post/119796535649/so-heres-some-of-the-commissions-ive-done-this)) and met some wonderful fans and creators along the way. But if you didn't get a chance to stop by, never fear: we're hoping to be back in town come [October](http://www.mcmcomiccon.com/london/).

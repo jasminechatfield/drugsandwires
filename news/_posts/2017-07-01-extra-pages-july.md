@@ -2,6 +2,7 @@
 layout: news
 title: Extra D&W Pages for July!
 alias: /extra-dw-pages-for-july/
+summary: Good news, 'Wireheads - thanks to ongoing support from our Patreon backers, we'll be publishing another five pages of D&W this month!
 ---
 
 Good news, 'Wireheads - thanks to ongoing support from our [Patreon](https://www.patreon.com/drugsandwires) backers, we'll be publishing another five pages of _D&W_ this month! Slightly less good news: next Monday's page will unfortunately be bumped, as Claire's on the road with only the barest of bare-bone art-ing tools at her disposal.

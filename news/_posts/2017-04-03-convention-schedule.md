@@ -2,11 +2,11 @@
 layout: news
 title: "Drugs & Wires #3 & Convention Schedule"
 alias: /drugs-wires-3-convention-schedule/
+image: chapter3coverfinal2.jpg
+summary: 'The big news: Issue #3, "Rock Bottom" is ready to be sent off to the printers - we''re currently taking pre-orders to help us with the printing costs!'
 ---
 
 Hey everyone, haven't posted here in a while! Actually, I'm pretty sure this is my first time writing a news post on here - normally Io's much better at it, but I've got way more free time on my hands these days, so it's only fair I start updating more often.
-
-{% include newsimage.html imageurl="https://www.drugsandwires.fail/wp-content/uploads/2017/04/chapter3coverfinal2.jpg" imageurl2="https://www.drugsandwires.fail/wp-content/uploads/2017/04/chapter3coverfinal2.jpg" alt="chapter3coverfinal2" caption="" %}
 
 So, the big news: Issue #3, "Rock Bottom" is ready to be sent off to the printers - we're currently taking pre-orders to help us with the printing costs! You can order a copy (and limited edition sketch) in [D&amp;W Tictail store](https://drugsandwires.tictail.com/product/drugs-wires-3-pre-orders). For those of you supporting us on [Patreon](https://www.patreon.com/drugsandwires), you can grab a 20% discount code in the latest post.
 
