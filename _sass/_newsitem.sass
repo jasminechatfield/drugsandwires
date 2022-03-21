@@ -14,6 +14,13 @@
       display: block
       width: 250px
       height: 300px
+    &--zerowidth
+      +for-tablet-portrait-up
+        width: unset
+        height: unset
+      +for-tablet-landscape-up
+        width: 250px
+        height: 300px
     img
       +for-tablet-portrait-up
         height: 100%
@@ -23,10 +30,19 @@
     box-sizing: border-box
     +for-tablet-portrait-up
       max-width: calc(100% - 250px)
-      padding-left: 1rem
+      padding-left: 2rem
+      +for-tablet-landscape-up
+        padding-left: 3rem
     display: flex
     flex-direction: column
     justify-content: space-between
+    &--maxwidth
+      +for-tablet-portrait-up
+        max-width: calc(100%)
+        padding-left: 0
+      +for-tablet-landscape-up
+        max-width: calc(100% - 250px)
+        padding-left: 3rem
   &__title
     margin-block-start: 0
     margin-block-end: 0
@@ -35,7 +51,6 @@
     font-size: 1.25rem
     text-align: right
     +for-tablet-portrait-up
-      margin-left: 1.5rem
       font-size: 1.25rem
     +for-tablet-landscape-up
       font-size: 1.5rem
@@ -49,8 +64,6 @@
     margin-top: 0.25rem
   &__summary
     line-height: 1.25rem
-    +for-tablet-portrait-up
-      margin-left: 1.5rem
   &__button
     margin: 0 -0.75rem
     display: block
@@ -71,7 +84,8 @@
     +for-tablet-portrait-up
       width: 100%
       margin: 0rem
+      text-align: right
+      padding: 0.5rem 1rem 0.5rem 1rem
     +for-tablet-landscape-up
         padding: 0.5rem 2rem 0.5rem 0.5rem
-    +for-desktop-up
-      margin-left: 1.5rem
+

@@ -16,23 +16,7 @@ layout: default
    {% include paginate.html type="numbers" path="news" %}
    <div class="news__list">
    {% for post in paginator.posts %}
-      <div class="news__item">
-         <div class="news__item__image">
-            {% if post.image %}
-               <img src="/assets/img/news/{{post.image}}" />
-            {% endif %}
-         </div>
-         <div class="news__item__info">
-            <h3 class="news__item__title">
-               <a href="{{post.url}}">{{post.title}}</a>
-            </h3>
-            <time class="news__item__date">{{post.date | date: "%b %e %Y"}}</time>
-            <p class="news__item__summary">{{post.summary}}</p>
-            <a href="{{post.url}}" class="news__item__button">
-               Read more >
-            </a>
-         </div>
-      </div>
+     {% include newsitem.html %}
    {% endfor %}
    </div>
    {% include paginate.html type="numbers" path="news" %}
