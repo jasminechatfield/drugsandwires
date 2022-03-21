@@ -1,8 +1,44 @@
-{% if paginator.total_pages > 1 %}
+{% if include.type == "numbers" %}
 
-<ul class="paginate">
+<ul class="paginate paginate--numbers">
    {% if paginator.previous_page %}
-   <li class="previous paginate__nav">
+      <li class="previous paginate__nav paginate__nav--arrows">
+         <a
+            href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+         >
+            <img src="/assets/img/site/nav_prev.png" alt="Previous" />
+         </a>
+      </li>
+   {% else %}
+      <li class="paginate__nav"></li>
+   {% endif %}
+   {% for i in (1..paginator.total_pages) %}
+      {% if paginator.page == i %}
+      <li class="paginate__nav paginate__nav--numbers paginate__nav--numbers--current">
+         <a> <span>{{ i }}</span> </a>
+      </li>
+      {% else %}
+         <li class="paginate__nav paginate__nav--numbers">
+            <a href="{% if i == 1 %}/news/{% else %}/{{ include.path }}/page/{{ i }}/{% endif %}"> <span>{{ i }}</span> </a>
+         </li>
+      {% endif %}
+   {% endfor %}
+   {% if paginator.next_page %}
+      <li class="next paginate__nav">
+         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <img src="/assets/img/site/nav_next.png" alt="Next" />
+         </a>
+      </li>
+   {% else %}
+      <li class="paginate__nav"></li>
+   {% endif %}
+</ul>
+
+{% else %} {% if paginator.total_pages > 1 %}
+
+<ul class="paginate paginate--arrows">
+   {% if paginator.previous_page %}
+   <li class="previous paginate__nav paginate__nav--arrows">
       <a
          href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
       >
@@ -22,4 +58,4 @@
    <li class="paginate__nav"></li>
    {% endif %}
 </ul>
-{% endif %}
+{% endif %} {% endif %}
