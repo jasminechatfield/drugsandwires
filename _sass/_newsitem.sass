@@ -20,8 +20,10 @@
         width: 100%
         object-fit: cover
   &__info
+    box-sizing: border-box
     +for-tablet-portrait-up
       max-width: calc(100% - 250px)
+      padding-left: 1rem
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -30,6 +32,8 @@
     margin-block-end: 0
     text-transform: uppercase
     line-height: 1.1em
+    font-size: 1.25rem
+    text-align: right
     +for-tablet-portrait-up
       margin-left: 1.5rem
       font-size: 1.25rem
@@ -37,6 +41,12 @@
       font-size: 1.5rem
     a
       color: $whiter
+  &__date
+    font-size: 1.125rem
+    display: block
+    text-align: right
+    font-weight: 700
+    margin-top: 0.25rem
   &__summary
     line-height: 1.25rem
     +for-tablet-portrait-up
@@ -44,22 +54,24 @@
   &__button
     margin: 0 -0.75rem
     display: block
+    background-color: $pink
+    font-size: 1.25rem
+    width: calc(100% + 1.5rem)
+    display: block
+    border: none
+    text-align: right
+    padding: 0.5rem 1rem 0.5rem 2rem
+    font-family: 'Anonymous Pro', monospace
+    font-size: 1.5rem
+    text-transform: uppercase
+    font-weight: 700
+    box-sizing: border-box
+    color: black
+    text-align: center
     +for-tablet-portrait-up
       width: 100%
       margin: 0rem
+    +for-tablet-landscape-up
+        padding: 0.5rem 2rem 0.5rem 0.5rem
     +for-desktop-up
       margin-left: 1.5rem
-    button
-      background-color: $pink
-      font-size: 1.25rem
-      width: 100%
-      display: block
-      border: none
-      text-align: right
-      padding: 0.25rem 2rem 0.25rem 0.25rem
-      font-family: 'Anonymous Pro', monospace
-      font-size: 1.5rem
-      text-transform: uppercase
-      font-weight: 700
-      +for-tablet-landscape-up
-        padding: 0.5rem 2rem 0.5rem 0.5rem
