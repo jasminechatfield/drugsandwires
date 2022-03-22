@@ -75,6 +75,9 @@ title: "Home"
 
 {% endfor %}
 
+<div id="hw-jumpbar"></div>
+<script src="https://cdn.hiveworkscomics.com/jumpbar.js" async></script>
+
 <div class="news__latest">
 <h2 class="news__latest__title">Latest News</h2>
 
