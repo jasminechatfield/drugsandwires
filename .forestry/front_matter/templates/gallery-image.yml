@@ -4,16 +4,36 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title of image
+  config:
+    required: true
+- name: image
+  type: text
+  config:
+    required: true
+  label: Image filename
+  description: As long as it's in the folder for the correct gallery (/assets/img/galleries/[gallery-name]/),
+    you only need to write the filename itself (e.g. image.png). Do NOT include the
+    path (e.g. /assets/img/galleries/fanart/image.png)
 - type: text
   name: artist
-  label: artist
+  label: Artist name
+  description: The name of the artist/illustrator of the image.
+  config:
+    required: true
 - type: text
   name: artisturl
-  label: artisturl
-- type: file
-  name: image
-  label: image
+  label: Link to artist's website
+- name: artistcomic
+  type: text
+  config:
+    required: false
+  label: Artist's webcomic name
+  description: If the artist is also a webcomic artist and you want to use their URL
+    to redirect to their comic, add the comic title here to give them extra visibility!
 - type: text
   name: tags
-  label: tags
+  label: Character tags
+  description: Enter a space-separated list of character tags, e.g. "dan lin dans-manager".<br><br>If
+    you aren't sure of the exact character tag (as in the case of dans-manager) check
+    the character info file.
