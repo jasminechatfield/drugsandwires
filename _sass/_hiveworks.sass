@@ -6,12 +6,16 @@
     display: none
     +for-ad-breakpoint-up
       display: block
+      position: absolute
       width: 160px
       height: 600px
       background-color: grey
-      position: absolute
-      right: 1rem
-      margin-top: 20rem
+      right: calc((((100vw - 1000px) / 2) - 2rem) * -1)
+      // top: 20rem
+      // right: -125px
+    +for-ad-big-breakpoint-up
+      right: -12rem
+      
   &--720
     +for-ad-breakpoint-up
       width: 720px
