@@ -37,3 +37,5 @@ fields:
   description: Enter a space-separated list of character tags, e.g. "dan lin dans-manager".<br><br>If
     you aren't sure of the exact character tag (as in the case of dans-manager) check
     the character info file.
+pages:
+- galleries/bonus/_posts/promo-2022.md
