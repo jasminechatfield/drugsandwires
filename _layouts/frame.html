@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 
+  
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.hiveworkscomics.com/jumpbar.css">
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
   <div class="page__wrapper">
+    <div id="cc-comic"></div>
 <header>
   <!-- <h1>Drugs and Wires</h1> -->
   {% include header.html %}
@@ -36,9 +41,8 @@
   <span></span>
 </div>
 </footer>
-
 </body>
 <script src="/assets/js/keyboardNav.js"></script>
 <script src="/assets/js/mobileMenu.js"></script>
-<script src="/assets/js/gallery.js"></script>
+
 </html>
