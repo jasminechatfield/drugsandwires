@@ -3,6 +3,10 @@ layout: default
 title: "Home"
 ---
 
+<div class="hiveworks hiveworks--160">
+    <p>160px x 600px</p>
+</div>
+
 {% for page in site.categories.comic  limit:1 %}
 
 {% for post in site.categories.comic %}
@@ -51,14 +55,22 @@ title: "Home"
 {% endif %}
 {% endif %}
 
-<div class="comic__info">
-<div class="comic__info__meta">
-   <h3 class="comic__info__title">{{page.title}}</h3>
-   <p class="comic__info__date">
-      {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
-   </p></div>
-   <div class="comic__info__text">{{page.content}}</div>
-   {% include tags.html %}
+<div class="hiveworks__container">
+    <div class="comic__info">
+        <div class="comic__info__meta">
+            <h3 class="comic__info__title">{{page.title}}</h3>
+            <p class="comic__info__date">
+                {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+            </p>
+        </div>
+        <div class="comic__info__text">{{page.content}}</div>
+        {% include tags.html %}
+    </div>
+
+    <div class="hiveworks hiveworks--300">
+    <p>300px x 250px</p>
+    </div>
+
 </div>
 
 <div id="hyvor-talk-view"></div>
