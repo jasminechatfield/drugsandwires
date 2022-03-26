@@ -1,9 +1,7 @@
 <div class="gallery {% if include.compact %}gallery--compact{% endif %}">
   {% capture color %}{% if include.color %}{{ include.color }}{% else %}black{% endif %}{% endcapture %}
   <ul class="gallery__list gallery__list--{% if include.blackbg %}black{% else %}{{ color }}{% endif %}">
-    {{ include.gallery }}
     {% for post in site.categories[include.gallery] %}
-    
       {% if include.tag %}
         {% if post.tags contains include.tag %}
           {% assign splitimage = post.image | split: "." %}
