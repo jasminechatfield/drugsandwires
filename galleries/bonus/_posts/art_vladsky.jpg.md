@@ -1,6 +1,6 @@
 ---
-title: art_vladsky.jpg
-image: A Life of Blood And Fire - Vlad's book
+title: A Life of Blood And Fire - Vlad's book
+image: art_vladsky.jpg
 artist: Cryo
 artisturl: ''
 artistcomic: ''
