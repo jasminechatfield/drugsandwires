@@ -1,0 +1,9 @@
+---
+title: Dan & Lin 2014 Strip
+image: oldart_it.jpg
+artist: Cryo
+artisturl: ''
+artistcomic: ''
+tags: dan lin
+
+---
