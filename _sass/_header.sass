@@ -1,16 +1,15 @@
 .header
   background-color: black
   width: 100%
-  display: grid
-  grid-template-columns: 2fr 1fr
+  display: flex
   padding: 1rem 1rem 0 1rem
   margin-bottom: 0.5rem
   box-sizing: border-box
   +for-tablet-portrait-up
-    grid-template-columns: 1fr 1fr
+   
     padding: 1rem 1rem 0 1rem
   +for-tablet-landscape-up
-    grid-template-columns: 7fr 10fr
+    
     padding: 1.5rem 1.5rem 0 1.5rem
   .header__background
     position: absolute

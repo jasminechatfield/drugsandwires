@@ -4,7 +4,7 @@
     display: unset
   &--160
     display: none
-    +for-ad-breakpoint-up
+    +for-desktop-up
       display: block
       position: absolute
       width: 160px
@@ -29,6 +29,19 @@
       background-color: grey
       flex-shrink: 0
       margin-left: 2rem
+  &--mobile
+    width: 320px
+    height: 50px
+    background-color: grey
+    margin: 0 auto 1rem auto
+    +for-tablet-portrait-up
+      margin-bottom: 0
+    +for-ad-breakpoint-up
+      display: none
+    p
+      margin-block-start: 0
+      margin-block-end: 0
+      padding: 1rem
   &__wrapper
     display: none
     +for-ad-breakpoint-up
@@ -37,6 +50,11 @@
       max-width: 1000px
       margin: 0 auto
       padding-top: 1rem
+    &--mobile     
+      +for-tablet-portrait-up
+        background-color: black
+      +for-ad-breakpoint-up
+        display: none
   p
     text-align: center
     font-size: 3rem
