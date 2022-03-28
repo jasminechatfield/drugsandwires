@@ -4,8 +4,10 @@
     justify-content: space-evenly
     background-color: black
     display: flex
-    padding: 0 1rem 1rem 1rem
+    padding: 0 0.5rem 1rem 0.5rem
     position: relative
+  +for-tablet-landscape-up
+    padding: 0 1rem 1rem 1rem
   +for-desktop-up
     padding-bottom: 1rem
   .navigation__item
@@ -54,6 +56,7 @@
         font-size: 1rem
         padding-top: 0.5rem
         padding-right: 2.5%
+        margin: 0 -0.5rem
       +for-desktop-up
         font-size: 1.5rem
     &:hover
