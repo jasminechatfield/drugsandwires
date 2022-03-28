@@ -1,4 +1,5 @@
 .newsbox
+  display: none
   margin-left: 20%
   color: $orange
   padding: 0 0.75rem
@@ -6,15 +7,16 @@
   box-sizing: border-box
   position: relative
   +for-tablet-portrait-up
+    display: block
     background-color: black
-    box-shadow: 10px -10px 20px #00000060, -10px -10px 20px #00000060
+    box-shadow: 10px 10px 20px #00000060, -10px 10px 20px #00000060
     margin: 0 1.5rem
     padding-bottom: 3rem
     padding-top: 1rem
   +for-tablet-landscape-up
     margin-left: max(3rem, calc((100vw - 1000px) / 2))
     margin-right: max(3rem, calc((100vw - 1000px) / 2))
-    padding: 3rem 1.5rem 3rem 1.5rem
+    padding: 1rem 1.5rem 2rem 1.5rem
   +for-desktop-up
     margin: 0 auto
     padding: 1rem 4rem 2rem 3rem
@@ -22,14 +24,17 @@
     border: $orange solid 3px
     background-image: url('/assets/img/site/tile.png')
     padding: 0.5rem 0.75rem
-    min-height: 150px
+    min-height: 75px
     +for-tablet-portrait-up
-      padding-bottom: 2.5rem
+      padding-bottom: 2rem
       width: 70%
       margin-left: auto
+    +for-ad-breakpoint-up
+      // margin-right: calc(max(0rem, (100vw - 3rem - 1.5rem - 720px) / 2))
     +for-tablet-landscape-up
+      margin-right: 0
       width: 75%
-      padding: 0.75rem 1rem 3rem 1rem
+      padding: 0.75rem 1rem 2rem 1rem
     +for-desktop-up
       width: 80%
   &__text
@@ -68,15 +73,15 @@
     top: 15px
     +for-tablet-portrait-up
       z-index: 1
-      height: 350px
+      height: 250px
       top: 0.5rem
-      left: -1.5rem
+      left: -0.5rem
     +for-tablet-landscape-up
-      left: -3rem
-      top: 2rem
+      left: -2rem
+      top: -6rem
+      height: 350px
     +for-desktop-up
-      left: -4rem
-      top: -4rem
+      top: -5rem
     img
       max-width: 100%
       max-height: 100%

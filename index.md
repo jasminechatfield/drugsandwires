@@ -3,9 +3,7 @@ layout: default
 title: "Home"
 ---
 
-<div class="hiveworks hiveworks--160">
-    <p>160px x 600px</p>
-</div>
+
 
 {% for page in site.categories.comic  limit:1 %}
 
@@ -90,6 +88,11 @@ title: "Home"
 <div id="hw-jumpbar"></div>
 <script src="https://cdn.hiveworkscomics.com/jumpbar.js"></script>
 
+<div class="hiveworks__columns">
+<div class="hiveworks hiveworks--160">
+    <p>160px x 600px</p>
+</div>
+
 <div class="news__latest">
 <h2 class="news__latest__title">Latest News</h2>
 
@@ -101,4 +104,5 @@ title: "Home"
 
 <a href="/news" class="news__latest__button"><button>More news >>></button></a>
 
+</div>
 </div>
