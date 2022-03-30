@@ -31,18 +31,17 @@ layout: default
 {% endif %}
 
 <div class="hiveworks__container">
-<div class="comic__info">
-   <div class="comic__info__meta">
-      <h3 class="comic__info__title">{{page.title}}</h3>
-      <p class="comic__info__date">
-         {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
-      </p>
+   <div class="comic__info">
+      <div class="comic__info__meta">
+         <h3 class="comic__info__title">{{page.title}}</h3>
+         <p class="comic__info__date">
+            {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+         </p>
+      </div>
+      <div class="comic__info__text">{{content}}</div>
+      {% include tags.html %}
    </div>
-   <div class="comic__info__text">{{content}}</div>
-   {% include tags.html %}
+   <div class="hiveworks hiveworks--300" id="box-space"></div>
 </div>
-<div class="hiveworks hiveworks--300">
-   <p>300px x 250px</p>
-   </div>
-</div>
+
 {% include comments.html %}

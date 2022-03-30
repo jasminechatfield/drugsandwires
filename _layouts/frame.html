@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="https://cdn.hiveworkscomics.com/jumpbar.css">
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Fallback code for Hiveworks ads --> 
+  <script src="/assets/js/hiveworksAlt.js"></script>
 
 </head>
 
@@ -27,7 +29,7 @@
   {% include navigation.html %}
 
   <div class="hiveworks hiveworks__wrapper">
-    <div class="hiveworks--720"><p>720px x 90px</p></div>
+    <div class="hiveworks--720" id="top-space"><span></span></div>
   </div>
 
 
@@ -49,5 +51,6 @@
 </body>
 <script src="/assets/js/keyboardNav.js"></script>
 <script src="/assets/js/mobileMenu.js"></script>
-
+<script src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" data-site-id="XXXXXXXXXXXXXXXXXXXXXXX" data-mode="scan" async 
+onerror="javascript:usealtstuff();"></script>
 </html>
