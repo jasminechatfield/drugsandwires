@@ -2,4 +2,70 @@
 layout: frame
 ---
 
-<main>{{ content }}</main>
+<div class="page__main__wrapper">
+  <main>
+    {% for page in site.categories.comic  limit:1 %}
+      {% for post in site.categories.comic %}
+        {% if post.url == page.url %}
+          {% assign post_index0 = forloop.index0 %}
+          {% assign post_index1 = forloop.index %}
+        {% endif %}
+      {% endfor %}
+      {% for post in site.categories.comic %}
+        {% if post_index0 == forloop.index %}
+          {% assign next_post = post.url %}
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+          {% assign prev_post = post.url %}
+        {% endif %}
+      {% endfor %}
+      {% capture prev %}{{prev_post}}{% endcapture %}
+      {% capture next %}{{next_post}}{% endcapture %}
+      {% if prev_post %}
+        {% if next_post %}
+          {% include page-with-nav.html first_or_last=first_or_last  prev=prev next=next %}
+        {% else %}
+          {% include page-with-nav.html first_or_last=first_or_last prev=prev %}
+        {% endif %}
+      {% else %}
+        {% if next_post %}
+          {% include page-with-nav.html first_or_last=first_or_last next=next %}
+        {% endif %}
+      {% endif %}
+    
+      <div class="hiveworks__container">
+        <div class="comic__info">
+            <div class="comic__info__meta">
+                <h3 class="comic__info__title">{{page.title}}</h3>
+                <p class="comic__info__date">
+                    {{page.date | date: "%B %d"}}, {{page.date | date: "%Y"}}
+                </p>
+            </div>
+            <div class="comic__info__text">{{page.content}}</div>
+            {% include tags.html %}
+        </div>
+        <div class="hiveworks hiveworks--300" id="box-space"></div> 
+      </div>
+    
+      {% include comments.html %}
+    
+    {% endfor %}
+    
+    <div id="hw-jumpbar"></div>
+    <script src="https://cdn.hiveworkscomics.com/jumpbar.js"></script>
+    
+    <div class="hiveworks__columns">
+      <div class="hiveworks hiveworks--160" id="right-space"></div>
+      
+      <div class="news__latest">
+      <h2 class="news__latest__title">Latest News</h2>
+        {% for post in site.categories.news  limit:3 %} 
+          {% include newsitem.html %}
+        {% endfor %}
+        <a href="/news" class="news__latest__button">
+          <button>More news >>></button>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
