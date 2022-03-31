@@ -19,7 +19,6 @@ function usealtstuff() {
          }
 
          var fixl = document.getElementById("top-space");
-         console.log(fixl);
          if (fixl != null) {
             if (fixl.firstChild != "undefined") {
                while (fixl.firstChild) {
@@ -33,7 +32,6 @@ function usealtstuff() {
             li.src = "//cdn.thehiveworks.com/images/hiveworks72890.png";
             la.appendChild(li);
             fixl.appendChild(la);
-            console.log(fixl);
          }
 
          var fixl2 = document.getElementById("top-space-mobile");
@@ -50,7 +48,6 @@ function usealtstuff() {
             xi.src = "//cdn.thehiveworks.com/images/hiveworks72890.png";
             xa.appendChild(xi);
             fixl2.appendChild(xa);
-            console.log(fixl);
          }
 
          var fixb = document.getElementById("box-space");
