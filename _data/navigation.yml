@@ -16,7 +16,7 @@ items:
      image: /assets/img/site/menu_links.png
      image-hover: /assets/img/site/menu_links_hover.png
    - name: Merch
-     url: https://www.hellovoid.online/
+     url: https://itch.io/profile/cryo-draws
      image: /assets/img/site/menu_merch.png
      image-hover: /assets/img/site/menu_merch_hover.png
    - name: Gallery

@@ -1,0 +1,36 @@
+{% if post.categories contains "comic" %}
+  {% if post.imagepaths %}
+    {% assign paths = post.imagepaths | split: " " %}
+    {% for path in paths %}
+      <img
+      src="{{ site.url }}/assets/img/pages/{{path}}"
+      alt="{{post.title}}"
+      />
+    {% endfor %}
+  {% elsif post.imagepath %}
+    <img
+        src="{{ site.url }}/assets/img/pages/{{post.imagepath}}"
+        alt="{{post.title}}"
+    />
+  {% elsif post.pages %}
+    {% assign pagenos = post.pages | split: " " %}
+    {% for pageno in pagenos %}     
+        <img
+            src="{{ site.url }}/assets/img/pages/ch0{{post.chapter}}/page{% if pageno.size == 1 %}0{% endif %}0{{pageno}}.jpeg"
+            alt="Chapter {{post.chapter}} Page {{post.page1}}"
+        />    
+    {% endfor %}
+  {% else %}
+      <img
+        src="{{ site.url }}/assets/img/pages/ch0{{post.chapter}}/page{% if post.page < 10 %}0{% endif %}0{{post.page}}.jpeg"
+        alt="Chapter {{post.chapter}} Page {{post.page}}"
+      /> 
+  {% endif %}
+{% elsif post.categories contains "news" %}
+  <h3>{{ post.title }}</h3>
+  {{ post.content }}
+{% endif %}
+
+
+
+

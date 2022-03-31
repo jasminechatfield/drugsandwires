@@ -22,18 +22,32 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 
+	<image>
+	<url>https://www.drugsandwires.fail/assets/img/site/dslogo-144x144.png</url>
+	<title>Drugs and Wires &#8211; Cyberpunk Misadventures in the Dark Future of 1995</title>
+	<link>https://www.drugsandwires.fail</link>
+	<width>32</width>
+	<height>32</height>
+	</image> 
+
   {% assign comicposts = site.categories.comic %}
-  {% for post in comicposts limit: 10 %}
+	{% assign newsposts = site.categories.news %}
+	{% assign allposts = comicposts | concat: newsposts %}
+  {% for post in allposts limit: 10 %}
   <item>
     <title>{{ post.title | xml_escape }}</title>
 				{% if post.author.name %}
 					<dc:creator><![CDATA[Drugs &#38; Wires]]></dc:creator>
 				{% endif %}
-				{% if post.excerpt %}
-					<description>{{ post.excerpt | xml_escape }}</description>
+				{% if post.summary %}
+					<description>{{ post.summary | xml_escape }}</description>
 				{% else %}
-					<description>{{ post.content | xml_escape }}</description>
+					<description>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</description>
 				{% endif %}
+				<content type="text/html" mode="escaped">
+					{% include rsspage.html %}
+				</content>
+	
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
