@@ -23,7 +23,7 @@
 	1	</sy:updateFrequency>
 
 	<image>
-	<url>https://www.drugsandwires.fail/assets/img/site/dslogo-144x144.png</url>
+	<url>{{site.url}}/assets/img/site/dslogo-144x144.png</url>
 	<title>Drugs and Wires &#8211; Cyberpunk Misadventures in the Dark Future of 1995</title>
 	<link>https://www.drugsandwires.fail</link>
 	<width>32</width>
