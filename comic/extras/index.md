@@ -1,4 +1,5 @@
 ---
+title: "Extras"
 layout: chapter
 type: extras
 contentsimage: contentsextras.jpeg

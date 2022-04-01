@@ -1,4 +1,5 @@
 ---
+title: "Chapter 5: The Hard Sell"
 layout: chapter
 chapter: 5
 contentsimage: contents5.jpeg
