@@ -1,4 +1,5 @@
 ---
+title: "Wirepedia: The World of Drugs & Wires"
 layout: chapter
 type: wirepedia
 contentsimage: contentswirepedia.jpeg

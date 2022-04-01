@@ -1,4 +1,5 @@
 ---
+title: "Chapter 3: Rock Bottom"
 layout: chapter
 chapter: 3
 contentsimage: contents3.jpeg
