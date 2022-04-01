@@ -1,4 +1,4 @@
-name: Build
+name: Generate thumbnails, build and deploy
 
 on:
    push:
@@ -6,10 +6,10 @@ on:
          - main
 
 jobs:
-   build:
+   generate-thumbnails:
       runs-on: ubuntu-latest
       steps:
-         - uses: actions/checkout@v1
+         - uses: actions/checkout@v3
          - uses: jruipinto/ImageMagick-action@v1
            name: "Generate thumbnails of pages from jpegs"
            continue-on-error: true
@@ -60,6 +60,11 @@ jobs:
               git checkout "${GITHUB_REF:11}"
               git commit --allow-empty -am "Thumbnails"
               git push
+   build:
+      needs: generate-thumbnails
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v3
          - uses: actions/cache@v2
            with:
               path: vendor/bundle
@@ -70,7 +75,11 @@ jobs:
            with:
               token: ${{ secrets.GITHUB_TOKEN }}
               target_branch: "gh-pages"
-         - uses: actions/checkout@v2.1.0
+   deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v3
            with:
               ref: gh-pages
          - name: FTP-Deploy-Action
