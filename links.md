@@ -3,6 +3,7 @@ layout: page
 title: Links
 titleimage: /site/menu_links.png
 color: green
+permalink: /links/
 ---
 
 ### D&W Online

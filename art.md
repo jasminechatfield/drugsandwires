@@ -3,6 +3,7 @@ layout: page
 color: purple
 titleimage: /site/menu_gallery.png
 title: Gallery
+permalink: /gallery/
 ---
 
 ## Bonus Art
