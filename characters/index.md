@@ -1,6 +1,7 @@
 ---
 layout: characterlist
 title: Characters
+permalink: /characters/
 ---
 
 # Characters
