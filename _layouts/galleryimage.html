@@ -8,14 +8,14 @@ layout: default
       <h2 class="page__header__title">Gallery</h2>
    </div>
   <div class="galleryimage">
-    <h1 class="galleryimage__header">
+    <h3 class="galleryimage__header">
         <span class="galleryimage__header__title">
           {{ page.title }}
         </span>
-        <span class="galleryimage__header__title">
+        <span class="galleryimage__header__artist">
           by 
-          {% if page.artisturl %}
-            {% if page.artistcomic %}
+          {% if page.artisturl and page.artisturl != "" %}
+            {% if page.artistcomic and page.artistcomic != "" %}
               <a href="{{page.artisturl}}" target="_blank">{{page.artistcomic}}</a>'s {{page.artist}}
             {% else %}
               <a href="{{page.artisturl}}" target="_blank">{{page.artist}}</a>
@@ -24,7 +24,7 @@ layout: default
             {{page.artist}}
           {% endif %}
         </span>
-    </h1>
+    </h3>
     <img
         src="/assets/img/galleries/{{page.categories[1]}}/{{page.image}}"
         class="galleryimage__image"
