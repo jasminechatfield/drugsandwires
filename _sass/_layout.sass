@@ -16,6 +16,9 @@ body
     background-size: 100% auto, cover
 .page__wrapper
   max-width: 1200px
+  overflow: hidden
+  +for-tablet-portrait-up
+    overflow: unset
   margin: auto
 .page__main__wrapper
   position: relative
