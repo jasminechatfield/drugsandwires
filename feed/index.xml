@@ -47,6 +47,8 @@
 				<content type="text/html" mode="escaped">
 					{% include rsspage.html %}
 				</content>
+				<content:encoded><![CDATA[{% include rsspage.html %}]]>
+				</content:encoded>
 	
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
