@@ -8,14 +8,16 @@
       /></a>
       <div class="hiveworks__wrapper--mobile">
          <div class="hiveworks--mobile" id="top-space-mobile"></div>
-       </div>
+      </div>
    </div>
    <div class="header__icons">
       <div class="header__icons__support">
          <a href="https://www.hiveworkscomics.com/" target="_blank">
-            <img src="/assets/img/site/hw-bee.svg"
-            alt="Hiveworks logo"
-            class="header__icons__icon" />
+            <img
+               src="/assets/img/site/hw-bee.svg"
+               alt="Hiveworks logo"
+               class="header__icons__icon"
+            />
          </a>
          <a href="https://www.patreon.com/drugsandwires" target="_blank"
             ><img
@@ -29,7 +31,6 @@
                alt="RSS"
                class="header__icons__icon"
          /></a>
-
       </div>
       <div class="header__icons__social">
          <a href="https://twitter.com/MarySafroArt" target="_blank"
@@ -66,81 +67,98 @@
          >
             <button class="header__menu__navigation__button">Close menu</button>
          </div>
-         <div class="header__menu__navigation__social">
-            <a href="https://twitter.com/MarySafroArt" target="_blank"
-               ><img
-                  src="/assets/img/site/icon_twitter.png"
-                  alt="Twitter"
-                  class="header__icons__icon"
-            /></a>
-            <a href="https://www.facebook.com/DrugsAndWires/" target="_blank"
-               ><img
-                  src="/assets/img/site/icon_facebook.png"
-                  alt="Facebook"
-                  class="header__icons__icon"
-            /></a>
-            <a href="https://www.instagram.com/cryodraws/" target="_blank"
-               ><img
-                  src="/assets/img/site/icon_instagram.png"
-                  alt="Instagram"
-                  class="header__icons__icon"
-            /></a>
-         </div>
-         <div class="header__menu__navigation__main">
-            {% for item in site.data.navigation.items %}
-            <div class="navigation__item">
-               {% if item.url contains "http" %}
+         <div class="header__menu__navigation__middle">
+            <div class="header__menu__navigation__middle__right">
+               <div class="header__menu__navigation__social">
+                  <a href="https://twitter.com/MarySafroArt" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_twitter.png"
+                        alt="Twitter"
+                        class="header__icons__icon"
+                  /></a>
+                  <a
+                     href="https://www.facebook.com/DrugsAndWires/"
+                     target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_facebook.png"
+                        alt="Facebook"
+                        class="header__icons__icon"
+                  /></a>
+                  <a href="https://www.instagram.com/cryodraws/" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_instagram.png"
+                        alt="Instagram"
+                        class="header__icons__icon"
+                  /></a>
 
-               <a href="{{ item.url }}" class="navigation__link" target="_blank"
-                  ><div class="navigation__item__image">
+                  <a href="/feed" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_rss.png"
+                        alt="RSS"
+                        class="header__icons__icon"
+                  /></a>
+               </div>
+               <div class="header__menu__navigation__hiveworks">
+                  <a href="https://www.hiveworkscomics.com/" target="_blank">
                      <img
-                        src="{{ item.image }}"
-                        class="navigation__item__image--normal"
+                        src="/assets/img/site/hw-bee.svg"
+                        alt="Hiveworks logo"
+                        class="header__icons__icon"
                      />
-                     <img
-                        src="{{ item.image-hover }}"
-                        class="navigation__item__image--hover"
-                     />
-                  </div>
-                  <div class="navigation__item__text">{{item.name}}</div>
-               </a>
-               {% else %}
-               <a href="/{{item.url}}" class="navigation__link"
-                  ><div class="navigation__item__image">
-                     <img
-                        src="{{ item.image }}"
-                        class="navigation__item__image--normal"
-                     />
-                     <img
-                        src="{{ item.image-hover }}"
-                        class="navigation__item__image--hover"
-                     />
-                  </div>
-                  <div class="navigation__item__text">{{item.name}}</div>
-               </a>
-               {% endif %}
+                  </a>
+               </div>
             </div>
-            {% endfor %}
-         </div>
-         <div class="header__menu__navigation__support">
-            <a href="https://www.hiveworkscomics.com/" target="_blank">
-               <img src="/assets/img/site/hw-bee.svg"
-               alt="Hiveworks logo"
-               class="header__icons__icon" />
-            </a>
-            <a href="https://www.patreon.com/drugsandwires" target="_blank"
-               ><img
-                  src="/assets/img/site/icon_patreon.png"
-                  alt="Heart icon, text saying 'Support us on Patreon'"
-                  class="header__icons__icon"
-            /></a>
-            <a href="/feed" target="_blank"
-               ><img
-                  src="/assets/img/site/icon_rss.png"
-                  alt="RSS"
-                  class="header__icons__icon"
-            /></a>
+            <div class="header__menu__navigation__middle__left">
+               <div class="header__menu__navigation__main">
+                  {% for item in site.data.navigation.items %}
+                  <div class="navigation__item">
+                     {% if item.url contains "http" %}
 
+                     <a
+                        href="{{ item.url }}"
+                        class="navigation__link"
+                        target="_blank"
+                     >
+                        <div class="navigation__item__text">{{item.name}}</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="{{ item.image }}"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="{{ item.image-hover }}"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     {% else %}
+                     <a href="/{{item.url}}" class="navigation__link">
+                        <div class="navigation__item__text">{{item.name}}</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="{{ item.image }}"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="{{ item.image-hover }}"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     {% endif %}
+                  </div>
+                  {% endfor %}
+               </div>
+               <a
+                  href="https://www.patreon.com/drugsandwires"
+                  target="_blank"
+                  class="header__menu__navigation__patreon"
+                  ><img
+                     src="/assets/img/site/icon_patreon.png"
+                     alt="Heart icon, text saying 'Support us on Patreon'"
+                     class="header__icons__icon"
+               /></a>
+            </div>
          </div>
       </div>
    </div>
