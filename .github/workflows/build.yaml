@@ -6,7 +6,7 @@ on:
          - main
 
 jobs:
-   generate-thumbnails:
+   build:
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v3
@@ -52,19 +52,6 @@ jobs:
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.gif
-         - name: Commit generated thumbnails
-           run: |
-              git config --global user.name 'Jasmine Chatfield'
-              git config --global user.email 'jasminechatfield@users.noreply.github.com'
-              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-              git checkout "${GITHUB_REF:11}"
-              git commit --allow-empty -am "Thumbnails"
-              git push
-   build:
-      needs: generate-thumbnails
-      runs-on: ubuntu-latest
-      steps:
-         - uses: actions/checkout@v3
          - uses: actions/cache@v2
            with:
               path: vendor/bundle
@@ -75,6 +62,7 @@ jobs:
            with:
               token: ${{ secrets.GITHUB_TOKEN }}
               target_branch: "gh-pages"
+              keep_history: true
    deploy:
       needs: build
       runs-on: ubuntu-latest
