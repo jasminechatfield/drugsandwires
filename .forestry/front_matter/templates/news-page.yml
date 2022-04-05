@@ -1,0 +1,19 @@
+---
+label: News page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: file
+  name: image
+  label: image
+- type: text
+  name: alias
+  label: alias
+- type: textarea
+  name: summary
+  label: summary

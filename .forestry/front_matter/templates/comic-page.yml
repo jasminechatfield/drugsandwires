@@ -2,18 +2,69 @@
 label: Comic page
 hide_body: true
 fields:
-- type: number
-  name: chapter
-  label: chapter
-- type: number
-  name: page
-  label: page
-- type: text
-  name: tags
-  label: tags
 - type: text
   name: title
-  label: title
+  label: Page title
+  config:
+    required: true
+  description: Usually just "Chapter X Page X" for regular comic pages, or however
+    you want for special pages, extras etc.
+  default: Chapter X Page X
+- name: multiple_pages
+  type: boolean
+  label: Multiple pages
+- type: number
+  name: chapter
+  label: Chapter number
+  default: -1
+  config:
+    step: 1
+    min: 0
+    max: 999
+- type: number
+  name: page
+  label: Page number
+  config:
+    step: 1
+    min: 0
+    max: 999
+  default: -1
+  showOnly:
+    field: multiple_pages
+  description: Leave blank (-1) if not relevant.
+- name: pages
+  type: text
+  config:
+    required: false
+  label: Multiple page numbers
+  description: Use this instead of 'page' if your update contains more than 1 regular
+    comic page.<br><br>A space separated list of page numbers e.g. "37 38" for pages
+    37-38.
+  showOnly:
+    field: multiple_pages
+    value: true
 - type: text
-  name: alias
-  label: alias
+  name: tags
+  label: Character tags
+  description: Space separated list of character tags e.g. "dan lin troy"<br><br>Check
+    the character document if you aren't sure of the exact tag.
+- name: imagepath
+  type: text
+  config:
+    required: false
+    min: 8
+    max: 30
+  label: Custom image path
+  description: If your filename doesn't follow a typical format (e.g. "ch08/page004.jpeg"),
+    add the image path here to override the default path.<br><br>Only files in the
+    "/assets/img/pages/" folders can be used here, and that part of the directory
+    path is already included by default so doesn't need to be added.<br><br>For example:<br>for
+    "/assets/img/pages/extras/pagefilename.gif"<br>write "extras/pagefilename.gif"<br><br>For
+    multiple images, use the multiple option instead.
+- name: imagepaths
+  type: text
+  config:
+    required: false
+    min: 16
+    max: 200
+  label: Custom image path (multiple)
