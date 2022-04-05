@@ -10,6 +10,18 @@ fields:
   default: news
   config:
     required: true
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: YYYY-MM-DD
+    time_format: HH:mm:ss
+    display_utc: false
+    export_format: YYYY-MM-DD HH:mm:ss
+  hidden: true
+  default: now
 - type: text
   name: title
   label: Title
