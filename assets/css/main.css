@@ -1760,23 +1760,16 @@ html {
 .character__pages__thumbnails {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box; }
-  @media (min-width: 1024px) {
-    .character__pages__thumbnails {
-      justify-content: flex-start; } }
   .character__pages__thumbnails .comic__thumbnail {
-    width: 50%;
+    max-width: 165px;
+    max-height: 250px;
+    overflow: hidden;
     padding: 0.25rem;
     box-sizing: border-box; }
     .character__pages__thumbnails .comic__thumbnail img {
       width: 100%; }
-    @media (min-width: 640px) {
-      .character__pages__thumbnails .comic__thumbnail {
-        width: 33%; } }
-    @media (min-width: 1024px) {
-      .character__pages__thumbnails .comic__thumbnail {
-        width: 20%; } }
 .character--yellow .character__image--small {
   border-color: #FDFF60; }
 .character--yellow .character__name {
