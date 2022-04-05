@@ -45,9 +45,6 @@ permalink: /feed/
 				{% else %}
 					<description>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</description>
 				{% endif %}
-				<content type="text/html" mode="escaped">
-					{% include rsspage.html %}
-				</content>
 				<content:encoded><![CDATA[{% include rsspage.html %}]]>
 				</content:encoded>
 	
