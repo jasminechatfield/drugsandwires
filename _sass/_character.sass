@@ -209,20 +209,16 @@
     &__thumbnails
       display: flex
       flex-wrap: wrap
-      justify-content: space-around
+      justify-content: space-between
       box-sizing: border-box
-      +for-tablet-landscape-up
-        justify-content: flex-start
       .comic__thumbnail
-        width: 50%
+        max-width: 165px
+        max-height: 250px
+        overflow: hidden
         padding: 0.25rem
         box-sizing: border-box
         img
           width: 100%
-        +for-tablet-portrait-up
-          width: 33%
-        +for-tablet-landscape-up
-          width: 20% 
   &--yellow
     .character__image--small
       border-color: $yellow
