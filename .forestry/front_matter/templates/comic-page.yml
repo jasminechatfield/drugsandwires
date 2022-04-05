@@ -1,0 +1,19 @@
+---
+label: Comic page
+hide_body: true
+fields:
+- type: number
+  name: chapter
+  label: chapter
+- type: number
+  name: page
+  label: page
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
+- type: text
+  name: alias
+  label: alias
