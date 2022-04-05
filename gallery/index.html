@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title>Gallery - Drugs and Wires</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#39407a">
+  <meta name="theme-color" content="#ffffff">
+
+  <script type='application/ld+json'>
+		{
+		"@context": "https://schema.org",
+		"@type": "ComicStory",
+		"name": "Drugs and Wires",
+		"url": "https://drugsandwires.fail",
+		"author": "Mary Safro, Io Black",
+		"publisher": "Hiveworks Comics",
+		"description": "A satirical weekly webcomic set in the bleak cyberpunk future of 1995 AD."
+		}
+	</script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.hiveworkscomics.com/jumpbar.css">
+
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Fallback code for Hiveworks ads --> 
+  <script src="/assets/js/hiveworksAlt.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61072718-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-61072718-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="page__wrapper">
+    <div id="cc-comic"></div>
+<header>
+  <!-- <h1>Drugs and Wires</h1> -->
+  <div class="header">
+   <div class="header__background"></div>
+   <div class="header__title">
+      <a href="/" class="header__title__link">
+         <img
+            src="/assets/img/site/header_logo_LARGE.png"
+            class="header__title__image"
+      /></a>
+      <div class="hiveworks__wrapper--mobile">
+         <div class="hiveworks--mobile" id="top-space-mobile"></div>
+      </div>
+   </div>
+   <div class="header__icons">
+      <div class="header__icons__support">
+         <a href="https://www.hiveworkscomics.com/" target="_blank">
+            <img
+               src="/assets/img/site/hw-bee.svg"
+               alt="Hiveworks logo"
+               class="header__icons__icon"
+            />
+         </a>
+         <a href="https://www.patreon.com/drugsandwires" target="_blank"
+            ><img
+               src="/assets/img/site/icon_patreon.png"
+               alt="Heart icon, text saying 'Support us on Patreon'"
+               class="header__icons__icon"
+         /></a>
+         <a href="/feed" target="_blank"
+            ><img
+               src="/assets/img/site/icon_rss.png"
+               alt="RSS"
+               class="header__icons__icon"
+         /></a>
+      </div>
+      <div class="header__icons__social">
+         <a href="https://twitter.com/MarySafroArt" target="_blank"
+            ><img
+               src="/assets/img/site/icon_twitter.png"
+               alt="Twitter"
+               class="header__icons__icon"
+         /></a>
+         <a href="https://www.facebook.com/DrugsAndWires/" target="_blank"
+            ><img
+               src="/assets/img/site/icon_facebook.png"
+               alt="Facebook"
+               class="header__icons__icon"
+         /></a>
+         <a href="https://www.instagram.com/cryodraws/" target="_blank"
+            ><img
+               src="/assets/img/site/icon_instagram.png"
+               alt="Instagram"
+               class="header__icons__icon"
+         /></a>
+      </div>
+   </div>
+   <div class="header__menu">
+      <button class="header__menu__button" id="header__menu__button">
+         Menu
+      </button>
+      <div
+         class="header__menu__navigation hidden"
+         id="header__menu__navigation"
+      >
+         <div
+            class="header__menu__navigation__button__container"
+            id="header__menu__navigation__button__container"
+         >
+            <button class="header__menu__navigation__button">Close menu</button>
+         </div>
+         <div class="header__menu__navigation__middle">
+            <div class="header__menu__navigation__middle__right">
+               <div class="header__menu__navigation__social">
+                  <a href="https://twitter.com/MarySafroArt" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_twitter.png"
+                        alt="Twitter"
+                        class="header__icons__icon"
+                  /></a>
+                  <a
+                     href="https://www.facebook.com/DrugsAndWires/"
+                     target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_facebook.png"
+                        alt="Facebook"
+                        class="header__icons__icon"
+                  /></a>
+                  <a href="https://www.instagram.com/cryodraws/" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_instagram.png"
+                        alt="Instagram"
+                        class="header__icons__icon"
+                  /></a>
+
+                  <a href="/feed" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_rss.png"
+                        alt="RSS"
+                        class="header__icons__icon"
+                  /></a>
+               </div>
+               <div class="header__menu__navigation__hiveworks">
+                  <a href="https://www.hiveworkscomics.com/" target="_blank">
+                     <img
+                        src="/assets/img/site/hw-bee.svg"
+                        alt="Hiveworks logo"
+                        class="header__icons__icon"
+                     />
+                  </a>
+               </div>
+            </div>
+            <div class="header__menu__navigation__middle__left">
+               <div class="header__menu__navigation__main">
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/about" class="navigation__link">
+                        <div class="navigation__item__text">About</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_about.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_about_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/characters" class="navigation__link">
+                        <div class="navigation__item__text">Characters</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_characters.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_characters_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/archive" class="navigation__link">
+                        <div class="navigation__item__text">Archive</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_archive.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_archive_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/links" class="navigation__link">
+                        <div class="navigation__item__text">Links</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_links.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_links_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+
+                     <a
+                        href="https://itch.io/profile/cryo-draws"
+                        class="navigation__link"
+                        target="_blank"
+                     >
+                        <div class="navigation__item__text">Merch</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_merch.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_merch_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/art" class="navigation__link">
+                        <div class="navigation__item__text">Gallery</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_gallery.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_gallery_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/news" class="navigation__link">
+                        <div class="navigation__item__text">News</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_news.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_news_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+               </div>
+               <a
+                  href="https://www.patreon.com/drugsandwires"
+                  target="_blank"
+                  class="header__menu__navigation__patreon"
+                  ><img
+                     src="/assets/img/site/icon_patreon.png"
+                     alt="Heart icon, text saying 'Support us on Patreon'"
+                     class="header__icons__icon"
+               /></a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+  <nav>
+   <div class="navigation">
+      
+      <div class="navigation__item">
+         
+         <a href="/about" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_about.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_about_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">About</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/characters" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_characters.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_characters_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Characters</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/archive" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_archive.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_archive_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Archive</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/links" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_links.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_links_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Links</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+
+         <a href="https://itch.io/profile/cryo-draws" class="navigation__link" target="_blank"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_merch.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_merch_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Merch</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/art" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_gallery.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_gallery_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Gallery</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/news" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_news.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_news_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">News</div>
+         </a>
+         
+      </div>
+      
+   </div>
+</nav>
+
+
+  <div class="hiveworks hiveworks__wrapper">
+    <div class="hiveworks--720" id="top-space"><span></span></div>
+  </div>
+
+
+
+<div class="newsbox">
+   <div class="newsbox__sim">
+      <img src="/assets/img/site/newsbox_sim.png" />
+   </div>
+   <svg
+      viewbox="0 0 75 75"
+      height="75"
+      width="100"
+      class="newsbox__speech"
+      role="presentation"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+   >
+      <polygon points="5,50 95,5 95,65" stroke="#FFAA00" fill="#0D0700" />
+   </svg>
+   <div class="newsbox__bubble">
+      <p class="newsbox__text">_Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut egestas tortor. Nunc turpis ante, vulputate non euismod vitae, tempor sit amet augue. Donec a sapien tortor. Quisque vel eros quis nulla consequat tristique.</p>
+   </div>
+</div>
+
+
+<div class="page__main__wrapper">
+   <main><div class="page page--purple mobile--black">
+   
+    <div class="page__header page__header--withimage">
+        <img class="page__header__image" src="/assets/img/site/menu_gallery.png" />
+    
+       <h2 class="page__header__title">Gallery</h2>
+    </div>
+   <h2 id="bonus-art">Bonus Art</h2>
+
+<div class="gallery ">
+  
+  <ul class="gallery__list gallery__list--black">
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/vintage-dan/">
+          <img src="/assets/img/galleries/bonus/art_vintagedan.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/vintage-dan/">
+              <p>Vintage Dan</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/twitter-dan/">
+          <img src="/assets/img/galleries/bonus/art_twitterdan.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/twitter-dan/">
+              <p>Twitter Dan</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/tiger-queen/">
+          <img src="/assets/img/galleries/bonus/art_2021tiger.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/tiger-queen/">
+              <p>Tiger Queen</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/the-arm-2014-comic-strip/">
+          <img src="/assets/img/galleries/bonus/oldart_strip_lin.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/the-arm-2014-comic-strip/">
+              <p>The Arm - 2014 comic strip</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/teamwork/">
+          <img src="/assets/img/galleries/bonus/art_lincat.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/teamwork/">
+              <p>Teamwork</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/subway-gang/">
+          <img src="/assets/img/galleries/bonus/art_subwaytrio.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/subway-gang/">
+              <p>Subway Gang</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/seasons-greetings/">
+          <img src="/assets/img/galleries/bonus/art_girlboss2021.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/seasons-greetings/">
+              <p>Seasons Greetings</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/sandman-early-art/">
+          <img src="/assets/img/galleries/bonus/oldart_sandman.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/sandman-early-art/">
+              <p>Sandman Early Art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/ru-a-cyberpunk/">
+          <img src="/assets/img/galleries/bonus/art_dancyberpunk.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/ru-a-cyberpunk/">
+              <p>RU a Cyberpunk</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/promo-2022/">
+          <img src="/assets/img/galleries/bonus/2022promohv.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/promo-2022/">
+              <p>Promo 2022</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/party-time/">
+          <img src="/assets/img/galleries/bonus/art_2020partydan.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/party-time/">
+              <p>Party Time</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/lin-s-promo/">
+          <img src="/assets/img/galleries/bonus/art_2021linposter.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/lin-s-promo/">
+              <p>Lin's promo</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/lin-s-final-form/">
+          <img src="/assets/img/galleries/bonus/art_linnightmare.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/lin-s-final-form/">
+              <p>Lin's final form</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/lin-2018/">
+          <img src="/assets/img/galleries/bonus/art_lin2018.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/lin-2018/">
+              <p>Lin 2018</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/lenin-head/">
+          <img src="/assets/img/galleries/bonus/art_leninhead.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/lenin-head/">
+              <p>Lenin Head</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/happy-new-year-1975/">
+          <img src="/assets/img/galleries/bonus/art_ny.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/happy-new-year-1975/">
+              <p>Happy New Year 1975</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/happy-2022/">
+          <img src="/assets/img/galleries/bonus/art_2022.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/happy-2022/">
+              <p>Happy 2022</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/good-old-times/">
+          <img src="/assets/img/galleries/bonus/art_daneve.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/good-old-times/">
+              <p>Good Old Times</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/fixer-gets-a-makeover/">
+          <img src="/assets/img/galleries/bonus/art_fixer.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/fixer-gets-a-makeover/">
+              <p>Fixer gets a makeover</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/exposed-wires/">
+          <img src="/assets/img/galleries/bonus/art_2020exposed.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/exposed-wires/">
+              <p>Exposed Wires</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/eve/">
+          <img src="/assets/img/galleries/bonus/art_eve.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/eve/">
+              <p>Eve</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/eve-dan-prequel-art/">
+          <img src="/assets/img/galleries/bonus/oldart_concepts5.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/eve-dan-prequel-art/">
+              <p>Eve &amp; Dan - prequel art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/eve-concept/">
+          <img src="/assets/img/galleries/bonus/art_eveconcept.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/eve-concept/">
+              <p>Eve Concept</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/enjoy-your-meal/">
+          <img src="/assets/img/galleries/bonus/art_dantroylin.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/enjoy-your-meal/">
+              <p>Enjoy your meal</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dreamspace-gang-prequel-art/">
+          <img src="/assets/img/galleries/bonus/oldart_concepts2.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dreamspace-gang-prequel-art/">
+              <p>Dreamspace Gang - prequel art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dates-wires-promo/">
+          <img src="/assets/img/galleries/bonus/art_2021datesandwires.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dates-wires-promo/">
+              <p>Dates &amp; Wires Promo</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan/">
+          <img src="/assets/img/galleries/bonus/art_fancydan.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan/">
+              <p>Dan</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan-semi-realism/">
+          <img src="/assets/img/galleries/bonus/art_danpainted.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan-semi-realism/">
+              <p>Dan - semi-realism</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan-s-old-job-old-concept-art/">
+          <img src="/assets/img/galleries/bonus/oldart_concepts1.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan-s-old-job-old-concept-art/">
+              <p>Dan's old job - old concept art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan-prequel-art/">
+          <img src="/assets/img/galleries/bonus/oldart_concepts4.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan-prequel-art/">
+              <p>Dan - prequel art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan-lin-2014-strip/">
+          <img src="/assets/img/galleries/bonus/oldart_it.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan-lin-2014-strip/">
+              <p>Dan &amp; Lin 2014 Strip</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/dan-and-lin-shitpost-art/">
+          <img src="/assets/img/galleries/bonus/art_mgk.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/dan-and-lin-shitpost-art/">
+              <p>Dan and Lin shitpost art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/d-w-daily-struggles-2014-cover-art/">
+          <img src="/assets/img/galleries/bonus/oldart_strips.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/d-w-daily-struggles-2014-cover-art/">
+              <p>D&amp;W Daily Struggles - 2014 Cover Art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/cyborg-party/">
+          <img src="/assets/img/galleries/bonus/art_cyborgparty.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/cyborg-party/">
+              <p>Cyborg Party</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/cyber-gopnik-2014-concept-art/">
+          <img src="/assets/img/galleries/bonus/oldart_cybergopnik.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/cyber-gopnik-2014-concept-art/">
+              <p>Cyber Gopnik - 2014 concept art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/code4food-early-art/">
+          <img src="/assets/img/galleries/bonus/oldart_c4f.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/code4food-early-art/">
+              <p>Code4Food Early Art</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/campaign-era-dan/">
+          <img src="/assets/img/galleries/bonus/art_2021dansuit.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/campaign-era-dan/">
+              <p>Campaign Era Dan</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/bad-end/">
+          <img src="/assets/img/galleries/bonus/art_badend.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/bad-end/">
+              <p>Bad End</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/art_vladsky.jpg/">
+          <img src="/assets/img/galleries/bonus/art_vladsky.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/art_vladsky.jpg/">
+              <p>A Life of Blood And Fire - Vlad's book</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/bonus/5th-anniversary-art-stream/">
+          <img src="/assets/img/galleries/bonus/art_5th.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/bonus/5th-anniversary-art-stream/">
+              <p>5th Anniversary Art Stream</p>
+              <p>by Cryo</p>
+            </a>
+        </div>
+        </li>
+      
+    
+    <li class="gallery__list__item"></li>
+  </ul>
+</div>
+
+<h2 id="fanart">Fanart</h2>
+
+<div class="gallery ">
+  
+  <ul class="gallery__list gallery__list--black">
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-zhjake/">
+          <img src="/assets/img/galleries/fanart/greywarepreview.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-zhjake/">
+              <p>Lin</p>
+              <p>by zhjake</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-ty-dunitz/">
+          <img src="/assets/img/galleries/fanart/CuvCuSrXYAYS5lp.png-large.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-ty-dunitz/">
+              <p>Dan</p>
+              <p>by Ty Dunitz</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-toherrys/">
+          <img src="/assets/img/galleries/fanart/tumblr_oj9cipdTzg1sng6i6o1_1280.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-toherrys/">
+              <p>Dan</p>
+              <p>by Toherrys</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-ghostly-pixels/">
+          <img src="/assets/img/galleries/fanart/480-4162-uaz-452-passenger.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-ghostly-pixels/">
+              <p>Dan</p>
+              <p>by Ghostly Pixels</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-casper/">
+          <img src="/assets/img/galleries/fanart/casparwijngaard_dan.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-casper/">
+              <p>Dan</p>
+              <p>by Caspar Wijngaard</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-bobbytrauma/">
+          <img src="/assets/img/galleries/fanart/bobbytrauma.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-bobbytrauma/">
+              <p>Dan</p>
+              <p>by Bobby Trauma</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-rollerdog/">
+          <img src="/assets/img/galleries/fanart/art_trade___dan_by_rollerdog-d76z8pk.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-rollerdog/">
+              <p>Dan</p>
+              <p>by Rollerdog</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/vvaspen/">
+          <img src="/assets/img/galleries/fanart/Dan-and-Eve-by-VVAspen.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/vvaspen/">
+              <p>Dan and Eve</p>
+              <p>by VVAspen</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-pugh/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Pugh.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-pugh/">
+              <p>Dan</p>
+              <p>by Pugh</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/vlad-by-asmodeus/">
+          <img src="/assets/img/galleries/fanart/Vlad-by-Asmodeus.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/vlad-by-asmodeus/">
+              <p>Vlad (and Tasha)</p>
+              <p>by Asmodeus</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/the-gang-by-l00tkirby/">
+          <img src="/assets/img/galleries/fanart/The-Gang-by-l00tkirby.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/the-gang-by-l00tkirby/">
+              <p>The Gang</p>
+              <p>by Tok</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/the-cast-by-hydra-pendragon/">
+          <img src="/assets/img/galleries/fanart/The-Cast-by-Hydra-pendragon.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/the-cast-by-hydra-pendragon/">
+              <p>The Cast</p>
+              <p>by Hydra-pendragon</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/the-cast-by-chatmot/">
+          <img src="/assets/img/galleries/fanart/The-Cast-by-ChatMot.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/the-cast-by-chatmot/">
+              <p>The Cast</p>
+              <p>by Chat-Mot</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-raenyras/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Raenyras.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-raenyras/">
+              <p>Lin</p>
+              <p>by Raenyras</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-liz-sapper/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Nicolas-Escallier.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-liz-sapper/">
+              <p>Lin</p>
+              <p>by Liz Sapper</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-kai/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Kai.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-kai/">
+              <p>Lin</p>
+              <p>by Kai</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-cybernecrocat/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Cybernecrocat.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-cybernecrocat/">
+              <p>Lin</p>
+              <p>by Cybernecrocat</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-crumblewithme/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Crumblewithme.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-crumblewithme/">
+              <p>Lin</p>
+              <p>by Crumblewithme</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-annika/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Annika.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-annika/">
+              <p>Lin</p>
+              <p>by Annika von Stein</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-alain-grey/">
+          <img src="/assets/img/galleries/fanart/Lin-by-Alain-Grey.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-alain-grey/">
+              <p>Lin</p>
+              <p>by Alain Grey</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-synaptic-relay/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Synaptic-Relay.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-synaptic-relay/">
+              <p>Dan</p>
+              <p>by Synaptic Relay</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-nykkt/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Nykkt.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-nykkt/">
+              <p>Dan</p>
+              <p>by Nykkt</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-notevenrobots/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Notevenrobots.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-notevenrobots/">
+              <p>Dan</p>
+              <p>by Notevenrobots</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-nicolas/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Nicolas-Escallier.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-nicolas/">
+              <p>Dan</p>
+              <p>by Nicolas Escallier</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-maushawk/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Maushawk.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-maushawk/">
+              <p>Dan</p>
+              <p>by Maushawk</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-makoninah/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Makoninah.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-makoninah/">
+              <p>Dan</p>
+              <p>by Makoninah</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-jay/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Jay.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-jay/">
+              <p>Dan</p>
+              <p>by Jay</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-hydra-pendragon/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Hydra-pendragon.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-hydra-pendragon/">
+              <p>Dan</p>
+              <p>by Hydra-pendragon</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-evolavi/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Evolavi.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-evolavi/">
+              <p>Dan</p>
+              <p>by Evolavi</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-eve-greenwood/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Eve-Greenwood.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-eve-greenwood/">
+              <p>Dan</p>
+              <p>by Eve Greenwood</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-bobthedragon/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Bobthedragon.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-bobthedragon/">
+              <p>Dan</p>
+              <p>by Bobthedragon</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-and-skullfuck-by-maushawk/">
+          <img src="/assets/img/galleries/fanart/Dan-and-Skullfuck-by-Maushawk.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-and-skullfuck-by-maushawk/">
+              <p>Dan and Skullfuck</p>
+              <p>by Maushawk</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-and-lin-by-pugh/">
+          <img src="/assets/img/galleries/fanart/Dan-and-Lin-by-Pugh-1024x724.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-and-lin-by-pugh/">
+              <p>Dan and Lin</p>
+              <p>by Pugh</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-and-lin-by-azyomecha/">
+          <img src="/assets/img/galleries/fanart/Dan-and-Lin-by-AzyoMecha.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-and-lin-by-azyomecha/">
+              <p>Dan and Lin</p>
+              <p>by AzyoMecha</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-glebthezombie/">
+          <img src="/assets/img/galleries/fanart/dan_fanart_by_glebthezombie-d9ju7kn.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-glebthezombie/">
+              <p>Dan</p>
+              <p>by GlebTheZombie</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-phoenixan/">
+          <img src="/assets/img/galleries/fanart/lin_by_recycledoj.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-phoenixan/">
+              <p>Lin</p>
+              <p>by Phoenixan</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-chat-mot/">
+          <img src="/assets/img/galleries/fanart/dan_by_mot.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-chat-mot/">
+              <p>Dan and Dan</p>
+              <p>by Chat-Mot</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-marina/">
+          <img src="/assets/img/galleries/fanart/dan_by_marina.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-marina/">
+              <p>Dan</p>
+              <p>by Marina</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-injuu/">
+          <img src="/assets/img/galleries/fanart/tumblr_n6ny1dWPLG1s8di4so1_500.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-injuu/">
+              <p>Lin</p>
+              <p>by Injuu</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/nate-by-kai/">
+          <img src="/assets/img/galleries/fanart/tumblr_n22yswdGZt1sqrncso1_500.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/nate-by-kai/">
+              <p>Nate</p>
+              <p>by Kai</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-injuu/">
+          <img src="/assets/img/galleries/fanart/tumblr_n6ny1dWPLG1s8di4so1_500.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-injuu/">
+              <p>Lin</p>
+              <p>by Injuu</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-injuu-2/">
+          <img src="/assets/img/galleries/fanart/tumblr_mwintfIK1W1s8di4so1_500.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-injuu-2/">
+              <p>Lin</p>
+              <p>by Injuu</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-b-macbridge/">
+          <img src="/assets/img/galleries/fanart/00b6ba8487ce4ec1a103411b682eb57e.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-b-macbridge/">
+              <p>Dan</p>
+              <p>by B. MacBride</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/lin-by-injuu/">
+          <img src="/assets/img/galleries/fanart/the-file-i-have-no-idea-what-im-doing-already-exists.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/lin-by-injuu/">
+              <p>Lin</p>
+              <p>by Injuu</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-zenazure/">
+          <img src="/assets/img/galleries/fanart/cryoclaire_fan_art_by_ezat-d6ra8hf.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-zenazure/">
+              <p>Dan</p>
+              <p>by ZenAzure</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-solniger/">
+          <img src="/assets/img/galleries/fanart/tumblr_mrafn4Ujix1qachklo1_1280.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-solniger/">
+              <p>Dan</p>
+              <p>by sol-niger</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-kai/">
+          <img src="/assets/img/galleries/fanart/dreams_are_strange_by_kiri_stansfield-d70rt90.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-kai/">
+              <p>Dan</p>
+              <p>by Kai</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-jay-levang/">
+          <img src="/assets/img/galleries/fanart/dan_drugs_kopi_by_harkill-d92pwox.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-jay-levang/">
+              <p>Dan</p>
+              <p>by Jay Levang</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-and-lin-by-rebecca/">
+          <img src="/assets/img/galleries/fanart/uh____by_bechahns-d65a782.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-and-lin-by-rebecca/">
+              <p>Dan and Lin</p>
+              <p>by Rebecca Hahner</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-and-lin-by-fairyly/">
+          <img src="/assets/img/galleries/fanart/untitled_3_by_fairyly-d7ezpjy.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-and-lin-by-fairyly/">
+              <p>Dan and Lin</p>
+              <p>by FairyLy</p>
+            </a>
+        </div>
+        </li>
+      
+    
+      
+        
+        
+        <li class="gallery__list__item">
+        <a href="/galleries/fanart/dan-by-harmfulraes/">
+          <img src="/assets/img/galleries/fanart/Dan-by-Harmfulraes.webp" class="gallery__list__image" loading="lazy" />
+          </a>
+          <div class="gallery__list__item__meta gallery__list__item__meta--purple">
+            <a href="/galleries/fanart/dan-by-harmfulraes/">
+              <p>Dan</p>
+              <p>by Harmfulraes</p>
+            </a>
+        </div>
+        </li>
+      
+    
+    <li class="gallery__list__item"></li>
+  </ul>
+</div>
+
+</div>
+</main>
+</div>
+
+</div>
+<footer>
+  <div class="footer">
+    <div class="footer__background"></div>
+    <div class="footer__sticker">
+    <img src="/assets/img/site/y2ksticker.jpg" />
+  </div>
+ <p class="footer__copyright"> © 2015–2021 Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995 </p>
+  <span></span>
+</div>
+</footer>
+</body>
+<script src="/assets/js/keyboardNav.js"></script>
+<script src="/assets/js/mobileMenu.js"></script>
+<script>usealtstuff();</script>
+</html>

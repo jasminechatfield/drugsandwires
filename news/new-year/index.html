@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <title>Happy New Year (Again!) - Drugs and Wires</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#39407a">
+  <meta name="theme-color" content="#ffffff">
+
+  <script type='application/ld+json'>
+		{
+		"@context": "https://schema.org",
+		"@type": "ComicStory",
+		"name": "Drugs and Wires",
+		"url": "https://drugsandwires.fail",
+		"author": "Mary Safro, Io Black",
+		"publisher": "Hiveworks Comics",
+		"description": "A satirical weekly webcomic set in the bleak cyberpunk future of 1995 AD."
+		}
+	</script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.hiveworkscomics.com/jumpbar.css">
+
+  <script src="/assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Fallback code for Hiveworks ads --> 
+  <script src="/assets/js/hiveworksAlt.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61072718-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-61072718-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="page__wrapper">
+    <div id="cc-comic"></div>
+<header>
+  <!-- <h1>Drugs and Wires</h1> -->
+  <div class="header">
+   <div class="header__background"></div>
+   <div class="header__title">
+      <a href="/" class="header__title__link">
+         <img
+            src="/assets/img/site/header_logo_LARGE.png"
+            class="header__title__image"
+      /></a>
+      <div class="hiveworks__wrapper--mobile">
+         <div class="hiveworks--mobile" id="top-space-mobile"></div>
+      </div>
+   </div>
+   <div class="header__icons">
+      <div class="header__icons__support">
+         <a href="https://www.hiveworkscomics.com/" target="_blank">
+            <img
+               src="/assets/img/site/hw-bee.svg"
+               alt="Hiveworks logo"
+               class="header__icons__icon"
+            />
+         </a>
+         <a href="https://www.patreon.com/drugsandwires" target="_blank"
+            ><img
+               src="/assets/img/site/icon_patreon.png"
+               alt="Heart icon, text saying 'Support us on Patreon'"
+               class="header__icons__icon"
+         /></a>
+         <a href="/feed" target="_blank"
+            ><img
+               src="/assets/img/site/icon_rss.png"
+               alt="RSS"
+               class="header__icons__icon"
+         /></a>
+      </div>
+      <div class="header__icons__social">
+         <a href="https://twitter.com/MarySafroArt" target="_blank"
+            ><img
+               src="/assets/img/site/icon_twitter.png"
+               alt="Twitter"
+               class="header__icons__icon"
+         /></a>
+         <a href="https://www.facebook.com/DrugsAndWires/" target="_blank"
+            ><img
+               src="/assets/img/site/icon_facebook.png"
+               alt="Facebook"
+               class="header__icons__icon"
+         /></a>
+         <a href="https://www.instagram.com/cryodraws/" target="_blank"
+            ><img
+               src="/assets/img/site/icon_instagram.png"
+               alt="Instagram"
+               class="header__icons__icon"
+         /></a>
+      </div>
+   </div>
+   <div class="header__menu">
+      <button class="header__menu__button" id="header__menu__button">
+         Menu
+      </button>
+      <div
+         class="header__menu__navigation hidden"
+         id="header__menu__navigation"
+      >
+         <div
+            class="header__menu__navigation__button__container"
+            id="header__menu__navigation__button__container"
+         >
+            <button class="header__menu__navigation__button">Close menu</button>
+         </div>
+         <div class="header__menu__navigation__middle">
+            <div class="header__menu__navigation__middle__right">
+               <div class="header__menu__navigation__social">
+                  <a href="https://twitter.com/MarySafroArt" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_twitter.png"
+                        alt="Twitter"
+                        class="header__icons__icon"
+                  /></a>
+                  <a
+                     href="https://www.facebook.com/DrugsAndWires/"
+                     target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_facebook.png"
+                        alt="Facebook"
+                        class="header__icons__icon"
+                  /></a>
+                  <a href="https://www.instagram.com/cryodraws/" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_instagram.png"
+                        alt="Instagram"
+                        class="header__icons__icon"
+                  /></a>
+
+                  <a href="/feed" target="_blank"
+                     ><img
+                        src="/assets/img/site/icon_rss.png"
+                        alt="RSS"
+                        class="header__icons__icon"
+                  /></a>
+               </div>
+               <div class="header__menu__navigation__hiveworks">
+                  <a href="https://www.hiveworkscomics.com/" target="_blank">
+                     <img
+                        src="/assets/img/site/hw-bee.svg"
+                        alt="Hiveworks logo"
+                        class="header__icons__icon"
+                     />
+                  </a>
+               </div>
+            </div>
+            <div class="header__menu__navigation__middle__left">
+               <div class="header__menu__navigation__main">
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/about" class="navigation__link">
+                        <div class="navigation__item__text">About</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_about.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_about_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/characters" class="navigation__link">
+                        <div class="navigation__item__text">Characters</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_characters.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_characters_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/archive" class="navigation__link">
+                        <div class="navigation__item__text">Archive</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_archive.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_archive_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/links" class="navigation__link">
+                        <div class="navigation__item__text">Links</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_links.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_links_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+
+                     <a
+                        href="https://itch.io/profile/cryo-draws"
+                        class="navigation__link"
+                        target="_blank"
+                     >
+                        <div class="navigation__item__text">Merch</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_merch.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_merch_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/art" class="navigation__link">
+                        <div class="navigation__item__text">Gallery</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_gallery.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_gallery_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+                  <div class="navigation__item">
+                     
+                     <a href="/news" class="navigation__link">
+                        <div class="navigation__item__text">News</div>
+                        <div class="navigation__item__image">
+                           <img
+                              src="/assets/img/site/menu_news.png"
+                              class="navigation__item__image--normal"
+                           />
+                           <img
+                              src="/assets/img/site/menu_news_hover.png"
+                              class="navigation__item__image--hover"
+                           />
+                        </div>
+                     </a>
+                     
+                  </div>
+                  
+               </div>
+               <a
+                  href="https://www.patreon.com/drugsandwires"
+                  target="_blank"
+                  class="header__menu__navigation__patreon"
+                  ><img
+                     src="/assets/img/site/icon_patreon.png"
+                     alt="Heart icon, text saying 'Support us on Patreon'"
+                     class="header__icons__icon"
+               /></a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+  <nav>
+   <div class="navigation">
+      
+      <div class="navigation__item">
+         
+         <a href="/about" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_about.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_about_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">About</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/characters" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_characters.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_characters_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Characters</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/archive" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_archive.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_archive_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Archive</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/links" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_links.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_links_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Links</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+
+         <a href="https://itch.io/profile/cryo-draws" class="navigation__link" target="_blank"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_merch.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_merch_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Merch</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/art" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_gallery.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_gallery_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">Gallery</div>
+         </a>
+         
+      </div>
+      
+      <div class="navigation__item">
+         
+         <a href="/news" class="navigation__link"
+            ><div class="navigation__item__image">
+               <img
+                  src="/assets/img/site/menu_news.png"
+                  class="navigation__item__image--normal"
+               />
+               <img
+                  src="/assets/img/site/menu_news_hover.png"
+                  class="navigation__item__image--hover"
+               />
+            </div>
+            <div class="navigation__item__text">News</div>
+         </a>
+         
+      </div>
+      
+   </div>
+</nav>
+
+
+  <div class="hiveworks hiveworks__wrapper">
+    <div class="hiveworks--720" id="top-space"><span></span></div>
+  </div>
+
+
+
+<div class="newsbox">
+   <div class="newsbox__sim">
+      <img src="/assets/img/site/newsbox_sim.png" />
+   </div>
+   <svg
+      viewbox="0 0 75 75"
+      height="75"
+      width="100"
+      class="newsbox__speech"
+      role="presentation"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+   >
+      <polygon points="5,50 95,5 95,65" stroke="#FFAA00" fill="#0D0700" />
+   </svg>
+   <div class="newsbox__bubble">
+      <p class="newsbox__text">_Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut egestas tortor. Nunc turpis ante, vulputate non euismod vitae, tempor sit amet augue. Donec a sapien tortor. Quisque vel eros quis nulla consequat tristique.</p>
+   </div>
+</div>
+
+
+<div class="page__main__wrapper">
+   <main><div class="news mobile--black">
+   <div class="news__header">
+      <img
+         class="news__header__image"
+         src="/assets/img/site/menu_news_hover.png"
+      />
+      <h2 class="news__header__title">News</h2>
+   </div>
+   <article class="news__article">
+      
+      <div class="news__article__header__info">
+         <h2 class="news__article__header__title">Happy New Year (Again!)</h2>
+         <p class="news__article__header__date">
+            January 1, 2017
+         </p>
+      </div>
+      <div class="news__article__content"><p>And welcome to 2017! For most of us, last year wobbled wildly between “kind of OK” and “five-alarm blaze at the local fireworks factory that’s also somehow an orphanage”, so if we can hope for one thing, it’s that this new year will bring some good news with it, too.</p>
+
+<p>As far as the comic went, however, 2016 actually wasn’t <em>all</em> that shabby:</p>
+
+<ul>
+  <li>
+    <p>We celebrated our first anniversary with a big fanart contest, which honestly yielded <a href="http://www.drugsandwires.fail/fanart-contest-winners/">more amazing submissions</a> than it had any right to.</p>
+  </li>
+  <li>
+    <p>D&amp;W more than doubled its subscriber base on Tapastic, rocketing from around 1,200 followers in January 2016 to comfortably over 3,000 by year’s end.</p>
+  </li>
+  <li>
+    <p>After months of hemming, we finally Did The Thing and launched <a href="https://www.patreon.com/drugsandwires">our Patreon</a> with a range of new art and behind-the-scenes commentary.</p>
+  </li>
+  <li>
+    <p>With new translator Alex on board, we rebooted the <a href="http://acomics.ru/~drugsandwires">Russian-language version of D&amp;W</a> with a vengeance and finally caught up to the English comic.</p>
+  </li>
+  <li>
+    <p>We also picked up a bit of additional coverage, with mentions on <a href="http://reversemeltdown.com/2016/11/22/webcomic-spotlight-drugs-and-wires/">ReverseMeltdown</a>, <a href="http://directory.libsyn.com/episode/index/id/4879312/tdest_id/165185">Canned Air</a>, <a href="http://prettycoolwebcomics.tumblr.com/post/138266003492/pretty-cool-webcomics-drugs-and-wires">Pretty Cool Webcomics</a>, and <a href="http://awesomecomics.podbean.com/e/episode-32-knowledge-is-power-a-comic-book-q-a/?token=17ebc44c6d4b51a3d42ed086d41bb96f">The Awesome Comics Podcast</a>, as well as an in-depth interview with Tom Mortimer over at <a href="http://dirtyrottencomics.co.uk/?p=1876">Dirty Rotten Comics</a>.</p>
+  </li>
+  <li>
+    <p>On top of that, D&amp;W was recognized for Excellence in Writing and Science Fiction by the folks at <a href="http://startfaire.com/home.shtml">StArt Faire</a>.</p>
+  </li>
+  <li>
+    <p>D&amp;W was present at almost every major comic con in the UK last year, but one event was particularly special: our first combined showing at the <a href="http://thoughtbubblefestival.com/">Thought Bubble Festival</a> in Leeds, which mostly proved I can’t maintain a consistent signature for more than 10 minutes at a stretch.</p>
+  </li>
+  <li>
+    <p>And elsewhere, Dan clocked in cameo appearances in <a href="https://tapastic.com/episode/202901">HeLL(P)</a> and <a href="http://risingsand.glass/page/6">Rising Sand</a>, plus a very special guest slot in the most recent episode of <a href="http://store.steampowered.com/app/377970/">Void &amp; Meddler</a>.</p>
+  </li>
+</ul>
+
+<p>All this, of course, wouldn’t be possible without our readers and supporters, so wherever you may be: thank you, and all the best for the year ahead. We’re glad to have you with us.</p>
+
+<p>- Io</p>
+</div>
+   </article>
+   <div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 6020;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: "/happy-new-year/"
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
+</div>
+</main>
+</div>
+
+</div>
+<footer>
+  <div class="footer">
+    <div class="footer__background"></div>
+    <div class="footer__sticker">
+    <img src="/assets/img/site/y2ksticker.jpg" />
+  </div>
+ <p class="footer__copyright"> © 2015–2021 Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995 </p>
+  <span></span>
+</div>
+</footer>
+</body>
+<script src="/assets/js/keyboardNav.js"></script>
+<script src="/assets/js/mobileMenu.js"></script>
+<script>usealtstuff();</script>
+</html>
