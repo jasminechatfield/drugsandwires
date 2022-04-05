@@ -53,7 +53,7 @@ fields:
   type: text
   config:
     required: false
-    min: 8
+    min: 0
     max: 30
   label: Custom image path
   description: If your filename doesn't follow a typical format (e.g. "ch08/page004.jpeg"),
@@ -66,6 +66,6 @@ fields:
   type: text
   config:
     required: false
-    min: 16
+    min: 
     max: 200
   label: Custom image path (multiple)
