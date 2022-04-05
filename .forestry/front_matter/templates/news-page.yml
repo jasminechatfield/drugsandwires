@@ -4,16 +4,40 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
+  hidden: true
+  default: news
+  config:
+    required: true
 - type: text
   name: title
-  label: title
-- type: file
-  name: image
-  label: image
-- type: text
-  name: alias
-  label: alias
-- type: textarea
-  name: summary
-  label: summary
+  label: Title
+  description: The title of your news post.
+  config:
+    required: true
+    min: 3
+    max: 50
+- name: summary
+  type: text
+  config:
+    required: true
+    min: 10
+  label: Summary
+  description: Short paragraph for the news index, usually the first few sentences.
+- name: image
+  type: text
+  config:
+    required: false
+    min: 4
+    max: 30
+  label: Image filename
+  description: Relative to "/assets/img/news/" so if your image is "/assets/img/news/filename.jpeg"
+    all you need to enter is "filename.jpeg".
+- name: imagealt
+  type: text
+  config:
+    required: false
+    min: 3
+    max: 100
+  label: Image alt text
+  description: Short description of the news post's image for accessibility and SEO.
