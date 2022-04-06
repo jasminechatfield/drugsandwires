@@ -1090,6 +1090,8 @@ html {
 
 .news {
   padding: 1rem 0; }
+  .news.mobile--black {
+    padding-top: 0; }
   @media (min-width: 1000px) {
     .news {
       padding-top: 0; } }
@@ -1894,7 +1896,6 @@ html {
 
 .archive {
   box-sizing: border-box;
-  padding-top: 2rem;
   padding-bottom: 2rem; }
   @media (min-width: 640px) {
     .archive {
