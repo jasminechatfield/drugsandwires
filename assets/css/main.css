@@ -2239,6 +2239,10 @@ html {
   .page--pink .page__header {
     border-color: #FD7EA3; }
 
+.error__image {
+  display: block;
+  margin: 0 auto; }
+
 /* JUMPBAR */
 #hw-jumpbar {
   max-width: 1000px;
