@@ -67,7 +67,8 @@
     box-sizing: border-box;
     margin: 0 auto;
     text-decoration: none;
-    color: #FFFFFFE6; }
+    color: #FFFFFFE6;
+    max-width: 100%; }
     @media (min-width: 1000px) {
       .comic__page__link {
         width: max-content; } }
