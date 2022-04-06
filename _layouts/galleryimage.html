@@ -8,23 +8,34 @@ layout: default
       <h2 class="page__header__title">Gallery</h2>
    </div>
   <div class="galleryimage">
-    <h3 class="galleryimage__header">
-        <span class="galleryimage__header__title">
+    <div class="galleryimage__header">
+      <h3 class="galleryimage__header__title">
+        <span class="galleryimage__header__name">
           {{ page.title }}
         </span>
         <span class="galleryimage__header__artist">
           by 
           {% if page.artisturl and page.artisturl != "" %}
             {% if page.artistcomic and page.artistcomic != "" %}
-              <a href="{{page.artisturl}}" target="_blank">{{page.artistcomic}}</a>'s {{page.artist}}
+              <a href="{{page.artisturl}}" class="galleryimage__header__artist__url" target="_blank">
+                {{page.artistcomic}}</a>'s {{page.artist}}
             {% else %}
-              <a href="{{page.artisturl}}" target="_blank">{{page.artist}}</a>
+              <a href="{{page.artisturl}}" class="galleryimage__header__artist__url" target="_blank">
+                {{page.artist}}
+              </a>
             {% endif %}
           {% else %}
             {{page.artist}}
           {% endif %}
         </span>
-    </h3>
+      </h3>
+    
+    {% if page.artisturl and page.artisturl != "" %}
+      <a href="{{page.artisturl}}" target="_blank" class="galleryimage__header__link">
+        Visit {{page.artist}}'s {% if page.artistcomic and page.artistcomic != "" %}comic{%else%}website{% endif %}
+      </a>
+    {% endif %}
+    </div>
     <img
         src="/assets/img/galleries/{{page.categories[1]}}/{{page.image}}"
         class="galleryimage__image"
