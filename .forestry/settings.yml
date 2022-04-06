@@ -12,6 +12,10 @@ sections:
 - type: document
   path: _data/navigation.yml
   label: Navigation
+- type: document
+  path: _data/newsbox.yml
+  label: News box
+  match: "**/*"
 - type: directory
   path: news
   label: News
