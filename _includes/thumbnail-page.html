@@ -26,8 +26,7 @@
       </a>
    </div>
 {% elsif comicpage.pages and comicpage.pages != "" %}
-   {% assign pagenos = comicpage.pages | split: "
-   " %}
+   {% assign pagenos = comicpage.pages | split: " " %}
    {% for pageno in pagenos %}
       <div class="comic__thumbnail">
          <a href="{{comicpage.url}}">

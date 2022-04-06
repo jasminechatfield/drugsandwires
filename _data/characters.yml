@@ -13,7 +13,7 @@ categories:
              - name: "Dan's lost album"
                type: linkimage
                image: news/albumartfinel.jpeg
-               url: /news/dans-tracks.html
+               url: /news/dans-tracks
                offsite: false
              - name: "Dan's Twitter"
                type: link
