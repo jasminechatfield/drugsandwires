@@ -1842,10 +1842,50 @@ html {
       background-repeat: no-repeat;
       background-blend-mode: multiply; } }
 
-.galleryimage__header {
-  text-align: right; }
-.galleryimage__image {
-  max-width: 100%; }
+.galleryimage {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto; }
+  .galleryimage__header {
+    text-align: center;
+    border: 3px #9062C0 solid;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    background-color: #9062C0; }
+    @media (min-width: 1024px) {
+      .galleryimage__header {
+        padding: 0.5rem 5rem; } }
+    .galleryimage__header__title {
+      display: block;
+      margin-block-start: 0 !important;
+      margin-block-end: 0;
+      color: white !important; }
+    .galleryimage__header__name {
+      font-size: 2rem; }
+    .galleryimage__header__artist {
+      display: block;
+      color: white; }
+      .galleryimage__header__artist__url {
+        color: white !important; }
+    .galleryimage__header__link {
+      background-color: black;
+      color: white !important;
+      display: block;
+      padding: 0.5rem 2rem;
+      width: max-content;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 1rem auto 0 auto; }
+      .galleryimage__header__link:hover {
+        color: #9062C0 !important; }
+  .galleryimage__image {
+    display: block;
+    margin: 0 -0.75rem;
+    max-width: calc(100% + 1.5rem); }
+    @media (min-width: 640px) {
+      .galleryimage__image {
+        margin: 0 auto;
+        max-width: 100%; } }
 
 .archive {
   box-sizing: border-box;
@@ -2039,7 +2079,6 @@ html {
 
 .page {
   box-sizing: border-box;
-  padding-top: 2rem;
   padding-bottom: 2rem; }
   @media (min-width: 640px) {
     .page {
