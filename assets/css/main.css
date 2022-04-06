@@ -114,7 +114,8 @@
     font-weight: 700; }
     @media (min-width: 640px) {
       .comic__info__date {
-        font-size: 1.25rem; } }
+        font-size: 1.25rem;
+        margin-left: 1rem; } }
   .comic__info__text {
     font-size: 0.875rem; }
     @media (min-width: 640px) {
@@ -2022,7 +2023,13 @@ html {
     margin-bottom: 2rem; }
     .archive .comic__page__wrapper .comic__info__meta {
       display: flex;
-      justify-content: space-between; }
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column; }
+    .archive .comic__page__wrapper .comic__info__title {
+      text-align: left; }
+    .archive .comic__page__wrapper .comic__info__date {
+      text-align: right; }
 
 .paginate {
   display: flex;
