@@ -21,10 +21,11 @@
     margin: 0 auto
     padding: 1rem 4rem 2rem 3rem
   &__bubble
+    display: block
     border: $orange solid 3px
     background-image: url('/assets/img/site/tile.png')
     padding: 0.5rem 0.75rem
-    min-height: 75px
+    text-decoration: none
     +for-tablet-portrait-up
       padding-bottom: 2rem
       width: 70%
@@ -43,6 +44,8 @@
     margin-block-end: 0
     line-height: 1.2em
     font-weight: 100
+    width: fit-content
+    margin: 0 auto
     +for-tablet-portrait-up
       font-size: 1rem
     +for-tablet-landscape-up
@@ -56,15 +59,15 @@
     transform: scale(0.3, 0.3)
     +for-tablet-portrait-up
       transform: scale(0.5, 0.5)
-      left: calc(30% - 98px)
+      left: calc(30% - 97px)
       stroke-width: 6px
       bottom: 3rem
     +for-tablet-landscape-up
-      bottom: 5rem
+      bottom: 2rem
       left: calc(25% - 98px)
     +for-desktop-up
       bottom: 2rem
-      left: calc(20% - 85px)
+      left: calc(20% - 84px)
   &__sim
     position: absolute
     height: 170px

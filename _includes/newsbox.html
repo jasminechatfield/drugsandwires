@@ -13,7 +13,13 @@
    >
       <polygon points="5,50 95,5 95,65" stroke="#FFAA00" fill="#0D0700" />
    </svg>
-   <div class="newsbox__bubble">
-      <p class="newsbox__text">_{{site.data.newsbox.text}}</p>
-   </div>
+   {% if site.data.newsbox.link and site.data.newsbox.link != "" %}
+      <a class="newsbox__bubble" href="{{ site.data.newsbox.link }}" target="_blank">
+         <p class="newsbox__text">_{{ site.data.newsbox.text }}</p>
+      </a>
+   {% else %}
+      <div class="newsbox__bubble">
+         <p class="newsbox__text">_{{ site.data.newsbox.text }}</p>
+      </div>
+   {% endif %}
 </div>
