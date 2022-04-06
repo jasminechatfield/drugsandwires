@@ -34,6 +34,7 @@ fields:
     step: 1
     min: -1
     max: 999
+  description: Leave blank (-1) if not relevant.
 - type: number
   name: page
   label: Page number
