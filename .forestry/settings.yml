@@ -15,18 +15,15 @@ sections:
 - type: document
   path: _data/newsbox.yml
   label: News box
+- type: heading
+  label: Pages
+- type: document
+  path: about.md
+  label: About
   match: "**/*"
 - type: directory
   path: news
   label: News
-  create: all
-  match: "**/*"
-  new_doc_ext: md
-- type: heading
-  label: Comic
-- type: directory
-  path: comic
-  label: Comic Pages
   create: all
   match: "**/*"
   new_doc_ext: md
@@ -35,6 +32,21 @@ sections:
   label: Galleries
   create: all
   match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - gallery-image
+- type: document
+  path: links.md
+  label: Links
+  match: "**/*"
+- type: heading
+  label: Comic
+- type: directory
+  path: comic
+  label: Comic Pages
+  create: all
+  match: "**/*"
+  new_doc_ext: md
 - type: heading
   label: Characters
 - type: document
