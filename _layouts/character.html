@@ -31,8 +31,11 @@ layout: default
                      {% for paragraph in character.description %}
                         <p>{{paragraph}}</p>
                      {% endfor %}
-                     {% if character.hobbies %}
-                        <p><strong>Hobbies:</strong> {{character.hobbies}}</p>
+                     {% if character.hobbies and character.hobbies != "" %}
+                        <p>
+                           <strong>Hobbies:</strong> 
+                           {{character.hobbies}}
+                        </p>
                      {% endif %}
                      {{ content }}
                   </div>
@@ -43,24 +46,29 @@ layout: default
                      </div>
                   </div>
                   {% if character.bonus %}
-                     <div class="character__bonus">
-                        <h3>{{page.title}} bonus content</h3>
-                        <div class="character__bonus__content">
-                           {% for content in character.bonus %}
-                           <div class="character__bonus__cell">
-                              {% include bonuscontent.html item=content %}
+                     {% assign bonuslength = character.bonus | size %}
+                     {% if bonuslength > 0 %}
+                        <div class="character__bonus">
+                           <h3>{{page.title}} bonus content</h3>
+                           <div class="character__bonus__content">
+                              {% for content in character.bonus %}
+                              <div class="character__bonus__cell">
+                                 {% include bonuscontent.html item=content %}
+                              </div>
+                              {% endfor %}
                            </div>
-                           {% endfor %}
                         </div>
-                     </div>
+                     {% endif %}
                   {% endif %}
                </div>
             </div>
             <div class="character__pages">
                <h3>Pages featuring {{page.title}}</h3>
                <div class="character__pages__thumbnails">
-                  {% for comicpage in site.categories.comic %} {% if comicpage.tags
-                  contains character.tag %} {% include thumbnail-page.html %} {% endif %}
+                  {% for comicpage in site.categories.comic %}
+                     {% if comicpage.tags contains character.tag %}
+                        {% include thumbnail-page.html %}
+                     {% endif %}
                   {% endfor %}
                </div>
             </div>

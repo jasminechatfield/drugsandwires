@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page{% if page.color %} page--{{ page.color }}{% endif %} mobile--black">
-   {% if page.titleimage %}
+   {% if page.titleimage and page.titleimage != "" %}
     <div class="page__header page__header--withimage">
         <img class="page__header__image" src="/assets/img{{page.titleimage}}" />
     {% else %}

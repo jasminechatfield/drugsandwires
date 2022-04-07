@@ -1,7 +1,7 @@
 <div class="tags">
    {% for tag in page.tags %}
-   <a href="/characters/{{tag}}" class="tags__tag"
-      ><button class="tags__tag__button">{{tag}}</button></a
-   >
+      <a href="/characters/{{ tag }}" class="tags__tag">
+         <button class="tags__tag__button">{{ tag }}</button>
+      </a>
    {% endfor %}
 </div>

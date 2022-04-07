@@ -15,10 +15,10 @@
                   class="navigation__item__image--hover"
                />
             </div>
-            <div class="navigation__item__text">{{item.name}}</div>
+            <div class="navigation__item__text">{{ item.name }}</div>
          </a>
          {% else %}
-         <a href="/{{item.url}}" class="navigation__link"
+         <a href="/{{ item.url }}" class="navigation__link"
             ><div class="navigation__item__image">
                <img
                   src="{{ item.image }}"
@@ -29,7 +29,7 @@
                   class="navigation__item__image--hover"
                />
             </div>
-            <div class="navigation__item__text">{{item.name}}</div>
+            <div class="navigation__item__text">{{ item.name }}</div>
          </a>
          {% endif %}
       </div>

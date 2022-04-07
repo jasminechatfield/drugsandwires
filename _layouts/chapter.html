@@ -10,15 +10,13 @@ layout: default
       />
       <h2 class="archive__header__title">Archive</h2>
    </div>
-
-   <h3 class="archive__chapter__header">{% if page.chapter %}Chapter {{page.chapter}}{% else %}{{page.type}}{% endif %}</h3>
-   {{ content }} 
-   
-   {% include paginate.html %}
-   
+   <h3 class="archive__chapter__header">
+      {% if page.chapter and page.chapter != -1 %}Chapter {{page.chapter}}{% else %}{{page.type}}{% endif %}
+   </h3>
+   {{ content }}   
+   {% include paginate.html %}  
    {% for page in paginator.posts %}
-   {% include page.html %}
-   {% endfor %}
-   
+      {% include page.html %}
+   {% endfor %}  
    {% include paginate.html %}
 </div>

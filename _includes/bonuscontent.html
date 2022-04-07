@@ -1,47 +1,49 @@
 {% if include.item.type == "image" %}
-<div class="character__bonus__content__item">
-   <div class="character__bonus__content__item__content">
-      <a href="/assets/img/{{include.item.image}}" target="_blank">
-         <img src="/assets/img/{{include.item.image}}" />
-      </a>
+   <div class="character__bonus__content__item">
+      <div class="character__bonus__content__item__content">
+         <a href="/assets/img/{{ include.item.image }}" target="_blank">
+            <img src="/assets/img/{{ include.item.image }}" />
+         </a>
+      </div>
+      <div class="character__bonus__content__item__meta">
+         <a href="/assets/img/{{ include.item.image }}" target="_blank">
+            <p>{{ include.item.type }}</p>
+            <p>{{ include.item.name }}</p>
+         </a>
+      </div>
    </div>
-   <div class="character__bonus__content__item__meta">
-      <a href="/assets/img/{{include.item.image}}" target="_blank">
-         <p>{{ include.item.type }}</p>
-         <p>{{include.item.name}}</p>
-      </a>
-   </div>
-</div>
 {% elsif include.item.type == "link" %}
-<div class="character__bonus__content__item">
-   <div
-      class="character__bonus__content__item__content character__bonus__content__item__meta character__bonus__content__item__meta--visible"
-   >
-      <a
-         href="{{include.item.url}}"
-         target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
-         ><p>Link</p>
-         <p>{{include.item.name}}</p></a
+   <div class="character__bonus__content__item">
+      <div
+         class="character__bonus__content__item__content character__bonus__content__item__meta character__bonus__content__item__meta--visible"
       >
+         <a
+            href="{{include.item.url}}"
+            target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
+            >
+            <p>Link</p>
+            <p>{{ include.item.name }}</p>
+         </a>
+      </div>
    </div>
-</div>
 {% elsif include.item.type == "linkimage" %}
-<div class="character__bonus__content__item">
-   <div class="character__bonus__content__item__content">
-      <a
-         href="{{include.item.url}}"
-         target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
-         ><img src="/assets/img/{{include.item.image}}"
-      /></a>
+   <div class="character__bonus__content__item">
+      <div class="character__bonus__content__item__content">
+         <a
+            href="{{include.item.url}}"
+            target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
+            >
+            <img src="/assets/img/{{include.item.image}}"/>
+         </a>
+      </div>
+      <div class="character__bonus__content__item__meta">
+         <a
+            href="{{ include.item.url }}"
+            target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
+         >
+            <p>Content</p>
+            <p>{{ include.item.name }}</p>
+         </a>
+      </div>
    </div>
-   <div class="character__bonus__content__item__meta">
-      <a
-         href="{{include.item.url}}"
-         target="_{% if include.item.offsite == true %}blank{% else %}self{% endif %}"
-      >
-         <p>Content</p>
-         <p>{{include.item.name}}</p>
-      </a>
-   </div>
-</div>
 {% endif %}
