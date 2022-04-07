@@ -1,13 +1,13 @@
 {% if comicpage.imagepaths and comicpage.imagepaths != "" %}
    <div class="comic__thumbnail">
-      <a href="{{comicpage.url}}">
+      <a href="{{ comicpage.url }}">
          {% assign paths = comicpage.imagepaths | split: " " %}
          {% for path in paths %}
             {% assign splitimage = path | split: "." %}
             {% assign splitimagesize = splitimage | size %}
             <img
                src="/assets/img/pages/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
-               alt="{{comicpage.title}}"
+               alt="{{ comicpage.title }}"
                loading="lazy"
             />
          {% endfor %}
@@ -15,12 +15,12 @@
    </div>
 {% elsif comicpage.imagepath and comicpage.imagepath != "" %}
    <div class="comic__thumbnail">
-      <a href="{{comicpage.url}}">
+      <a href="{{ comicpage.url }}">
          {% assign splitimage = comicpage.imagepath | split: "." %}
          {% assign splitimagesize = splitimage | size %}
          <img
             src="/assets/img/pages/{% if splitimagesize == 2 %}{{ splitimage[0] }}{% else %}{{ splitimage[0]}}.{{ splitimage[1] }}{% endif %}.webp"
-            alt="{{comicpage.title}}"
+            alt="{{ comicpage.title }}"
             loading="lazy"
          />
       </a>
@@ -29,10 +29,10 @@
    {% assign pagenos = comicpage.pages | split: " " %}
    {% for pageno in pagenos %}
       <div class="comic__thumbnail">
-         <a href="{{comicpage.url}}">
+         <a href="{{ comicpage.url }}">
             <img
-            src="/assets/img/pages/ch0{{comicpage.chapter}}/page0{% if pageno.size == 1 %}0{% endif %}{{pageno}}.webp"
-            alt="Chapter {{comicpage.chapter}} Page {{pageno}}"
+            src="/assets/img/pages/ch0{{ comicpage.chapter }}/page0{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.webp"
+            alt="Chapter {{ comicpage.chapter }} Page {{ pageno }}"
             loading="lazy"
             />
          </a>
@@ -40,14 +40,12 @@
    {% endfor %}
 {% elsif comicpage.page and comicpage.page != -1 %} 
    <div class="comic__thumbnail">
-      <a href="{{comicpage.url}}">
+      <a href="{{ comicpage.url }}">
          <img
-            src="/assets/img/pages/ch{% if comicpage.chapter < 10 %}0{% endif %}{{comicpage.chapter}}/page{% if comicpage.page < 10 %}0{% endif %}0{{comicpage.page}}.webp"
-            alt="Chapter {{comicpage.chapter}} Page {{comicpage.page}}"
+            src="/assets/img/pages/ch{% if comicpage.chapter < 10 %}0{% endif %}{{ comicpage.chapter }}/page{% if comicpage.page < 10 %}0{% endif %}0{{ comicpage.page }}.webp"
+            alt="Chapter {{ comicpage.chapter }} Page {{ comicpage.page }}"
             loading="lazy"
          />
       </a>
    </div>
-{% else %}
-   BIG PROBLEMS IN THUMBNAIL LAND
 {% endif %}

@@ -1,4 +1,11 @@
-<img src="/assets/img/news/{{include.image}}" alt="{{include.alt}}" />
-<figcaption markdown="1">
-  {{include.caption}}
-</figcaption>
+<figure>
+  <img
+    src="/assets/img/news/{{ include.image }}" 
+    alt="{% if include.alt and include.alt != '' %}{{ include.alt }}{% else %}{{ page.title }}{% endif %}" 
+  />
+  {% if include.caption and include.caption != "" %}
+  <figcaption markdown="1">
+    {{ include.caption }}
+  </figcaption>
+  {% endif %}
+</figure>

@@ -1,18 +1,21 @@
 <div class="news__item">
-  <div class="news__item__image{% if post.image %}{% else %} news__item__image--zerowidth{% endif %}">
-     {% if post.image %}
-        <img src="/assets/img/news/{{post.image}}" />
+  <div class="news__item__image{% unless post.image and post.image != '' %} news__item__image--zerowidth{% endunless %}">
+     {% if post.image and post.image != "" %}
+        <img
+         src="/assets/img/news/{{ post.image }}"
+         alt="{% if post.imagealt and post.imagealt != '' %}{{ post.imagealt }}{% else %}{{ post.title }}{% endif %}"
+         />
      {% endif %}
   </div>
-  <div class="news__item__info{% if post.image %}{% else %} news__item__info--maxwidth{% endif %}">
+  <div class="news__item__info{% unless post.image and post.image != '' %} news__item__info--maxwidth{% endunless %}">
      <div>
         <h3 class="news__item__title">
-           <a href="{{post.url}}">{{post.title}}</a>
+           <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <time class="news__item__date">{{post.date | date: "%b %e %Y"}}</time>
+        <time class="news__item__date">{{ post.date | date: "%b %e %Y" }}</time>
      </div>
-     <p class="news__item__summary">{{post.summary}}</p>
-     <a href="{{post.url}}" class="news__item__button">
+     <p class="news__item__summary">{{ post.summary }}</p>
+     <a href="{{ post.url }}" class="news__item__button">
         Read more >
      </a>
   </div>

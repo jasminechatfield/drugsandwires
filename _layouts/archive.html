@@ -18,7 +18,7 @@ layout: default
    <div class="archive__list"> 
       {% assign chapter_list = site.pages | where: "layout", "chapter" | sort: "chapter" %}
       {% for item in chapter_list %}
-         {% if item.chapter %}
+         {% if item.chapter and item.chapter != -1 %}
             {% unless item.url contains 'page' %}
             {% capture chapterkey %}chapter-{{item.chapter}}{% endcapture %}
             <div class="archive__list__item">
@@ -34,7 +34,7 @@ layout: default
 
       {% assign extras_list = chapter_list | sort: "weight" %}
       {% for item in extras_list %}
-         {% if item.type %}
+         {% if item.type and item.type != "" %}
          {% unless item.url contains 'page' %}
             <div class="archive__list__item">
                <div class="archive__list__item__image">

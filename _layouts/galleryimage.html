@@ -18,21 +18,21 @@ layout: default
           {% if page.artisturl and page.artisturl != "" %}
             {% if page.artistcomic and page.artistcomic != "" %}
               <a href="{{page.artisturl}}" class="galleryimage__header__artist__url" target="_blank">
-                {{page.artistcomic}}</a>'s {{page.artist}}
+                {{ page.artistcomic }}</a>'s {{ page.artist }}
             {% else %}
               <a href="{{page.artisturl}}" class="galleryimage__header__artist__url" target="_blank">
                 {{page.artist}}
               </a>
             {% endif %}
           {% else %}
-            {{page.artist}}
+            {{ page.artist }}
           {% endif %}
         </span>
       </h3>
     
     {% if page.artisturl and page.artisturl != "" %}
-      <a href="{{page.artisturl}}" target="_blank" class="galleryimage__header__link">
-        Visit {{page.artist}}'s {% if page.artistcomic and page.artistcomic != "" %}comic{%else%}website{% endif %}
+      <a href="{{ page.artisturl }}" target="_blank" class="galleryimage__header__link">
+        Visit {{ page.artist }}'s {% if page.artistcomic and page.artistcomic != "" %}comic{% else %}website{% endif %}
       </a>
     {% endif %}
     </div>

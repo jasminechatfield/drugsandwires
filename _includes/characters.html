@@ -1,38 +1,30 @@
 {% for category in site.data.characters.categories %}
-<div class="characters__category characters__category--{{category.color}}">
-   <h3 class="characters__category__title">{{category.name}}</h1>
-
-   {% if category.description %}
-   <p class="characters__category__description">{{category.description}}</p>
+<div class="characters__category characters__category--{{ category.color }}">
+   <h3 class="characters__category__title">{{ category.name }}</h3>
+   {% if category.description and category.description != "" %}
+   <p class="characters__category__description">{{ category.description }}</p>
    {% else %}
    <span class="characters__category__description"></span>
    {% endif %}
    <div class="characters__category__list">
-      {% for character in category.characters %}
-      
+      {% for character in category.characters %}    
          <div class="characters__character">
-            <a href="/characters/{{character.tag}}">
-            <img src="/assets/img/characters/{{character.tag}}_square.jpg" />
-            <div class="characters__character__info">
-               <div class="characters__character__info__extra">
-                  <span class="characters__character__info__extra__spacing"></span>
-                  <h2 class="characters__character__name">
-                     {{character.name}}
-                  </h2>
-     
-                  <p>{{character.summary}}</p>
-                  <button class="characters__character__info__button">
-                     ➔ ➔ ➔
-                  </button>
-                  <!-- {% if character.hobbies %}
-               <h3>{{character.name}}'s Hobbies</h3>
-               <p>{{character.hobbies}}</p>
-               {% endif %} -->
+            <a href="/characters/{{ character.tag }}">
+               <img src="/assets/img/characters/{{ character.tag }}_square.jpg" />
+               <div class="characters__character__info">
+                  <div class="characters__character__info__extra">
+                     <span class="characters__character__info__extra__spacing"></span>
+                     <h2 class="characters__character__name">
+                        {{ character.name }}
+                     </h2>    
+                     <p>{{ character.summary }}</p>
+                     <button class="characters__character__info__button">
+                        ➔ ➔ ➔
+                     </button>
+                  </div>
                </div>
-            </div>
             </a>
-         </div>
-      
+         </div>     
       {% endfor %}
    </div>
 </div>

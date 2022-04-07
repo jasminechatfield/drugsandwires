@@ -2,66 +2,69 @@
    <div class="comic__page">
       <div class="comic__navigation">
          {% if include.prev %}
-         <a
-            href="{{site.categories.comic.last.url}}"
-            class="comic__navigation__option"
-         >
-            <img
-               src="/assets/img/site/nav_first.png"
-               alt="First"
-               class="comic__navigation__image"
-            />
-         </a>
-         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
-            ><img
-               src="/assets/img/site/nav_prev.png"
-               alt="Previous"
-               class="comic__navigation__image"
-         /></a>
+            <a
+               href="{{ site.categories.comic.last.url }}"
+               class="comic__navigation__option"
+            >
+               <img
+                  src="/assets/img/site/nav_first.png"
+                  alt="First"
+                  class="comic__navigation__image"
+               />
+            </a>
+            <a href="{{ include.prev }}" class="comic__navigation__option" id="prev"
+               <img
+                  src="/assets/img/site/nav_prev.png"
+                  alt="Previous"
+                  class="comic__navigation__image"
+               />
+            </a>
          {% else %}
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
          {% endif %}
-         <a href="/comic/random/" class="comic__navigation__option"
-            ><img
+         <a href="/comic/random/" class="comic__navigation__option">
+            <img
                src="/assets/img/site/nav_random.png"
                alt="Random"
                class="comic__navigation__image"
-         /></a>
+            />
+         </a>
          {% if include.next %}
-         <a href="{{include.next}}" class="comic__navigation__option" id="next"
-            ><img
-               src="/assets/img/site/nav_next.png"
-               alt="Next"
-               class="comic__navigation__image"
-         /></a>
-         <a
-            href="{{site.categories.comic.first.url}}"
-            class="comic__navigation__option"
-            ><img
-               src="/assets/img/site/nav_last.png"
-               alt="Latest"
-               class="comic__navigation__image"
-         /></a>
+            <a href="{{ include.next }}" class="comic__navigation__option" id="next">
+               <img
+                  src="/assets/img/site/nav_next.png"
+                  alt="Next"
+                  class="comic__navigation__image"
+               />
+            </a>
+            <a
+               href="{{site.categories.comic.first.url}}"
+               class="comic__navigation__option"
+               >
+               <img
+                  src="/assets/img/site/nav_last.png"
+                  alt="Latest"
+                  class="comic__navigation__image"
+               />
+            </a>
          {% else %}
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
          {% endif %}
       </div>
       {% if include.next %}
          <a href="{{include.next}}">
       {% endif %}
-      {% if page.imagepaths %}
+      {% if page.imagepaths and page.imagepaths != "" %}
          {% assign paths = page.imagepaths | split: " " %}
          {% for path in paths %}
             <img
@@ -70,13 +73,13 @@
             class="comic__page__image"
             />
          {% endfor %}
-      {% elsif page.imagepath %}
+      {% elsif page.imagepath and page.imagepath != "" %}
          <img
             src="/assets/img/pages/{{page.imagepath}}"
             alt="{{page.title}}"
             class="comic__page__image"
          />
-      {% elsif page.pages %}
+      {% elsif page.pages and page.pages != "" %}
          {% assign pagenos = page.pages | split: " " %}
          {% for pageno in pagenos %}
             {% if pageno.size > 1 %}
@@ -113,60 +116,63 @@
       {% endif %}
       <div class="comic__navigation">
          {% if include.prev %}
-         <a
-            href="{{site.categories.comic.last.url}}"
-            class="comic__navigation__option"
-         >
-            <img
-               src="/assets/img/site/nav_first.png"
-               alt="First"
-               class="comic__navigation__image"
-            />
-         </a>
-         <a href="{{include.prev}}" class="comic__navigation__option" id="prev"
-            ><img
-               src="/assets/img/site/nav_prev.png"
-               alt="Previous"
-               class="comic__navigation__image"
-         /></a>
+            <a
+               href="{{site.categories.comic.last.url}}"
+               class="comic__navigation__option"
+            >
+               <img
+                  src="/assets/img/site/nav_first.png"
+                  alt="First"
+                  class="comic__navigation__image"
+               />
+            </a>
+            <a href="{{include.prev}}" class="comic__navigation__option" id="prev">
+               <img
+                  src="/assets/img/site/nav_prev.png"
+                  alt="Previous"
+                  class="comic__navigation__image"
+               />
+            </a>
          {% else %}
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
          {% endif %}
-         <a href="/comic/random/" class="comic__navigation__option"
-            ><img
+         <a href="/comic/random/" class="comic__navigation__option">
+            <img
                src="/assets/img/site/nav_random.png"
                alt="Random"
                class="comic__navigation__image"
-         /></a>
+            />
+         </a>
          {% if include.next %}
-         <a href="{{include.next}}" class="comic__navigation__option" id="next"
-            ><img
-               src="/assets/img/site/nav_next.png"
-               alt="Next"
-               class="comic__navigation__image"
-         /></a>
-         <a
-            href="{{site.categories.comic.first.url}}"
-            class="comic__navigation__option"
-            ><img
-               src="/assets/img/site/nav_last.png"
-               alt="Latest"
-               class="comic__navigation__image"
-         /></a>
+            <a href="{{include.next}}" class="comic__navigation__option" id="next">
+               <img
+                  src="/assets/img/site/nav_next.png"
+                  alt="Next"
+                  class="comic__navigation__image"
+               />
+            </a>
+            <a
+               href="{{site.categories.comic.first.url}}"
+               class="comic__navigation__option"
+               >
+               <img
+                  src="/assets/img/site/nav_last.png"
+                  alt="Latest"
+                  class="comic__navigation__image"
+               />
+            </a>
          {% else %}
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-         <div class="comic__navigation__option">
-            <div class="comic__navigation__image"></div>
-         </div>
-
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
+            <div class="comic__navigation__option">
+               <div class="comic__navigation__image"></div>
+            </div>
          {% endif %}
       </div>
    </div>
