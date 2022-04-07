@@ -82,3 +82,5 @@ fields:
     min: 
     max: 200
   label: Custom image path (multiple)
+pages:
+- comic/chapter-8/_posts/chapter-8-page-41.md
