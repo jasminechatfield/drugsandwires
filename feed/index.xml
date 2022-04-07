@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Apr 2022 18:02:51 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,33 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 8 Page 41</title>
+				
+				
+					<description>First update on our brand new site - apologies for the delay! Hope you all like it - it’s been in development for quite some time, built from scratch by our amazing dev Jazz who also helped us prep it for Hiveworks (yes that’s a thing too! Very excited to...</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch08/page041.jpeg"
+        alt="Chapter 8 Page 41"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch08/page041.jpeg 850w, https://drugsandwires.fail/assets/img/pages/ch08/page041.webp 165w"
+      />
+    
+  </div>
+  <div><p>First update on our brand new site - apologies for the delay! Hope you all like it - it’s been in development for quite some time, built from scratch by our amazing dev Jazz who also helped us prep it for Hiveworks (yes that’s a thing too! Very excited to be a part of it) :)</p>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Thu, 07 Apr 2022 18:02:51 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-8/chapter-8-page-41/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/chapter-8-page-41/</guid>
+      </item>
   
   <item>
     <title>Chapter 8 Page 40</title>
@@ -289,34 +316,6 @@
 				<pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-8/page-32/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-32/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 8 Page 31</title>
-				
-				
-					<description>
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      <img
-        src="https://drugsandwires.fail/assets/img/pages/ch08/page031.jpeg"
-        alt="Chapter 8 Page 31"
-        srcset="https://drugsandwires.fail/assets/img/pages/ch08/page031.jpeg 850w, https://drugsandwires.fail/assets/img/pages/ch08/page031.webp 165w"
-      />
-    
-  </div>
-  <div>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-8/page-31/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-31/</guid>
       </item>
   
 
