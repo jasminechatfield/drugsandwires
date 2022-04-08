@@ -14,16 +14,16 @@
       {% assign pagenos = post.pages | split: " " %}
       {% for pageno in pagenos %}
         <img
-          src="{{ site.url }}/assets/img/pages/ch0{{post.chapter}}/page{% if pageno.size == 1 %}0{% endif %}0{{pageno}}.jpeg"
+          src="{{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.jpg"
           alt="Chapter {{ post.chapter }} Page {{ pageno }}"
-          srcset="{{ site.url }}/assets/img/pages/ch0{{ post.chapter }}/page{% if pageno.size == 1 %}0{% endif %}0{{pageno}}.jpeg 850w, {{ site.url }}/assets/img/pages/ch0{{post.chapter}}/page{% if pageno.size == 1 %}0{% endif %}0{{ pageno }}.webp 165w"
+          srcset="{{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.jpg 850w, {{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.webp 165w"
         />
       {% endfor %}
     {% else %}
       <img
-        src="{{ site.url }}/assets/img/pages/ch0{{post.chapter}}/page{% if post.page < 10 %}0{% endif %}0{{ post.page }}.jpeg"
+        src="{{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if page.page < 10 %}0{% endif %}{{page.page}}.jpg"
         alt="Chapter {{ post.chapter }} Page {{ post.page }}"
-        srcset="{{ site.url }}/assets/img/pages/ch0{{ post.chapter }}/page{% if post.page < 10 %}0{% endif %}0{{ post.page }}.jpeg 850w, {{ site.url }}/assets/img/pages/ch0{{ post.chapter }}/page{% if post.page < 10 %}0{% endif %}0{{ post.page }}.webp 165w"
+        srcset="{{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if page.page < 10 %}0{% endif %}{{page.page}}.jpg 850w, {{ site.url }}/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if page.page < 10 %}0{% endif %}{{page.page}}.webp 165w"
       />
     {% endif %}
   </div>
