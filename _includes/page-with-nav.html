@@ -81,35 +81,19 @@
          />
       {% elsif page.pages and page.pages != "" %}
          {% assign pagenos = page.pages | split: " " %}
-         {% for pageno in pagenos %}
-            {% if pageno.size > 1 %}
-               <img
-                  src="/assets/img/pages/ch0{{page.chapter}}/page0{{pageno}}.jpeg"
-                  alt="Chapter {{page.chapter}} Page {{pageno}}"
-                  class="comic__page__image"
-               />
-            {% else %}
-               <img
-                  src="/assets/img/pages/ch0{{page.chapter}}/page00{{pageno}}.jpeg"
-                  alt="Chapter {{page.chapter}} Page {{pageno}}"
-                  class="comic__page__image"
-               />
-            {% endif %}
+         {% for pageno in pagenos %}         
+            <img
+               src="/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.jpg"
+               alt="Chapter {{ page.chapter }} Page {{ pageno }}"
+               class="comic__page__image"
+            />
          {% endfor %}
-      {% else %}
-         {% if page.page > 9 %}
-            <img
-               src="/assets/img/pages/ch0{{page.chapter}}/page0{{page.page}}.jpeg"
-               alt="Chapter {{page.chapter}} Page {{page.page}}"
-               class="comic__page__image"
-            />
-         {% else %}
-            <img
-               src="/assets/img/pages/ch0{{page.chapter}}/page00{{page.page}}.jpeg"
-               alt="Chapter {{page.chapter}} Page {{page.page}}"
-               class="comic__page__image"
-            />
-         {% endif %}
+      {% else %}     
+         <img
+            src="/assets/img/pages/ch{% if page.chapter < 10 %}0{% endif %}{{ page.chapter }}/{% if page.page < 10 %}0{% endif %}{{page.page}}.jpg"
+            alt="Chapter {{ page.chapter }} Page {{ page.page }}"
+            class="comic__page__image"
+         />
       {% endif %}
       {% if include.next %}
          </a>
@@ -117,7 +101,7 @@
       <div class="comic__navigation">
          {% if include.prev %}
             <a
-               href="{{site.categories.comic.last.url}}"
+               href="{{ site.categories.comic.last.url }}"
                class="comic__navigation__option"
             >
                <img
@@ -126,7 +110,7 @@
                   class="comic__navigation__image"
                />
             </a>
-            <a href="{{include.prev}}" class="comic__navigation__option" id="prev">
+            <a href="{{ include.prev }}" class="comic__navigation__option" id="prev">
                <img
                   src="/assets/img/site/nav_prev.png"
                   alt="Previous"
@@ -149,7 +133,7 @@
             />
          </a>
          {% if include.next %}
-            <a href="{{include.next}}" class="comic__navigation__option" id="next">
+            <a href="{{ include.next }}" class="comic__navigation__option" id="next">
                <img
                   src="/assets/img/site/nav_next.png"
                   alt="Next"
@@ -157,7 +141,7 @@
                />
             </a>
             <a
-               href="{{site.categories.comic.first.url}}"
+               href="{{ site.categories.comic.first.url }}"
                class="comic__navigation__option"
                >
                <img

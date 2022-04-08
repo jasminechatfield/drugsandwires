@@ -31,7 +31,7 @@
       <div class="comic__thumbnail">
          <a href="{{ comicpage.url }}">
             <img
-            src="/assets/img/pages/ch0{{ comicpage.chapter }}/page0{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.webp"
+            src="/assets/img/pages/ch{% if comicpage.chapter < 10 %}0{% endif %}{{ comicpage.chapter }}/{% if pageno.size == 1 %}0{% endif %}{{ pageno }}.webp"
             alt="Chapter {{ comicpage.chapter }} Page {{ pageno }}"
             loading="lazy"
             />
@@ -42,7 +42,7 @@
    <div class="comic__thumbnail">
       <a href="{{ comicpage.url }}">
          <img
-            src="/assets/img/pages/ch{% if comicpage.chapter < 10 %}0{% endif %}{{ comicpage.chapter }}/page{% if comicpage.page < 10 %}0{% endif %}0{{ comicpage.page }}.webp"
+            src="/assets/img/pages/ch{% if comicpage.chapter < 10 %}0{% endif %}{{ comicpage.chapter }}/{% if comicpage.page < 10 %}0{% endif %}{{ comicpage.page }}.webp"
             alt="Chapter {{ comicpage.chapter }} Page {{ comicpage.page }}"
             loading="lazy"
          />
