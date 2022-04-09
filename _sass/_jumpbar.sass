@@ -3,29 +3,54 @@
 #hw-jumpbar 
 
   max-width: 1000px
-  background: orange
+  background: $orange !important
   margin: 20px 0
+  font-family: "Anonymous Pro", monospace !important
 
 .hw-jump-discover
-  background: red
+  font-family: "Quantico", sans-serif !important
+
+.hw-jump-desc-box
+  width: 200px !important
 
 .hw-jump-desc-wrap
-  background: blue
+  padding: 0px !important
+
+.hw-jump-byline
+  background-color: $orange
+  color: black
+  text-align: center
+
+.hw-jump-desc
+  padding: 3px 6px !important
+  border: $orange solid 3px
+  border-top: none
+  text-transform: none
 
 .hw-jump-title 
-  background: yellow
+  background: $orange !important
+  color: black
+  padding:  5px 5px 0px 5px !important
 
 .hw-jump-down 
-  border-top: 20px solid green
-
-.hw-jump-mid 
-  background: purple
+  border-top: 20px solid $orange !important
 
 .hw-jump-arrow-left
   cursor: pointer
+  filter: invert(1)
 
 .hw-jump-arrow-right
   cursor: pointer
+  filter: invert(1)
 
 .hw-jump-arrow-left:hover, .hw-jump-arrow-right:hover
-  opacity: .75
+  opacity: .50
+
+.hw-jump-small .hw-jump-link
+  color: black
+
+.hw-jump-small .hw-jump-mid
+  background: black !important
+
+.hw-jump-small .hw-jump-mid .hw-jump-link
+  color: white
