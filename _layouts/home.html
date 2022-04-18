@@ -44,7 +44,11 @@ layout: frame
             <div class="comic__info__text">{{ page.content }}</div>
             {% include tags.html %}
         </div>
-        <div class="hiveworks hiveworks--300" id="box-space"></div> 
+        <div class="hiveworks hiveworks--300" id="box-space">
+          <!-- Drugs and Wires - 300x250 Static (6256c4f1210cab3458907d10) - 300x250 - Place in <BODY> of page where ad should appear -->
+          <div class="vm-placement" data-id="6256c4f1210cab3458907d10"></div>
+          <!-- / Drugs and Wires - 300x250 Static (6256c4f1210cab3458907d10) -->
+        </div> 
       </div>
       {% include comments.html %}  
     {% endfor %}
@@ -53,7 +57,12 @@ layout: frame
     <script src="https://cdn.hiveworkscomics.com/jumpbar.js"></script>
     
     <div class="hiveworks__columns">
-      <div class="hiveworks hiveworks--160" id="right-space"></div>      
+      <div class="hiveworks hiveworks--160" id="right-space">
+        <!-- Drugs and Wires - 160x600 Static (6256c4d179260764dae138fd) - 160x600 - Place in <BODY> of page where ad should appear -->
+        <div class="vm-placement" data-id="6256c4d179260764dae138fd"></div>
+        <!-- / Drugs and Wires - 160x600 Static (6256c4d179260764dae138fd) -->
+      </div>  
+          
       <div class="news__latest">
       <h2 class="news__latest__title">Latest News</h2>
         {% for post in site.categories.news  limit:3 %} 

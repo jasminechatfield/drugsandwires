@@ -58,6 +58,8 @@ jobs:
            with:
               # ImageMagick command to be executed
               command: mogrify -resize x250 -format webp assets/img/galleries/*/*.gif
+         - name: Download Venatus txt file
+           run: "curl https://adstxt.venatusmedia.com/62569d9b210cab3458907ce4_ads.txt > ads.txt"
          - uses: actions/cache@v2
            with:
               path: vendor/bundle
