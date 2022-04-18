@@ -35,8 +35,14 @@
   <link rel="stylesheet" href="https://cdn.hiveworkscomics.com/jumpbar.css">
 
   <script src="/assets/js/jquery-3.6.0.min.js"></script>
+
+
   <!-- Fallback code for Hiveworks ads --> 
   <script src="/assets/js/hiveworksAlt.js"></script>
+
+  <!-- Venatus Ad Manager - Install in <HEAD> of page -->
+  <script src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" data-site-id="62569d9b210cab3458907ce4" data-mode="scan" async onerror="javascript:usealtstuff();"></script>
+  <!-- / Venatus Ad Manager -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61072718-1"></script>
@@ -64,7 +70,11 @@
             class="header__title__image"
       /></a>
       <div class="hiveworks__wrapper--mobile">
-         <div class="hiveworks--mobile" id="top-space-mobile"></div>
+         <div class="hiveworks--mobile" id="top-space-mobile">
+            <!-- Drugs and Wires - 300x50 Dynamic Mobile (6256c5a379260764dae13901) - 300x50, 320x50, 300x100, 320x100 - Place in <BODY> of page where ad should appear -->
+            <div class="vm-placement" data-id="6256c5a379260764dae13901"></div>
+            <!-- / Drugs and Wires - 300x50 Dynamic Mobile (6256c5a379260764dae13901) -->
+         </div>
       </div>
    </div>
    <div class="header__icons">
@@ -451,7 +461,11 @@
 
 
   <div class="hiveworks hiveworks__wrapper">
-    <div class="hiveworks--720" id="top-space"><span></span></div>
+    <div class="hiveworks--720" id="top-space">
+      <!-- Drugs and Wires - 728x90 Static (6256c50079260764dae138ff) - 728x90 - Place in <BODY> of page where ad should appear -->
+      <div class="vm-placement" data-id="6256c50079260764dae138ff"></div>
+      <!-- / Drugs and Wires - 728x90 Static (6256c50079260764dae138ff) -->
+    </div>
   </div>
 
 
@@ -1885,5 +1899,4 @@
 </body>
 <script src="/assets/js/keyboardNav.js"></script>
 <script src="/assets/js/mobileMenu.js"></script>
-<script>usealtstuff();</script>
 </html>
