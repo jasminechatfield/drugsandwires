@@ -1,0 +1,13 @@
+---
+date: 2022-04-27 07:18:35
+title: Chapter 8 Page 44
+chapter: 8
+page: 44
+multiple_pages: false
+pages: ''
+tags: mira troy eve
+imagepath: ''
+imagepaths: ''
+published: false
+
+---
