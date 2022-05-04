@@ -1,4 +1,4 @@
-#V 11.04.2022 VH
+#V 03.05.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                  # 33Across_0_9_6&7
@@ -154,11 +154,11 @@ openx.com, 539640546, DIRECT, 6a698e2ec38604c6                              # Ju
 improvedigital.com, 185, DIRECT                                             # Just Premium_0_6
 indexexchange.com, 189872, DIRECT                                           # Just Premium_0_6
 loopme.com, 11398, DIRECT, 6c8d5f95897a5a3b                                 # Loopme_4_6&7
-rubiconproject.com, 20744, DIRECT, 0bfd66d529a55807                         # Loopme_4_6&7
-pubmatic.com, 158154, DIRECT, 5d62403b186f2ace                              # Loopme_4_6&7
-contextweb.com, 562499, DIRECT, 89ff185a4c4e857c                            # Loopme_4_6&7
-indexexchange.com, 194730, DIRECT                                           # Loopme_4_6&7
-conversantmedia.com, 100246, DIRECT, 03113cd04947736d                       # Loopme_4_6&7
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807                       # Loopme_4_6&7
+pubmatic.com, 158154, RESELLER, 5d62403b186f2ace                            # Loopme_4_6&7
+contextweb.com, 562499, RESELLER, 89ff185a4c4e857c                          # Loopme_4_6&7
+indexexchange.com, 194730, RESELLER                                         # Loopme_4_6&7
+conversantmedia.com, 100246, RESELLER, 03113cd04947736d                     # Loopme_4_6&7
 rubiconproject.com, 17902, DIRECT, 0bfd66d529a55807                         # Magnite_1_6&7
 rubiconproject.com,  13762, DIRECT, 0bfd66d529a55807                        # Magnite_0&2_6&7
 nativo.com, 5712, DIRECT, 59521ca7cc5e9fee                                  # Nativo_2_6
@@ -166,11 +166,13 @@ nativo.com, 5712, DIRECT, 59521ca7cc5e9fee                                  # Na
 appnexus.com, 8035, DIRECT, f5ab79cb980f11d1                                # Nativo_2_6
 contextweb.com, 560921, DIRECT, 89ff185a4c4e857c                            # Nativo_2_6
 districtm.io, 101810, DIRECT, 3fd707be9c4527c3                              # Nativo_2_6
+nobid.io, 22629800915, DIRECT                                               # NoBid_9_6
+sonobi.com, 7ad1b9f952, RESELLER, d1a215d9eb5aee9e                          # NoBid_9_6
 xandr.com, 12701, DIRECT, f5ab79cb980f11d1                                  # NoBid_9_6
 xandr.com, 11429, DIRECT, f5ab79cb980f11d1                                  # NoBid_9_6
+amxrtb.com, 105199579, DIRECT                                               # NoBid_9_6
+yahoo.com, 57872, DIRECT                                                    # NoBid_9_6
 sovrn.com, 273657, DIRECT, fafdf38b16bf6b2b                                 # NoBid_9_6
-admanmedia.com, 812, DIRECT                                                 # NoBid_9_6
-33across.com, 0010b00002Mq2FYAAZ, DIRECT, bbea06d9c4d2853c                  # NoBid_9_6
 acexchange.co.kr, 1908143852, DIRECT                                        # nhnACE_0s_6
 ogury.com, 086233d2-e8a8-44fc-907b-f0752e1c85de, DIRECT                     # Ogury_0_6
 appnexus.com, 11470, DIRECT                                                 # Ogury_0_6
@@ -220,6 +222,7 @@ spotx.tv, 212457, DIRECT                                                    # Sh
 pubmatic.com, 156557, DIRECT                                                # Sharethrough_0_6&7
 sharethrough.com, Ip2TfKpa, DIRECT, d53b998a7bd4ecd2                        # Sharethrough_1_6&7
 smartadserver.com, 3490, DIRECT                                             # Smart AdServer_0&1&2_6&7
+smartadserver.com, 3490-OB, DIRECT, 060d053dcf45cbf3                        # Smart AdServer_0&1&2_6&7
 rubiconproject.com, 16114, DIRECT, 0bfd66d529a55807                         # Smart AdServer_0&1&2_6&7
 appnexus.com, 3703, DIRECT, f5ab79cb980f11d1                                # Smart AdServer_0&1&2_6&7
 smaato.com, 1100044045, DIRECT, 07bcf65f187117b4                            # Smart AdServer_0&1&2_6&7
