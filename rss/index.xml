@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Wed, 04 May 2022 06:30:04 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 May 2022 07:37:04 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,34 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 8 Page 46</title>
+				
+				
+					<description>
+</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
+        alt="Chapter 8 Page 46"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
+      />
+    
+  </div>
+  <div>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Wed, 11 May 2022 07:37:04 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-8/page-46/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-46/</guid>
+      </item>
   
   <item>
     <title>Chapter 8 Page 45</title>
@@ -279,34 +307,6 @@
 				<pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-8/page-37/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-37/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 8 Page 36</title>
-				
-				
-					<description>
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      <img
-        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
-        alt="Chapter 8 Page 36"
-        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
-      />
-    
-  </div>
-  <div>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-8/page-36/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-36/</guid>
       </item>
   
 
