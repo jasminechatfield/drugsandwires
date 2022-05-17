@@ -1,4 +1,4 @@
-#V 05.05.2022 VH
+#V 12.05.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                  # 33Across_0_9_6&7
@@ -39,6 +39,7 @@ rubiconproject.com, 20736, DIRECT, 0bfd66d529a55807                         # Ad
 spotxchange.com, 230037, DIRECT, 7842df1d2fe2db34                           # AdYouLike_0_6
 loopme.com, 11480, RESELLER, 6c8d5f95897a5a3b                               # AdYouLike_0_6
 appnexus.com, 7664, DIRECT                                                  # AdYouLike_0_6
+spotim.market, sp_AYL2022, RESELLER, 077e5f709d15bdbb                       # AdYouLike_0_6
 aps.amazon.com,70247b00-ff8f-4016-b3ab-8344daf96e09,DIRECT                  # Amazon_3_6&7
 rhythmone.com,985572675,DIRECT,a670c89d4a324e47                             # Amazon_3_6&7
 smaato.com,1100044650,DIRECT,07bcf65f187117b4                               # Amazon_3_6&7
@@ -139,6 +140,12 @@ openx.com,537149485,DIRECT,6a698e2ec38604c6                                 # Gu
 pubmatic.com,157897,DIRECT,5d62403b186f2ace                                 # GumGum_9_6
 EMXDGT.com,1284,DIRECT,1e1d41537f7cad7f                                     # GumGum_9_6
 rubiconproject.com,23434,DIRECT,0bfd66d529a55807                            # GumGum_9_6
+synacor.com, 82515, DIRECT, e108f11b2cdf7d5b                                # IMDS_0_6
+yahoo.com, 55317, RESELLER, e1a5b5b6e3255540                                # IMDS_0_6
+pubmatic.com, 156344, RESELLER, 5d62403b186f2ace                            # IMDS_0_6
+video.unrulymedia.com, 905992537, RESELLER, a670c89d4a324e47                # IMDS_0_6
+rhythmone.com, 905992537, RESELLER, a670c89d4a324e47                        # IMDS_0_6
+rubiconproject.com, 13344, RESELLER, 0bfd66d529a55807                       # IMDS_0_6
 improvedigital.com, 1012, DIRECT                                            # Improve_0_6&7
 improvedigital.com, 1640, DIRECT                                            # Improve_1_6
 indexexchange.com, 183921, DIRECT, 50b1c356f2c5c8fc                         # Index Exchange_0_6&7
@@ -297,7 +304,6 @@ contextweb.com, 558355, DIRECT                                              # Gu
 33across.com, 0013300001r0t9mAAA, DIRECT, bbea06d9c4d2853c                  # GumGumTemp
 synacor.com, 82151, DIRECT, e108f11b2cdf7d5b                                # GumGumTemp
 rhythmone.com, 78519861, DIRECT, a670c89d4a324e47                           # GumGumTemp
-venatusmedia.com, 611cbdc7d8068a4334de2575, DIRECT
 
 primis.tech, 31136, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, DIRECT, 7842df1d2fe2db34
@@ -320,5 +326,6 @@ xandr.com, 13171, DIRECT
 supply.colossusssp.com, 290, DIRECT, 6c5b49d96ec1b458
 emxdgt.com, 1349, DIRECT, 1e1d41537f7cad7f
 Media.net, 8CU695QH7, DIRECT
+triplelift.com, 8210, RESELLER, 6c33edb13117fd86
 
 venatusmedia.com, 62569d9b210cab3458907ce4, DIRECT
