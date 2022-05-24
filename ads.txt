@@ -1,4 +1,4 @@
-#V 12.05.2022 VH
+#V 23.05.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                  # 33Across_0_9_6&7
@@ -172,6 +172,7 @@ indexexchange.com, 194730, RESELLER                                         # Lo
 conversantmedia.com, 100246, RESELLER, 03113cd04947736d                     # Loopme_4_6&7
 rubiconproject.com, 17902, DIRECT, 0bfd66d529a55807                         # Magnite_1_6&7
 rubiconproject.com,  13762, DIRECT, 0bfd66d529a55807                        # Magnite_0&2_6&7
+Media.net, 8CU8ARTF8, DIRECT                                                # Media.net_2_6_7
 nativo.com, 5712, DIRECT, 59521ca7cc5e9fee                                  # Nativo_2_6
 33across.com, 0010b00002OCUmCAAX, DIRECT, bbea06d9c4d2853c                  # Nativo_2_6
 appnexus.com, 8035, DIRECT, f5ab79cb980f11d1                                # Nativo_2_6
