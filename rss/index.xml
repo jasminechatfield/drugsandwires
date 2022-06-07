@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Tue, 31 May 2022 12:00:22 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 07 Jun 2022 08:13:36 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,34 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 8 Pages 52-53</title>
+				
+				
+					<description>
+</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
+        alt="Chapter 8 Page 52"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
+      />
+    
+  </div>
+  <div>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Tue, 07 Jun 2022 08:13:36 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-8/pages-52-53/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/pages-52-53/</guid>
+      </item>
   
   <item>
     <title>Chapter 8 Pages 50-51</title>
@@ -279,34 +307,6 @@
 				<pubDate>Thu, 07 Apr 2022 18:02:51 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-8/page-41/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-41/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 8 Page 40</title>
-				
-				
-					<description>
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      <img
-        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
-        alt="Chapter 8 Page 40"
-        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
-      />
-    
-  </div>
-  <div>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-8/page-40/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-40/</guid>
       </item>
   
 
