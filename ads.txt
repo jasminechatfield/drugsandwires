@@ -1,9 +1,9 @@
-#V 23.05.2022 VH
+#V 13.06.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                  # 33Across_0_9_6&7
 yahoo.com, 57289, DIRECT,  e1a5b5b6e3255540                                 # 33Across_0_9_6&7
-advertising.com, 12543, DIRECT                                              # 33Across_0_9_6&7
+pubmatic.com, 156423, RESELLER, 5d62403b186f2ace                            # 33Across_0_9_6&7
 appnexus.com, 10239, DIRECT, f5ab79cb980f11d1                               # 33Across_0_9_6&7
 rubiconproject.com, 16414, DIRECT, 0bfd66d529a55807                         # 33Across_0_9_6&7
 indexexchange.com, 191973, DIRECT, 50b1c356f2c5c8fc                         # 33Across_0_9_6&7
@@ -134,8 +134,9 @@ rubiconproject.com, 23644, DIRECT, 0bfd66d529a55807                         # Ep
 adingo.jp, 24379, DIRECT                                                    # Fluct_1_6&7
 freewheel.tv, 211121, DIRECT                                                # Freewheel_0_7
 freewheel.tv, 211129, DIRECT                                                # Freewheel_0_7
-google.com, pub-5781531207509232, DIRECT, f08c47fec0942fa0                  # Google_AdX_6&7
+google.com, pub-5781531207509232, RESELLER, f08c47fec0942fa0                # Google_AdX_6&7
 gumgum.com,13385,DIRECT,ffdef49475d318a9                                    # GumGum_9_6
+gumgum.com,14302,RESELLER,ffdef49475d318a9                                  # GumGum_9_6
 openx.com,537149485,DIRECT,6a698e2ec38604c6                                 # GumGum_9_6
 pubmatic.com,157897,DIRECT,5d62403b186f2ace                                 # GumGum_9_6
 EMXDGT.com,1284,DIRECT,1e1d41537f7cad7f                                     # GumGum_9_6
@@ -290,6 +291,7 @@ adform.com, 2742, DIRECT                                                    # Vi
 appnexus.com, 806, DIRECT, f5ab79cb980f11d1                                 # Xandr_0&2_6&7
 appnexus.com,1908,DIRECT,f5ab79cb980f11d1                                   # Xandr_0&2_6&7
 yieldmo.com, 2440034292147889057, DIRECT                                    # Yieldmo_1_6&7
+yieldmo.com, 2467323546544578775, DIRECT                                    # Yieldmo_1_6&7
 contextweb.com, 561118, DIRECT, 89ff185a4c4e857c                            # Yieldmo_1_6&7
 appnexus.com, 7911, DIRECT                                                  # Yieldmo_1_6&7
 admanmedia.com, 746, DIRECT                                                 # Yieldmo_1_6&7
@@ -328,5 +330,5 @@ supply.colossusssp.com, 290, DIRECT, 6c5b49d96ec1b458
 emxdgt.com, 1349, DIRECT, 1e1d41537f7cad7f
 Media.net, 8CU695QH7, DIRECT
 triplelift.com, 8210, RESELLER, 6c33edb13117fd86
-
+sharethrough.com, flUyJowI, RESELLER, d53b998a7bd4ecd2
 venatusmedia.com, 62569d9b210cab3458907ce4, DIRECT
