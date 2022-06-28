@@ -8,6 +8,5 @@ pages: ''
 tags: ''
 imagepath: ''
 imagepaths: ''
-published: false
 
 ---
