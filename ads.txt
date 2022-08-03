@@ -1,4 +1,4 @@
-#V 19.07.2022 VH
+#V 28.07.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                    # 33Across_0_9_6&7
@@ -6,7 +6,7 @@ yahoo.com, 57289, RESELLER,  e1a5b5b6e3255540                                 # 
 pubmatic.com, 156423, RESELLER, 5d62403b186f2ace                              # 33Across_0_9_6&7
 appnexus.com, 10239, RESELLER, f5ab79cb980f11d1                               # 33Across_0_9_6&7
 rubiconproject.com, 16414, RESELLER, 0bfd66d529a55807                         # 33Across_0_9_6&7
-indexexchange.com, 191973, RESELLER, 50b1c356f2c5c8fc                         # 33Across_0_9_6&7
+openx.com, 537120563, RESELLER, 6a698e2ec38604c6                              # 33Across_0_9_6&7
 acrosspf.com,366,DIRECT                                                       # AcrossMedia
 adagio.io, 1090, DIRECT                                                       # Adagio_0_6
 rubiconproject.com, 19116, RESELLER, 0bfd66d529a55807                         # Adagio_0_6
@@ -35,29 +35,29 @@ spotxchange.com, 230037, RESELLER, 7842df1d2fe2db34                           # 
 loopme.com, 11480, RESELLER, 6c8d5f95897a5a3b                                 # AdYouLike_0_6
 appnexus.com, 7664, DIRECT                                                    # AdYouLike_0_6
 aps.amazon.com,70247b00-ff8f-4016-b3ab-8344daf96e09,DIRECT                    # Amazon_3_6&7
-rhythmone.com,985572675,DIRECT,a670c89d4a324e47                               # Amazon_3_6&7
+rhythmone.com,985572675,RESELLER,a670c89d4a324e47                             # Amazon_3_6&7
 smaato.com,1100044650,RESELLER,07bcf65f187117b4                               # Amazon_3_6&7
 ad-generation.jp,12474,RESELLER,7f4ea9029ac04e53                              # Amazon_3_6&7
 appnexus.com,3663,RESELLER,f5ab79cb980f11d1                                   # Amazon_3_6&7
 gumgum.com,14141,RESELLER,ffdef49475d318a9                                    # Amazon_3_6&7
-pubmatic.com,159401,DIRECT,5d62403b186f2ace                                   # Amazon_3_6&7
-openx.com,542378302,DIRECT,6a698e2ec38604c6                                   # Amazon_3_6&7
-rubiconproject.com,13762,DIRECT,0bfd66d529a55807                              # Amazon_3_6&7
-admanmedia.com,663,DIRECT                                                     # Amazon_3_6&7
+pubmatic.com,159401,RESELLER,5d62403b186f2ace                                 # Amazon_3_6&7
+openx.com,542378302,RESELLER,6a698e2ec38604c6                                 # Amazon_3_6&7
+rubiconproject.com,13762,RESELLER,0bfd66d529a55807                            # Amazon_3_6&7
+admanmedia.com,663,RESELLER                                                   # Amazon_3_6&7
 contextweb.com,562541,RESELLER,89ff185a4c4e857c                               # Amazon_3_6&7
 emxdgt.com,2009,RESELLER,1e1d41537f7cad7f                                     # Amazon_3_6&7
 sharethrough.com,7144eb80,RESELLER                                            # Amazon_3_6&7
 admanmedia.com,726,RESELLER                                                   # Amazon_3_6&7
 themediagrid.com, JTQKMP, RESELLER, 35d5010d7789b49d                          # Amazon_3_6&7
-smartadserver.com,3490,DIRECT,060d053dcf45cbf3                                # Amazon_3_6&7
-sovrn.com, 375328, DIRECT, fafdf38b16bf6b2b                                   # Amazon_3_6&7
-lijit.com, 375328, DIRECT, fafdf38b16bf6b2b                                   # Amazon_3_6&7
+smartadserver.com,3490,RESELLER,060d053dcf45cbf3                              # Amazon_3_6&7
+sovrn.com, 375328, RESELLER, fafdf38b16bf6b2b                                 # Amazon_3_6&7
+lijit.com, 375328, RESELLER, fafdf38b16bf6b2b                                 # Amazon_3_6&7
 yieldmo.com,2467323546544578775,DIRECT                                        # Amazon_3_6&7
 beachfront.com,14804,RESELLER,e2541279e8e2ca4d                                # Amazon_3_6&7
 improvedigital.com,2050,RESELLER                                              # Amazon_3_6&7
 mintegral.com,10043,RESELLER,0aeed750c80d6423                                 # Amazon_3_6&7
 sonobi.com,7f5fa520f8,RESELLER,d1a215d9eb5aee9e                               # Amazon_3_6&7
-gumgum.com,13385,DIRECT,ffdef49475d318a9                                      # Amazon_3_6&7
+gumgum.com,13385,RESELLER,ffdef49475d318a9                                    # Amazon_3_6&7
 onetag.com,770a440e65869c2,RESELLER                                           # Amazon_3_6&7
 aniview.com, 5f2063121d82c82557194737, RESELLER, 78b21b97965ec3f8             # Aniview_5_7
 google.com, pub-5717092533913515, RESELLER, f08c47fec0942fa0                  # Aniview_5_7
@@ -122,6 +122,7 @@ adingo.jp, 24379, DIRECT                                                      # 
 freewheel.tv, 211121, DIRECT                                                  # Freewheel_0_7
 freewheel.tv, 211129, RESELLER                                                # Freewheel_0_7
 google.com, pub-5781531207509232, RESELLER, f08c47fec0942fa0                  # Google_AdX_6&7
+google.com, pub-2553634189837243, RESELLER, f08c47fec0942fa0                  # Google_AdX_6&7
 gumgum.com,13385,DIRECT,ffdef49475d318a9                                      # GumGum_9_6
 gumgum.com,14302,RESELLER,ffdef49475d318a9                                    # GumGum_9_6
 openx.com,537149485,reseller,6a698e2ec38604c6                                 # GumGum_9_6
