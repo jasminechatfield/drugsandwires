@@ -1,6 +1,8 @@
-#V 28.07.2022 VH
+#V 10.08.2022 VH
 
 #------------------------------------------------------------------------------------------------------
+152media.info,152M327,RESELLER                                                # 152Media_0_7
+appnexus.com, 11924, RESELLER, f5ab79cb980f11d1                               # 152Media_0_7
 33across.com, 0010b00001rrIFkAAM, DIRECT, bbea06d9c4d2853c                    # 33Across_0_9_6&7
 yahoo.com, 57289, RESELLER,  e1a5b5b6e3255540                                 # 33Across_0_9_6&7
 pubmatic.com, 156423, RESELLER, 5d62403b186f2ace                              # 33Across_0_9_6&7
@@ -113,7 +115,7 @@ districtm.io, 100749, DIRECT, 3fd707be9c4527c3                                # 
 emxdgt.com,1741, DIRECT, 1e1d41537f7cad7f                                     # EMX_2_6&7
 appnexus.com, 1356, RESELLER, f5ab79cb980f11d1                                # EMX_2_6&7
 EMXDGT.com, 2024, DIRECT, 1e1d41537f7cad7f                                    # EMX_9_7
-conversantmedia.com, 41150, DIRECT, 03113cd04947736d                          # Epsilon_2_6&7
+conversantmedia.com, 41150, RESELLER, 03113cd04947736d                        # Epsilon_2_6&7
 pubmatic.com, 158100, RESELLER, 5d62403b186f2ace                              # Epsilon_2_6&7
 openx.com, 540031703, RESELLER, 6a698e2ec38604c6                              # Epsilon_2_6&7
 appnexus.com, 4052, RESELLER                                                  # Epsilon_2_6&7
@@ -129,6 +131,7 @@ openx.com,537149485,reseller,6a698e2ec38604c6                                 # 
 pubmatic.com,157897,reseller,5d62403b186f2ace                                 # GumGum_9_6
 EMXDGT.com,1284,reseller,1e1d41537f7cad7f                                     # GumGum_9_6
 rubiconproject.com,23434,reseller,0bfd66d529a55807                            # GumGum_9_6
+imds.tv, 82515, DIRECT, ae6c32151e71f19d                                      # IMDS_0_6                     
 synacor.com, 82515, DIRECT, e108f11b2cdf7d5b                                  # IMDS_0_6
 yahoo.com, 55317, RESELLER, e1a5b5b6e3255540                                  # IMDS_0_6
 pubmatic.com, 156344, RESELLER, 5d62403b186f2ace                              # IMDS_0_6
@@ -207,9 +210,9 @@ spotxchange.com, 304965, RESELLER, 7842df1d2fe2db34                           # 
 spotx.tv, 304965, RESELLER, 7842df1d2fe2db34                                  # Rise_4_7	
 rubiconproject.com, 23876, RESELLER, 0bfd66d529a55807                         # Rise_4_7	
 yahoo.com, 59261, RESELLER                                                    # Rise_4_7	
-loopme.com, 11362, RESELLER, 6c8d5f95897a5a3b                                 # Rise_4_7	
-contextweb.com ,562615,RESELLER,89ff185a4c4e857c                              # Rise_4_7	
-openx.com, 537140488, RESELLER, 6a698e2ec38604c6                              # Rise_4_7
+pubmatic.com, 160295, RESELLER, 5d62403b186f2ace                              # Rise_4_7
+yahoo.com, 59261, RESELLER, e1a5b5b6e3255540                                  # Rise_4_7
+synacor.com, 82401, RESELLER, e108f11b2cdf7d5b                                # Rise_4_7
 sharethrough.com, 31c129df, DIRECT, d53b998a7bd4ecd2                          # Sharethrough_0_6&7
 indexexchange.com, 186046, RESELLER                                           # Sharethrough_0_6&7
 spotxchange.com, 212457, RESELLER                                             # Sharethrough_0_7
@@ -233,6 +236,7 @@ openx.com, 540421297, RESELLER, 6a698e2ec38604c6                              # 
 sonobi.com, 116da9d98c, DIRECT, d1a215d9eb5aee9e                              # Sonobi_0_6&7
 sonobi.com, ae3eca5cbd, DIRECT, d1a215d9eb5aee9e                              # Sonobi_1_6&7
 sonobi.com, e017850301, DIRECT, d1a215d9eb5aee9e                              # Sonobi_4_7
+yahoo.com, 59875, RESELLER                                                    # Sonobi_0_6&7
 rhythmone.com, 1059622079, RESELLER, a670c89d4a324e47                         # Sonobi_0&1_6&7
 contextweb.com, 560606, RESELLER, 89ff185a4c4e857c                            # Sonobi_0&1_6&7
 sovrn.com, 237754, DIRECT, fafdf38b16bf6b2b                                   # Sovrn_0&1&2_6&7
@@ -309,4 +313,5 @@ emxdgt.com, 1349, RESELLER, 1e1d41537f7cad7f
 Media.net, 8CU695QH7, RESELLER
 video.unrulymedia.com, 2338962694, RESELLER
 sharethrough.com, flUyJowI, RESELLER, d53b998a7bd4ecd2
+triplelift.com, 8210, RESELLER
 venatus.com, 62569d9b210cab3458907ce4, DIRECT
