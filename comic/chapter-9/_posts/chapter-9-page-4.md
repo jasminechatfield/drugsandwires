@@ -1,0 +1,18 @@
+---
+date: 2022-08-12 09:35:18
+title: Chapter 9 Page 4
+chapter: 9
+page: 4
+multiple_pages: false
+pages: ''
+tags: ''
+imagepath: ''
+imagepaths: ''
+published: false
+
+---
+We're gonna be going on another hiatus - sorry, everyone! It wasn't planned, but life happens and you can read more on why in my [public Patreon post](https://www.patreon.com/posts/70416171?pr=true)
+
+I will still update patrons if I manage to get pages out in upcoming weeks but there won't be a real schedule until things have settled and I have some sort of routine again. Thank you all for your patience :)
+
+\-Cryo
