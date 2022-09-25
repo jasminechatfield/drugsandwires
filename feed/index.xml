@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Fri, 12 Aug 2022 09:35:18 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 25 Sep 2022 14:27:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,35 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 9 Page 5</title>
+				
+				
+					<description>So, we’re not 100% back yet but I did want a new page up on the site so new readers aren’t immediately faced with Dan’s dad, plus I’ve been hyped about this scene for months. New updates will most likely go up on patreon first until I’m ready to return...</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
+        alt="Chapter 9 Page 5"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
+      />
+    
+  </div>
+  <div><p>So, we’re not 100% back yet but I did want a new page up on the site so new readers aren’t immediately faced with Dan’s dad, plus I’ve been hyped about this scene for months.</p>
+
+<p>New updates will most likely go up on patreon first until I’m ready to return with regular updates, though this month is still on pause and current patrons won’t get charged.</p>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Sun, 25 Sep 2022 14:27:18 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-9/page-5/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-9/page-5/</guid>
+      </item>
   
   <item>
     <title>Chapter 9 Page 4</title>
@@ -294,33 +323,6 @@
 				<pubDate>Tue, 24 May 2022 18:32:01 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-8/page-49/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-49/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 8 Page 47-48</title>
-				
-				
-					<description>
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      <img
-        src="https://drugsandwires.fail/assets/img/pages/ch08/48.jpg"
-        alt="Chapter 8 Page 47-48"
-      />
-    
-  </div>
-  <div>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Tue, 17 May 2022 18:37:38 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-8/page-47-48/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/page-47-48/</guid>
       </item>
   
 
