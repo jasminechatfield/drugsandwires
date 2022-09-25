@@ -1,4 +1,4 @@
-#V 10.08.2022 VH
+#V 30.08.2022 VH
 
 #------------------------------------------------------------------------------------------------------
 152media.info,152M327,RESELLER                                                # 152Media_0_7
@@ -164,6 +164,8 @@ rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807                         # 
 engagebdr.com, 10181, RESELLER                                                # Loopme_4_6&7	
 smartyads.com,100034, RESELLER, fd2bde0ff2e62c5d                              # Loopme_4_6&7	
 eskimi.com, eas-2020000005, RESELLER                                          # Loopme_4_6&7
+loopme.com,11511,RESELLER,6c8d5f95897a5a3b                                    # Loopme_2_6&7
+xandr.com, 13799, RESELLER                                                    # Loopme_2_6&7
 rubiconproject.com, 17902, RESELLER, 0bfd66d529a55807                         # Magnite_1_6&7
 rubiconproject.com,  13762, RESELLER, 0bfd66d529a55807                        # Magnite_0&2_6&7
 media.net, 8CU8ARTF8, DIRECT                                                  # Media.net   
@@ -314,4 +316,18 @@ Media.net, 8CU695QH7, RESELLER
 video.unrulymedia.com, 2338962694, RESELLER
 sharethrough.com, flUyJowI, RESELLER, d53b998a7bd4ecd2
 triplelift.com, 8210, RESELLER
+
+krushmedia.com, AJxF6R471a9M6CaTvK, DIRECT # KrushTest
+freewheel.tv, 1522338, DIRECT
+freewheel.tv, 1522514, RESELLER
+rhythmone.com, 2736329702851206590,DIRECT,a670c89d4a324e47
+video.unrulymedia.com, 2736329702851206590, DIRECT
+Contextweb.com ,562769,RESELLER,89ff185a4c4e857c
+imds.tv, 82531, RESELLER, ae6c32151e71f19d
+synacor.com, 82531, RESELLER, e108f11b2cdf7d5b
+inmobi.com,94262e51745c4a88863d51a61d0af6b6,RESELLER,83e75a7ae333ca9d
+sovrn.com, 245697, DIRECT, fafdf38b16bf6b2b
+lijit.com, 245697, DIRECT, fafdf38b16bf6b2b
+lijit.com, 245697-eb, DIRECT, fafdf38b16bf6b2b
+conversantmedia.com, 41784, DIRECT, 03113cd04947736d
 venatus.com, 62569d9b210cab3458907ce4, DIRECT
