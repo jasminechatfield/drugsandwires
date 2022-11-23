@@ -1,0 +1,16 @@
+---
+date: 2022-11-23 17:51:16
+title: Chapter 9 Page 7
+chapter: 9
+page: 7
+multiple_pages: false
+pages: ''
+tags: dan eve
+imagepath: ''
+imagepaths: ''
+published: false
+
+---
+While not completely out of the woods yet, we do have a couple more pages lined up thanks to Michael Sexton helping me out with inks and colours - he's the creator of the [Everblue](http://www.everblue-comic.com/) comic and an amazing artist, so I feel super lucky and grateful to Hiveworks for getting us in touch :D I'm also hoping to get more pages done myself over Christmas and who knows, maybe we can start updating seamlessly again. 
+
+And while you're here, please check out [this amazing Lin fanart]() by Raenyras and [Dan fanart](https://twitter.com/Everblue_Comic/status/1587545720357199873) by Michael. Every time I look at them they make my day!
