@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Mon, 24 Oct 2022 10:32:35 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 23 Nov 2022 17:51:16 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,35 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 9 Page 7</title>
+				
+				
+					<description>While not completely out of the woods yet, we do have a couple more pages lined up thanks to Michael Sexton helping me out with inks and colours - he’s the creator of the Everblue comic and an amazing artist, so I feel super lucky and grateful to Hiveworks for...</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
+        alt="Chapter 9 Page 7"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
+      />
+    
+  </div>
+  <div><p>While not completely out of the woods yet, we do have a couple more pages lined up thanks to Michael Sexton helping me out with inks and colours - he’s the creator of the <a href="http://www.everblue-comic.com/">Everblue</a> comic and an amazing artist, so I feel super lucky and grateful to Hiveworks for getting us in touch :D I’m also hoping to get more pages done myself over Christmas and who knows, maybe we can start updating seamlessly again.</p>
+
+<p>And while you’re here, please check out <a href="">this amazing Lin fanart</a> by Raenyras and <a href="https://twitter.com/Everblue_Comic/status/1587545720357199873">Dan fanart</a> by Michael. Every time I look at them they make my day!</p>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Wed, 23 Nov 2022 17:51:16 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-9/page-7/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-9/page-7/</guid>
+      </item>
   
   <item>
     <title>Chapter 9 Page 6</title>
@@ -294,35 +323,6 @@
 				<pubDate>Tue, 07 Jun 2022 08:13:36 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-8/pages-52-53/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/pages-52-53/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 8 Pages 50-51</title>
-				
-				
-					<description>
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      
-      
-        <img src="https://drugsandwires.fail/assets/img/pages/ch08/50.jpg" alt="Chapter 8 Pages 50-51" />
-      
-        <img src="https://drugsandwires.fail/assets/img/pages/ch08/51.jpg" alt="Chapter 8 Pages 50-51" />
-      
-    
-  </div>
-  <div>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Tue, 31 May 2022 12:00:22 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-8/pages-50-51/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-8/pages-50-51/</guid>
       </item>
   
 
