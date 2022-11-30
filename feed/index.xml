@@ -42,8 +42,9 @@
   <div>
     
       <img
-        src="https://drugsandwires.fail/assets/img/pages/assets/img/pages/ch09/08.jpg"
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
         alt="Chapter 9 Page 8"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
       />
     
   </div>
