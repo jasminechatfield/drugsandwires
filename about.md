@@ -24,6 +24,8 @@ And above all, this is the story of what happens when the future that never was 
 
 Drugs and Wires is an ongoing webcomic created by [Mary Safro aka Cryo](https://marysafro.crd.co/) (original premise, art, writing, drug research) and [Io Black](https://blackiochronicles.tumblr.com/) (writing, editing, plot development). It doubles up as a sequel to Dreamspace, a trilogy of motion comics published between 2013 and 2014.
 
+As of 2022 Mary works on scripting and sketching with Io Black providing some additional material, [Michael Sexton](https://everblue-comic.com/) does final inks and colors.
+
 ### So, do I have to have read Dreamspace to understand this comic?
 
 Nope. While Drugs and Wires picks up after the conclusion of Dreamspace, it’s ultimately intended to stand on its own. But if you haven’t read Dreamspace yet, why not take a few minutes to [check it out](http://dreamspace.nfshost.com/)? Word of warning: The comic features some flashing animation.
@@ -42,9 +44,9 @@ Great news - D&Wverse has produced a few spin-offs over the years.
 
 If you've read Dreamspace, you might enjoy [short strips and one-panel throwaways](https://tapas.io/series/DW-Oneshots) Mary worked on back in the olden days - though most of them aren't canon by now.
 
-We've also released[ Blue Pill Arcade](https://cryo-draws.itch.io/blue-pill-arcade), a 100+ page D&W prequel based in 1993 and centered around Dan and Eve's relationship and early VR scene in general. 
+We've also released[ Blue Pill Arcade](https://cryo-draws.itch.io/blue-pill-arcade), a 100+ page D&W prequel based in 1993 and centered around Dan and Eve's relationship and early VR scene in general.
 
-Finally there's[ Dates & Wires](https://ioblack.itch.io/dates-and-wires), a visual novel/disaster dating sim where you can attempt to date Stradania's least eligible bachelors and learn a bit of extra lore in the process. 
+Finally there's[ Dates & Wires](https://ioblack.itch.io/dates-and-wires), a visual novel/disaster dating sim where you can attempt to date Stradania's least eligible bachelors and learn a bit of extra lore in the process.
 
 Of course there's also our [Discord]() where you can hang with other readers and discuss latest updates.
 
