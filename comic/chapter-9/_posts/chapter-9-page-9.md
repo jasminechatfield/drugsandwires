@@ -1,0 +1,13 @@
+---
+date: 2022-12-07 20:39:49
+title: Chapter 9 Page 9
+chapter: 9
+page: 9
+multiple_pages: false
+pages: ''
+tags: ''
+imagepath: ''
+imagepaths: ''
+published: false
+
+---
