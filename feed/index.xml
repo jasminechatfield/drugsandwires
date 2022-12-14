@@ -12,7 +12,7 @@
 	<atom:link href="https://www.drugsandwires.fail/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.drugsandwires.fail</link>
 	<description>Everything went wrong.</description>
-	<lastBuildDate>Wed, 07 Dec 2022 20:39:49 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 14 Dec 2022 20:29:49 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,34 @@
   
 	
 	
+  
+  <item>
+    <title>Chapter 9 Page 10</title>
+				
+				
+					<description>
+</description>
+				
+				<content:encoded><![CDATA[
+  <div>
+    
+      <img
+        src="https://drugsandwires.fail/assets/img/pages/ch/.jpg"
+        alt="Chapter 9 Page 10"
+        srcset="https://drugsandwires.fail/assets/img/pages/ch/.jpg 850w, https://drugsandwires.fail/assets/img/pages/ch/.webp 165w"
+      />
+    
+  </div>
+  <div>
+</div>
+
+]]>
+				</content:encoded>
+	
+				<pubDate>Wed, 14 Dec 2022 20:29:49 +0000</pubDate>
+				<link>https://drugsandwires.fail/comic/chapter-9/page-10/</link>
+				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-9/page-10/</guid>
+      </item>
   
   <item>
     <title>Chapter 9 Page 9</title>
@@ -285,33 +313,6 @@
 				<pubDate>Wed, 20 Jul 2022 08:27:04 +0000</pubDate>
 				<link>https://drugsandwires.fail/comic/chapter-9/page-1/</link>
 				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-9/page-1/</guid>
-      </item>
-  
-  <item>
-    <title>Chapter 9 Cover</title>
-				
-				
-					<description>D&amp;W returns on the 20th July, in the meantime, here’s a cover! :)
-</description>
-				
-				<content:encoded><![CDATA[
-  <div>
-    
-      <img
-        src="https://drugsandwires.fail/assets/img/pages/ch09/cover9.jpg"
-        alt="Chapter 9 Cover"
-      />
-    
-  </div>
-  <div><p>D&amp;W returns on the 20th July, in the meantime, here’s a cover! :)</p>
-</div>
-
-]]>
-				</content:encoded>
-	
-				<pubDate>Tue, 28 Jun 2022 07:29:23 +0000</pubDate>
-				<link>https://drugsandwires.fail/comic/chapter-9/cover/</link>
-				<guid isPermaLink="true">https://drugsandwires.fail/comic/chapter-9/cover/</guid>
       </item>
   
 
